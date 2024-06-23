@@ -49,3 +49,10 @@ $ sudo apt install gtkwave
 </details>
 <!--End of Day 0-->
 </details>
+
+<details>
+<summary>Day 1: Introduction to Verilog RTL design and Synthesis>
+    
+</details>
+<!--End of Day 1-->
+</details>
