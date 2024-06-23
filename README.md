@@ -67,6 +67,7 @@ a.out file is executed.
                 </pre>
                 <pre>
 Load the .vcd file into GTKWave generator.
+![gtkwave](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/e133e105-de93-44a4-8e89-81623260c1b1).
                 </pre>
             </details>
         </li>
