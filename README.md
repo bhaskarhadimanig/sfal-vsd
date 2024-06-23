@@ -59,15 +59,12 @@ $ sudo apt install gtkwave
         <li>
             <details>
                 <summary>Lab using Iverilog and GTKWave</summary>
-                <p>Step 1</p>
                 <pre>
 Load mux & its testbench to Iverilog.
                 </pre>
-                <p>Step 2</p>
                 <pre>
 a.out file is executed.
                 </pre>
-                <p>Step 3</p>
                 <pre>
 Load the .vcd file into GTKWave generator.
                 </pre>
