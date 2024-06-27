@@ -67,7 +67,6 @@ a.out file is executed.
                 </pre>
                 <pre>
 Load the .vcd file into GTKWave generator.
-
                 </pre>
             </details>
         </li>
