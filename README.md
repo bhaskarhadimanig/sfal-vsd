@@ -351,4 +351,57 @@ Execute show to view the netlist design for the Synchronous Reset D-Flip Flop
                         </details>
                     </li>
                 </ul>   
+<details>
+                <summary>Special Case Optimizations</summary>
+                <ul>
+                    <li>
+                        <details>
+                            <summary>PART 1: mul2 Synthesis</summary>
+                            <pre>
+In Yosys, read the library
+Read the verilog file for mult_2
+Define the module to be synthesized
+                                
+![2mul2](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/cd7f31fe-bd3f-4e0b-b7d8-545a5a087fec)
+                       </pre>
+                            <pre>
+Generate the netlist and notice the prompt to not call for abc as there are no cells to be synthesized
+![3mul2](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/1748486f-65a2-4b49-b8de-601cbbbd60d0)
+                            </pre>
+                            <pre>
+Execute show to view the netlist design
+![5mul2](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/5876951a-d96a-4c75-9467-1d159997ed5a)
+                       </pre>
+                            <pre>
+Write the netlist
+View the netlist
+![6mul2](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/1f132b4b-cc56-44bf-aa53-fb7790005aec)
+                            </pre>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>PART 2: mult8 Synthesis</summary>
+                            <pre>
+Read the verilog file for mult_8
+Define the module to be sunthesized
+Generate the netlist and notice the prompt to not call for abc as there are no cells to be synthesized
+![1mul8](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/cc45b3e5-33a4-4ee1-99c9-499698fd51d9)
+![2mul8](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/eeedde07-8032-4147-a4bc-dc7fc182b366)
+                            </pre>
+                            <pre>
+Execute show to view the netlist design
+![3mul8](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/058218b7-9ce3-4f8f-b25e-ecd0cb970f63)
+                            </pre>
+                            <pre>
+Write the netlist
+View the netlist
+![4mul8](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/6eac8038-a1a4-4320-8b4b-c01d2b23f69e)
+                 </pre>
+                        </details>
+                    </li>    
+                </ul>
             </details>
+        </li>
+    </ul>
+</details>
