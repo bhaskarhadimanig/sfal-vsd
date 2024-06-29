@@ -61,12 +61,17 @@ $ sudo apt install gtkwave
                 <summary>Lab using Iverilog and GTKWave</summary>
                 <pre>
 Load mux & its testbench to Iverilog.
-                </pre>
+                    
+![1](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/26b24dfa-7a0b-431d-a218-7b8cefa8f989)
+    </pre>
                 <pre>
 a.out file is executed.
-                </pre>
+![2](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/cc657582-2c09-476e-8795-61475698e949)
+![3](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/548347d2-f98d-4a39-aab5-79fd6b7f1a9d)
+    </pre>
                 <pre>
 Load the .vcd file into GTKWave generator.
+![4](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/b0b540c8-e951-4005-8ac5-25abfaeee59e)
                 </pre>
             </details>
         </li>
@@ -78,26 +83,30 @@ Load the .vcd file into GTKWave generator.
                         <details>
                             <summary>PART 1: Realising the Logic and Generating Library Specific Design</summary>
                             <pre>
-Invoke Yosys by using command yosys
+Invoke Yosys by using command yosys.
+![5](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/9ec94c2c-e818-462e-9f1c-c63acff2cc37)
                             </pre>
                             <pre>
-Read the library using read_liberty
+Read the library using read_liberty.
+![6](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/45f3b167-0f40-4c32-b038-c53648264079)
                             </pre>
                             <pre>
-Read the design using read_verilog
+Read the design using read_verilog.
+![7](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/2f111f94-8a85-4e57-8151-a4cbd011fb2b)
+        </pre>
+                            <pre>
+Define the module that needs to be synthesized.
+![8](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/1308cc8f-ca78-4201-be95-ea30ea7b1dbd)
+![9](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/f69641a6-a241-4d53-b20b-162bf4cfb5ec)
                             </pre>
                             <pre>
-Define the module that needs to be synthesized
-                            </pre>
+Use command show to view the design.
+![10](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/aa942d01-c1a3-4d01-8372-141b8344f095)
+![11](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/95120a2a-9b73-4a32-b97c-ea9d3a0af3c0)
+         </pre>
                             <pre>
-Use command show to view the design
-                            </pre>
-                            <pre>
-Generate the netlist using abc command
-                            </pre>
-                            <pre>
-Use command show again to view the library specific design
-View the design using library modules
+Generate the netlist using abc command.
+![12](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/72059ce1-af52-4b4b-bb35-42e9cf5f4e02)
                             </pre>          
                         </details>
                     </li>
@@ -107,17 +116,13 @@ View the design using library modules
                         <details>    
                             <summary>PART 2: Write the netlist & Modify to View Without Additional Attributes</summary>
                             <pre>
-Write the netlist using command 'write_netlist'
+Write the netlist using command 'write_netlist'.
+![13](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/bbb8db2f-a56c-4fd5-910b-cfed9a2dd7df)
                             </pre>
                             <pre>
 View the netlist using command '!gvim'
 The Generated Netlist:
-                            </pre>
-                            <pre>
-Generate a netlist without attributes using -noattr
-                            </pre>
-                            <pre>
-Use '!gvim' again to view the modified netlist
+![14](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/9298beda-8bcd-4fdf-ba76-39e4becce7c7)
                             </pre>
                         </details>
                     </li>
