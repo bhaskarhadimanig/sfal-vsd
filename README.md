@@ -431,8 +431,19 @@ This using K-map and Quine Mckluskey and boolean expression methos to optimize t
 #### Basic:
 1. Sequestianl constant propogation.
 #### Advance:
-1. Static optimization.
+1. State optimization.
 2. Retiming.
 3. Sequential logic cloning.
-
+   
+#### Sequestianl constant propogation:
+Output can be constant irespective of reset and clock.
+![2](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/e45f6400-7d35-4972-aff0-bd521454b0bb)
+Note: Every flop if D input tied off is not a sequential constant and Q pin always take a constant value as shown below .
+![3](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/3bc6a1c7-cef2-4b09-9d8c-0a695cfa735e)
+#### State optimization:
+Optimization of unused stae in the finate state meachine.
+#### Cloning:
+#### Retiming:
+Spliting the logic equally to match the timing.
+![4](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/910f895d-f349-4980-b3ce-eab759913dcc)
  </details> 
