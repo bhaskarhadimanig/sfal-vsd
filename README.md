@@ -476,4 +476,29 @@ endmodule
 ![6](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/c2d54980-8600-425c-8886-7a175d5528ba)
 ###### It has been optimized to OR gate.
 ![10](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/f544630a-20e1-4b8f-84f6-1046c66764cb)
+## DAY 3 - Lab 3
+###### Code we are using for optimizing.
+![11](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/ddc676f7-c5c2-45e3-ac53-51e094d5f6fb)
+###### Invoke the YOSYS tool.
+###### Read the library.
+###### Read the verilog.
+###### Synthsise the code.
+![12](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/27a6abe2-d574-4309-bb46-c1ea7460be5c)
+###### To optimze use the command below.
+![6](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/c2d54980-8600-425c-8886-7a175d5528ba)
+###### It has been optimized to 3 input AND gate.
+![13](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/c2d02064-9535-4c69-a984-cbde4316f61b)
+![14](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/2f8526c6-8df2-4813-b599-dc8d2e7bb288)
+## DAY 3 - Lab 4
+###### Code we are using for optimizing.
+![16](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/16efc249-6f21-4653-9339-435144eb7116)
+###### Invoke the YOSYS tool.
+###### Read the library.
+###### Read the verilog.
+###### Synthsise the code.
+![15](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/34461484-1936-4543-96af-82c578fed2a1)
+###### To optimze use the command below.
+![6](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/c2d54980-8600-425c-8886-7a175d5528ba)
+###### It has been optimized.
+![17](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/3201d217-a34f-4dc1-aab6-0f58da61b79a)
  </details> 
