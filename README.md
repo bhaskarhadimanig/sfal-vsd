@@ -446,4 +446,34 @@ Optimization of unused stae in the finate state meachine.
 #### Retiming:
 Spliting the logic equally to match the timing.
 ![4](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/910f895d-f349-4980-b3ce-eab759913dcc)
+
+## DAY 3 - Lab 1
+###### Code we are using for optimizing.
+module opt_check (input a , input b , output y);
+	assign y = a?b:0;
+endmodule
+###### Invoke the YOSYS tool.
+###### Read the library.
+###### Read the verilog.
+###### Synthsise the code.
+![5](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/6d9c8ca9-9eb2-46d0-ace7-1f8da232dd3d)
+###### To optimze use the command below.
+![6](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/935387c5-7855-438b-99da-afa19da59cf2)
+###### It has been optimized to AND gate.
+![7](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/db8da1e7-7815-495b-acab-0ed1fd910084)
+![8](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/cc09cb9b-15cd-4a31-aa75-15298ea474f3)
+## DAY 3 - Lab 2
+###### Code we are using for optimizing.
+module opt_check2 (input a , input b , output y);
+	assign y = a?1:b;
+endmodule
+###### Invoke the YOSYS tool.
+###### Read the library.
+###### Read the verilog.
+###### Synthsise the code.
+![9](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/db61e4a1-1fa6-4d2b-85f1-7eff2b1d77c7)
+###### To optimze use the command below.
+![6](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/c2d54980-8600-425c-8886-7a175d5528ba)
+###### It has been optimized to OR gate.
+![10](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/f544630a-20e1-4b8f-84f6-1046c66764cb)
  </details> 
