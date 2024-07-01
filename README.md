@@ -405,3 +405,34 @@ View the netlist
         </li>
     </ul>
 </details>
+
+
+ <details> 
+<summary> DAY 3 - Combinational and Sequential Optimizations </summary>
+
+## DAY 3 - Combinational and Sequential Optimizations
+
+### Intro to optimizations
+
+#### Combinational Logic Optimisation:
+#### Why Combinational Logic Optimisation?
+
+-> Squeezing the logic to get the most optimised design (in terms of Area and Power savings- PPA)
+#### Technique used for combinatinal optimisation:
+1. Constant propogation.
+2. Boolean logic optimization.
+#### 1. Constant Propagation: 
+This is direct optimisation technique using boolean expression.
+![1](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/8d967fca-86da-44e4-8d9e-fe2d896ad8e8)
+#### 2. Boolean Logic Optimizations: 
+This using K-map and Quine Mckluskey and boolean expression methos to optimize the logic.
+
+#### Sequential Logic Optimisation:
+#### Basic:
+1. Sequestianl constant propogation.
+#### Advance:
+1. Static optimization.
+2. Retiming.
+3. Sequential logic cloning.
+
+ </details> 
