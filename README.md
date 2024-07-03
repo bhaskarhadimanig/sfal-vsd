@@ -526,3 +526,47 @@ endmodule
 ![19](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/66c2b61f-1353-4893-9585-d9686bee020b)
 ![20](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/573712d7-c535-4e18-abc2-b7531261cb72)
  </details> 
+ <details> 
+<summary> Day 4 - GLS (Gate level simulation), blocking vs non-blocking and Synthesis-Simulation mismatch </summary>
+	 
+## Day 4 - GLS (Gate level simulation), blocking vs non-blocking and Synthesis-Simulation mismatch
+
+### Gate level simulation (GLS) :
+#### What is GLS?
+Running test bench wiht Netlist as design under test.
+#### Why is GLS?
+1. To verify the logical corrects of design after synthesis.
+2. Ensuring the timing of the design is met.
+![3](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/a99cd9aa-0695-45e1-87d8-22ec1ab815f5)
+![2](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/a650806b-ab69-44e9-a68c-c8fd01016014)
+
+#### Why we need to validate the functinality of the Netlist?
+Because there could be synthesis and simulation mismatch.
+
+### Synthesis simulation mismatch :
+#### Simulation mismatch happens becuse of following reasons.
+1. Missing sensistivity list.
+2. Blocking vs Non blocking assignment.
+3. Non standard verilog coading.
+
+### Missing sensistivity list :
+In verilog code we need to take care of the providing sensistivity list.
+![4](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/ee0d3c2f-689e-44d2-95cb-3fed137b0741)
+In simulation time it looks like double edge flop.
+In synthesis it looks line mux.
+
+### Blocking vs Non blocking assignment :
+In side always block we use blocking and non clocking state ments.
+#### Blocking (=):
+Here the blocking stesments are executed in the sequesntial manner.
+Use always non blokcing with sequential circuit.
+![6](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/b36585af-1335-4936-8fbb-c966e2a08b8c)
+![7](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/1a59d6a6-1630-4259-89f2-c70bcda0f6d0)
+![8](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/68a3f44a-7a70-4e97-83e3-d52bdfab3cdc)
+
+#### Non Blocking (<=):
+Here executes all the RHS and assigned to LHS means non blocking statements are executed in the parllel.
+
+## DAY 4 - GLS Lab 1
+
+ </details>
