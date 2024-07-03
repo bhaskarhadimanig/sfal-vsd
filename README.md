@@ -568,5 +568,7 @@ Use always non blokcing with sequential circuit.
 Here executes all the RHS and assigned to LHS means non blocking statements are executed in the parllel.
 
 ## DAY 4 - GLS Lab 1
+![9](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/c0faffdc-02ff-40bb-8f37-eb0d629d2ff7)
+![10](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/37b354ba-38d8-464e-a8ea-40932644b5dc)
 
  </details>
