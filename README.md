@@ -447,7 +447,7 @@ Optimization of unused stae in the finate state meachine.
 Spliting the logic equally to match the timing.
 ![4](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/910f895d-f349-4980-b3ce-eab759913dcc)
 
-## DAY 3 - Lab 1
+## DAY 3 - Combinational Lab 1
 ###### Code we are using for optimizing.
 module opt_check (input a , input b , output y);
 	assign y = a?b:0;
@@ -462,7 +462,7 @@ endmodule
 ###### It has been optimized to AND gate.
 ![7](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/db8da1e7-7815-495b-acab-0ed1fd910084)
 ![8](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/cc09cb9b-15cd-4a31-aa75-15298ea474f3)
-## DAY 3 - Lab 2
+## DAY 3 - Combinational Lab 2
 ###### Code we are using for optimizing.
 module opt_check2 (input a , input b , output y);
 	assign y = a?1:b;
@@ -476,7 +476,7 @@ endmodule
 ![6](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/c2d54980-8600-425c-8886-7a175d5528ba)
 ###### It has been optimized to OR gate.
 ![10](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/f544630a-20e1-4b8f-84f6-1046c66764cb)
-## DAY 3 - Lab 3
+## DAY 3 - Combinational Lab 3
 ###### Code we are using for optimizing.
 ![11](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/ddc676f7-c5c2-45e3-ac53-51e094d5f6fb)
 ###### Invoke the YOSYS tool.
@@ -489,7 +489,7 @@ endmodule
 ###### It has been optimized to 3 input AND gate.
 ![13](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/c2d02064-9535-4c69-a984-cbde4316f61b)
 ![14](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/2f8526c6-8df2-4813-b599-dc8d2e7bb288)
-## DAY 3 - Lab 4
+## DAY 3 - Combinational Lab 4
 ###### Code we are using for optimizing.
 ![16](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/16efc249-6f21-4653-9339-435144eb7116)
 ###### Invoke the YOSYS tool.
@@ -501,4 +501,15 @@ endmodule
 ![6](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/c2d54980-8600-425c-8886-7a175d5528ba)
 ###### It has been optimized.
 ![17](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/3201d217-a34f-4dc1-aab6-0f58da61b79a)
+## DAY 3 - Sequential Lab 1
+![1](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/64dfac24-5662-4f12-b75e-5867985d98b9)
+![2](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/0272228c-7dfa-4b4c-a4a2-219c4ba8a0eb)
+![3](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/5a948d26-673f-40e1-b7eb-04d85b0bdad8)
+![4](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/25c903e3-5fd3-4abc-b04d-bb6741998c5e)
+![5](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/76bb9f9a-d93a-4985-8b93-df7edd9adff8)
+![6](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/42196f31-bdce-4429-b415-87a5b7a65144)
+![7](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/b6059a70-096f-412e-ad2e-8aa3f19290ce)
+## DAY 3 - Sequential Lab 2
+![8](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/22d6958b-d974-4f92-bbfd-de287b90caf2)
+![9](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/90366b2f-9235-4d22-8e75-1d194586fb75)
  </details> 
