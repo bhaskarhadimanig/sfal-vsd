@@ -515,4 +515,14 @@ endmodule
 ![10](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/e55be759-bcf8-49f6-921e-4e051f4ab729)
 ![11](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/e46d556b-7b7d-421d-9d10-312f298c8342)
 ![12](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/466923d4-382a-470e-b20f-be5778f2302d)
+## DAY 3 - Sequential Lab 3
+#### Unused Output Optimization:
+![16](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/651bb4ce-d31c-42c5-8f76-77dc4935b4e5)
+![14](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/b71406ad-1257-46bc-92e5-0b105d5e101d)
+![15](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/cfbcadc1-5b7f-4e49-9d3c-896c5ad121b9)
+![17](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/a807c47a-3439-403e-abe2-d29570601509)
+#### After mofifying above code:
+![18](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/c9687002-7418-4778-ad13-096bc8e4eb6a)
+![19](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/66c2b61f-1353-4893-9585-d9686bee020b)
+![20](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/573712d7-c535-4e18-abc2-b7531261cb72)
  </details> 
