@@ -510,6 +510,9 @@ endmodule
 ![6](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/42196f31-bdce-4429-b415-87a5b7a65144)
 ![7](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/b6059a70-096f-412e-ad2e-8aa3f19290ce)
 ## DAY 3 - Sequential Lab 2
-![8](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/22d6958b-d974-4f92-bbfd-de287b90caf2)
+![8](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/329128e2-033d-455e-a9fe-cc55a1b4620d)
 ![9](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/90366b2f-9235-4d22-8e75-1d194586fb75)
+![10](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/e55be759-bcf8-49f6-921e-4e051f4ab729)
+![11](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/e46d556b-7b7d-421d-9d10-312f298c8342)
+![12](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/466923d4-382a-470e-b20f-be5778f2302d)
  </details> 
