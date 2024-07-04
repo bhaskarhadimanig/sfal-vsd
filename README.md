@@ -570,5 +570,24 @@ Here executes all the RHS and assigned to LHS means non blocking statements are 
 ## DAY 4 - GLS Lab 1
 ![9](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/c0faffdc-02ff-40bb-8f37-eb0d629d2ff7)
 ![10](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/37b354ba-38d8-464e-a8ea-40932644b5dc)
+![11](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/b3d0c741-97e5-4186-9a7c-cc796f5d9cce)
+![12](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/bb5668ce-cef8-4b23-9749-84fdcfd5e879)
+#### Do GLS:
+![13](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/88e74866-584a-4aaf-80af-96f9477dded3)
+![14](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/faaabeca-46b2-4bab-8d99-eeb8aa9055ca)
+
+## DAY 4 - GLS Lab 2
+![15](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/7b91c9f4-bd39-4f05-992a-ecf7965c16c4)
+![16](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/6e030621-5bc6-4465-a610-a803c5607063)
+
+#### Do GLS:
+Synsthesis simulation miss match.
+![17](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/6be7ce45-b8cd-4846-9e67-49d4a2f600c7)
+![18](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/f1edef6a-571e-408a-b114-0ba98ad217a4)
+
+## DAY 4 - GLS Lab 3
+![19](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/02618158-f70a-418e-b834-00675249e47f)
+![20](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/a90df7ef-663b-459c-9af9-9a5306460b80)
+
 
  </details>
