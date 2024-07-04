@@ -588,6 +588,11 @@ Synsthesis simulation miss match.
 ## DAY 4 - GLS Lab 3
 ![19](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/02618158-f70a-418e-b834-00675249e47f)
 ![20](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/a90df7ef-663b-459c-9af9-9a5306460b80)
+![21](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/60b28480-8752-4104-bb1c-db5057be09aa)
+![22](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/6c45d4e1-2769-49a7-9578-225d73861932)
 
+#### Do GLS:
+![23](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/12be3aea-67d4-4c9d-88ac-1c89efc28b4c)
+![24](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/4e9143a1-5746-47cc-8c3f-0d9b91889b93)
 
  </details>
