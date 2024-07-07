@@ -621,4 +621,7 @@ Ex:<br>
 
 In .lib it contain fast and slow working cells. We requires fast workign cells to meet setup and slow working cells to meethe hold requirement.
 
+![11](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/e906f7f5-7d0c-4b85-82d2-f8ec5fe94386)
+![12](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/5674e541-e9bc-41ce-8bdf-c2037c71f115)
+
 </details>
