@@ -596,3 +596,29 @@ Synsthesis simulation miss match.
 ![24](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/4e9143a1-5746-47cc-8c3f-0d9b91889b93)
 
  </details>
+
+  <details> 
+<summary> Day 5 - Advanced synthesis and STA with design compliler </summary>
+	 
+## Day 5 - Advanced synthesis and STA with design compliler
+## Logic Synthesis
+### What is synthesis?
+RTL to gate level transistion is called synthesis.
+Or the converint design into gates and making connection between the gates.
+The out put of the synthesis is called as gate levle Netlist.
+![7](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/f139d56f-76e1-4427-9fd7-50ed1df5d909)
+
+### What is .lib?
+It is a collection of logic modules incluedes logic gates. It contains information of standard cell like timing, area, power.<br>
+It contains different flavors of same gates.<br>
+Ex:<br>
+2 input AND : slow, medium, fast.<br>
+3 input AND : slow, medium, fast.<br>
+4 input AND : slow, medium, fast.<br>
+![8](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/62608918-91c3-4dd7-ae0d-b9d701173cfe)
+![9](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/1b357167-76d1-4298-a84d-1cbd27df5547)
+![10](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/e3a4cf92-3fd4-42b1-9fe2-080ad91f55a9)
+
+In .lib it contain fast and slow working cells. We requires fast workign cells to meet setup and slow working cells to meethe hold requirement.
+
+</details>
