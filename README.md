@@ -630,4 +630,44 @@ In .lib it contain fast and slow working cells. We requires fast workign cells t
 ![17](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/c17e9851-7f9f-4f33-8c9b-c085a810e136)
 ![18](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/47241688-ce69-4954-9d45-995061388649)
 
+## Advace Synthesis and STA Using DC
+## Introduction Design Compiler
+![19](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/db6bc802-6f6d-4357-8d97-32d49429bc3e)
+![20](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/be33e049-29eb-4dea-8c89-210329dd227e)
+### Terminology used in DC compiler
+.LIB library which contains standard cells <br>
+.DB same as LIB but different format DC uses .db format for cell libraries <br>
+.DDC format to store design information  .DC can read and write out in .DDC <br>
+.DESIGN  RTL models <br>
+
+### SDC Format
+Constraints for power, area and timing <br>
+SDC syntax is based on TCL
+![22](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/e1244fd6-e1d5-4852-9807-1e6e5a607497)
+![23](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/9478d986-466c-4dc6-a5cb-b098d2e5b90b)
+![24](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/56aba3cd-ab59-4d3d-988f-c2a4f3e5da72)
+
+## DAY 5 - Ivoking DC basic set up Lab 1
+![25](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/d061c9a7-5490-4cbb-9595-5fdaf5b70c29)
+![26](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/2c8d2cc9-e594-40ee-b9de-7e95431f2c95)
+![27](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/c1250370-4a61-439b-92a4-4335e2502cf9)
+![28](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/93f84c54-e916-45c6-af71-39b62d1cefa6)
+
+Library is not liked so if write into .v file to understand the design it uses the virtual library. <br> There is no standard cell information is provided so it will written out using Gtech cells. <br>
+
+![28](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/ce4a5b96-c0f1-4e89-aae2-936a9fb71f85)
+![29](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/95ea773c-96bd-4580-aa6d-4f8f5674da86)
+
+### Read the library in .db format
+After reading the library again if write the verilog its writting in gtech cells formtat.<br>
+![31](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/3a55124c-3f91-4bf1-b462-4af27d6f495f)
+To resolve this we need to set the target_library and link_library. <br>
+![32](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/da5a197a-8ab4-4aba-b196-7aeaf1282644)
+### Link the library
+![33](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/2bc9c980-8a2a-4b1b-817a-743ec511ff11)
+### Compile the design and then write the design 
+![34](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/a9c0247a-c03c-4b39-bf85-b9ad0e628b52)
+![35](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/2727e7d6-2167-476f-996d-eccd77dbffe5)
+
+
 </details>
