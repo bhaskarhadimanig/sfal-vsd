@@ -684,4 +684,34 @@ In working directory we need to create ".synopsys_dc.setup" file and add all the
 After creating setup file and if we invoke dc_shell no need to set some of the information required for DC like target_library and link_library explicitly.<br>
 ![39](https://github.com/user-attachments/assets/431f435b-f097-4862-a162-5f795ee90a05)
 
+## TCL Scripting
+### TCL Scripting to set variable and print the value of variable
+set i 0 -> To setting a variable i to a value 0 
+echo $i -> To print the value of i in console
+incr i 	-> To increment the value of i
+![40](https://github.com/user-attachments/assets/0715fee6-3837-4185-8713-4ce8cf07d288)
+
+### TCL Scripting defing for loop
+![41](https://github.com/user-attachments/assets/ba1c7ce3-7c11-4143-8cd6-0c585aedf08d)
+
+### TCL Scripting defing while loop
+![42](https://github.com/user-attachments/assets/646a08a1-ed0d-4f1a-96f8-7c19c7af00f6)
+![43](https://github.com/user-attachments/assets/4fe60c23-e46b-43fe-bd0e-f00a31339ab9)
+
+### TCL Scripting creating list
+![44](https://github.com/user-attachments/assets/49a8c372-77de-457b-9b65-a7a245c5ae6b)
+
+### TCL Scripting foreach to iterate through list
+![45](https://github.com/user-attachments/assets/07898819-702c-4033-a588-22e894e93e6d)
+
+### TCL Scripting foreach_in_collection of DC
+![46](https://github.com/user-attachments/assets/81c9c11d-6a4c-4464-8eb8-f7176da21345)
+
+### TCL Scripting creating .tcl script and sourcing
+Create the tcl script ans save the script with .tcl extention and save the file.
+The tcl script can be source in shell.
+![48](https://github.com/user-attachments/assets/8a482eab-4533-48d0-ac17-03b1170a2783)
+![47](https://github.com/user-attachments/assets/6f2643e8-9f16-4636-adac-6c76b6c67030)
+![49](https://github.com/user-attachments/assets/c2236418-9cb0-4bb2-bab5-fb9be4366281)
+
 </details>
