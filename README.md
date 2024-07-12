@@ -668,6 +668,20 @@ To resolve this we need to set the target_library and link_library. <br>
 ### Compile the design and then write the design 
 ![34](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/a9c0247a-c03c-4b39-bf85-b9ad0e628b52)
 ![35](https://github.com/bhaskarhadimanig/sfal-vsd/assets/157913378/2727e7d6-2167-476f-996d-eccd77dbffe5)
-
+Write ddc command to write ddc "write -f ddc -out <filename.ddc>".
+## DAY 5 - Ivoking Design Vision Lab 2
+To invoke design vision tool need to use design_vision command.<br>
+Design vision is the GUI format of DC.<br>
+There we can able to read the ddc and .v file.<br>
+![36](https://github.com/user-attachments/assets/4c57079a-77f9-4a27-ac41-3b85fa2defa6)
+![37](https://github.com/user-attachments/assets/0524377c-1df4-44b7-a7e3-e84b6ddfba58)
+The file format ddc is propritory format of synopsis so if you are using ICC for pysical design if we read ddc is enough.<br>
+It will read all the information like libraries and constraints no need to read explcitly.
+## DAY 5 - Set up DC using set up file Lab 3
+Insted of reading or setting of libraries explicitly we can configure in the setup file.<br>
+In working directory we need to create ".synopsys_dc.setup" file and add all the set up in that file.<br>
+![38](https://github.com/user-attachments/assets/7a524315-e015-466f-8696-76860d897504)
+After creating setup file and if we invoke dc_shell no need to set some of the information required for DC like target_library and link_library explicitly.<br>
+![39](https://github.com/user-attachments/assets/431f435b-f097-4862-a162-5f795ee90a05)
 
 </details>
