@@ -715,3 +715,19 @@ The tcl script can be source in shell.
 ![49](https://github.com/user-attachments/assets/c2236418-9cb0-4bb2-bab5-fb9be4366281)
 
 </details>
+<!--End of Day 5 -->
+
+<!--Start of Day 6-->
+<details> 
+<summary> Day 6 - Basics of STA </summary>
+<ul>
+<li>
+<details> 
+<summary> Introduction to STA </summary>
+		 
+## Day 6 - Introduction to STA
+
+</details>
+</li>
+</ul>
+</details>
