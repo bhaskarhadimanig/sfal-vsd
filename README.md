@@ -759,13 +759,15 @@ Based on the IN to REG, REG to REG and REG to OUT we need to constrain the desig
 REG to REG : All the are constrained by clock. Once clock is defined then tool will constrin the combinational ciruit delay.<br>
 REG to OUT : Constrained by Output external delay (we need to constraint the logic) and clock period.<br>
 IN to REG  : Constrained by Input external delay (we need to constraint the logic) and clock period.<br>
+![12](https://github.com/user-attachments/assets/0b2eb2d2-7dda-4fa1-af62-3db83bbd52b5)
+![13](https://github.com/user-attachments/assets/ef57efaa-acee-48ea-afbc-d26276342667)
+![14](https://github.com/user-attachments/assets/d1e8c537-2464-4d78-a591-a9056e85d0a7)
 Based on the Output external delay and Input external delay tool will calculate the required combinational delay in REG to OUT and IN to REG path and is called IO modeling.<br>
 This can be constrained based on:<br>
 1. standart interface specification.<br>
 2. Io budgeting based on interation with other modules.<br>
-![12](https://github.com/user-attachments/assets/0b2eb2d2-7dda-4fa1-af62-3db83bbd52b5)
-![13](https://github.com/user-attachments/assets/ef57efaa-acee-48ea-afbc-d26276342667)
-![14](https://github.com/user-attachments/assets/d1e8c537-2464-4d78-a591-a9056e85d0a7)
+![15](https://github.com/user-attachments/assets/1ef3d781-9b1c-44cb-b8a7-f6df19f8b938)
+
 </details>
 </li>
 
