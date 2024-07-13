@@ -776,7 +776,12 @@ This can be constrained based on:<br>
 <summary> Input Transition and Output Load </summary>
 
 ## Day 6 - Input Tran and Output Load
-
+![16](https://github.com/user-attachments/assets/6665f51b-c665-4ca9-aaba-48edb6dd2bb4)
+![17](https://github.com/user-attachments/assets/d2e6f6ba-b9dd-41b4-90bd-acebc0cc8a83)
+![18](https://github.com/user-attachments/assets/db96eaf6-f237-4d1a-a9ac-9afb5438b56c)
+![19](https://github.com/user-attachments/assets/a491bb7b-1723-4baf-a826-5b9aa9286a92)
+Generallyt IO delay modeling is done on 70% - 30% thub rule, menas 70% for external delay and 30% for internal delay.
+![20](https://github.com/user-attachments/assets/93a9faa4-814f-4807-9f0a-f03e1e09851c)
 </details>
 </li>
 </ul>
