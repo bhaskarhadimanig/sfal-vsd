@@ -742,5 +742,40 @@ Where load is not only because of leangthy nets and also depends on number of lo
 
 </details>
 </li>
+<li>
+<details> 
+<summary> Constraints </summary>
+	
+## Day 6 - Constraints
+![8](https://github.com/user-attachments/assets/696fb917-cbb1-422f-b96f-f95f7f2369b1)
+![9](https://github.com/user-attachments/assets/1db1c382-4aa6-4aec-a1c8-bd45bef7d5d5)
+![10](https://github.com/user-attachments/assets/644d994b-6e37-41b5-a635-b6cc9c0978ff)
+Practically if curcuit has to work at some frequency then that decides the allowable cobinational delay.<br> 
+Coinatinal delay not decides the frequency fequency of circuit has to work decides the allowable combinational delay means clock period is limiting the combinational logic.<br>
+Example if circuit has to work at 500MHz or clock period is 2ns. And if TCQ delay of flip flop is 0.5ns. Then combinational delay should be of 1ns.<br>
+The constraint given to the synthesis tool is operating frequency or clock period as constraint. The tool will pick appropriate cells for the combinational logic to meet the timing.<br>
+![11](https://github.com/user-attachments/assets/f4046acc-4bd4-4163-9b7b-71016cea4261)
+Based on the IN to REG, REG to REG and REG to OUT we need to constrain the design.<br>
+REG to REG : All the are constrained by clock. Once clock is defined then tool will constrin the combinational ciruit delay.<br>
+REG to OUT : Constrained by Output external delay (we need to constraint the logic) and clock period.<br>
+IN to REG  : Constrained by Input external delay (we need to constraint the logic) and clock period.<br>
+Based on the Output external delay and Input external delay tool will calculate the required combinational delay in REG to OUT and IN to REG path and is called IO modeling.<br>
+This can be constrained based on:<br>
+1. standart interface specification.<br>
+2. Io budgeting based on interation with other modules.<br>
+![12](https://github.com/user-attachments/assets/0b2eb2d2-7dda-4fa1-af62-3db83bbd52b5)
+![13](https://github.com/user-attachments/assets/ef57efaa-acee-48ea-afbc-d26276342667)
+![14](https://github.com/user-attachments/assets/d1e8c537-2464-4d78-a591-a9056e85d0a7)
+</details>
+</li>
+
+<li>
+<details> 
+<summary> Input Transition and Output Load </summary>
+
+## Day 6 - Input Tran and Output Load
+
+</details>
+</li>
 </ul>
 </details>
