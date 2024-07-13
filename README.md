@@ -726,6 +726,19 @@ The tcl script can be source in shell.
 <summary> Introduction to STA </summary>
 		 
 ## Day 6 - Introduction to STA
+### Min and Max Delay:
+![1](https://github.com/user-attachments/assets/168b6bbe-3b16-459e-bdac-bd616de6576a)
+### Delay:
+So delay is a function of input transition and load capacitance.<br>
+Delay of any gate is function of input transition and out put load.<br>
+Where load is not only because of leangthy nets and also depends on number of load connected to it.<br>
+![2](https://github.com/user-attachments/assets/27c22a1c-4dff-41de-8d57-b17dce0cfcd4)
+![3](https://github.com/user-attachments/assets/35ad8416-9796-4561-8cfd-4b161d42042e)
+![4](https://github.com/user-attachments/assets/56ee13ba-2eed-4ebe-9c7b-72b5dccc6bd8)
+### Time Arcs:
+![5](https://github.com/user-attachments/assets/5efc3db7-68e1-4e18-ba9e-f8c730935625)
+![6](https://github.com/user-attachments/assets/41b1ed3f-325f-4dfb-bc24-01e013d62b2e)
+![7](https://github.com/user-attachments/assets/ce73f531-7723-4fca-9b51-165d0a77ad00)
 
 </details>
 </li>
