@@ -855,6 +855,7 @@ sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__and2_0
 #### To get capacitance of perticular gate:
 ![37](https://github.com/user-attachments/assets/2870ece8-c10c-49fe-b118-95f00e2c7780)
 #### To check clock pin or not of perticular gate:
+get_lib_attribute sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__and2_0/A clock
 #### To get all the sequential cells in the library:
 get_lib_cells */* -filter "is_sequential == true"
 </details>
