@@ -858,6 +858,8 @@ sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__and2_0
 get_lib_attribute sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__and2_0/A clock
 #### To get all the sequential cells in the library:
 get_lib_cells */* -filter "is_sequential == true"
+#### Command to list all atributes:
+list_attributes -app
 </details>
 </li>
 </ul>
