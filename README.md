@@ -784,5 +784,46 @@ Generallyt IO delay modeling is done on 70% - 30% thub rule, menas 70% for exter
 ![20](https://github.com/user-attachments/assets/93a9faa4-814f-4807-9f0a-f03e1e09851c)
 </details>
 </li>
+
+<li>
+<details> 
+<summary> Lab </summary>
+
+## Day 6 - Lab 1 - Timing .lib
+### In .lib we have following information:
+tt_025C_1V80 - referes to PVT cornner
+'tt' typical type library,
+'025C' referes to temperature, &
+'1v80' refers to the voltage.
+These give us the operating conditions of the cells in the library
+In .lib we have following informtion:
+Tells about technology lis CMOS.
+Delay module look up table.
+Time unit 1ns.
+Voltage unit 1v.
+Leakage power unit 1nW.
+Current unit 1mA.
+Pulling resistance unit 1kohm.
+Capacitive load unit pf.
+Operation condition.
+### default_max_transition : 1.5000000000;
+Load capacitance is depends on output capacistance, net capacitance and input capacitance of other gate.<br>
+This may incress the load capacitance this may leads to incress the transition.<br>
+So in library means in .lib default transition is set based on this DC can do buffering.<br>
+![21](https://github.com/user-attachments/assets/89d4c0f7-49d3-447a-ae3c-a05e13a26fc9)
+### Delay Model Look Up Table:
+It contains the delay information base on the Input transition and Output load.<br>
+Based on tranition and load DC will calculate the delay of the gate.<br>
+![22](https://github.com/user-attachments/assets/47071271-5483-44e9-9de9-6cc85033a3c1)
+### Unetness:
+OR and AND gate have positive unetbess.<br>
+NOT, NAND and NOR gave negative unetness.<br>
+XOR have both positive and negative unetness.<br>
+Tool will propogate the transition though the circuit based on the unetness.<br>
+![24](https://github.com/user-attachments/assets/856d4415-2a22-436f-85b8-59fa0157024e)
+## Day 6 - Lab 2 - Timing .lib
+
+</details>
+</li>
 </ul>
 </details>
