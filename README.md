@@ -822,7 +822,41 @@ XOR have both positive and negative unetness.<br>
 Tool will propogate the transition though the circuit based on the unetness.<br>
 ![24](https://github.com/user-attachments/assets/856d4415-2a22-436f-85b8-59fa0157024e)
 ## Day 6 - Lab 2 - Timing .lib
-
+CLK_N is the active low clock. Attribute clock is true. While for the D pin, attribute clock is false so based on the this attribute tool knows is it a clock pin or not.<br>
+timing_sense : "non_unate" - non_unate means with respect to clock Q has no unateness.<br>
+timing_type : "falling_edge" - sequential timing arc.<br>
+For positive edge flip flop setup time is mesure with respect to raising edge (setup_rising) and for negativ edge flip flop setup time is mesure with respect to falling edge (setup_falling).<br>
+![25](https://github.com/user-attachments/assets/1d4fc5b3-9e8e-40fd-bdc9-18b3e9f43209)
+![26](https://github.com/user-attachments/assets/83053eb3-7916-4468-96e3-f3171b07fae7)
+For latch its visversa.<br>
+![27](https://github.com/user-attachments/assets/f6618272-a169-40b9-933c-bef478562e01)
+## Day 6 - Lab 3 - Exploring .lib
+### How to query the properties of .lib from DC sheel:
+dc_shell> list_lib : it tells what the is library loaded in the DC shell.<br>
+get_lib_cells */*and* : to get the perticular type of cell.
+![28](https://github.com/user-attachments/assets/bcf21067-d571-431c-a5a5-fc740cf6bcbb)
+Command to get the list of that particular cell as a list:
+![29](https://github.com/user-attachments/assets/4dd7e67e-452a-4cce-bf82-1a41b35741b4)
+Command to get the pins in a cell (sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__nand4bb_2):
+dc_shell> get_lib_pins sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__nand4bb_2/*
+![30](https://github.com/user-attachments/assets/ec47fa95-6659-4a2d-aa3e-e26a43370c4d)
+#### To fetch pin direction of each pin:
+sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__and2_0
+![31](https://github.com/user-attachments/assets/0135610c-4b5a-458a-b4bc-c64c7236d5a0)
+#### To get pin direction:
+![32](https://github.com/user-attachments/assets/efa59b16-7b0c-4ad4-a8dd-9349fbf6ef0b)
+#### To get the functinality of out pin:
+![33](https://github.com/user-attachments/assets/a3de99df-d86d-481b-9ec4-d80adc79e060)
+#### Script to get function for list of gates:
+![34](https://github.com/user-attachments/assets/aedcba8c-9ae3-4283-8bc7-b37155ca28e5)
+![35](https://github.com/user-attachments/assets/f4993e0c-f7eb-4b61-9c36-ec3f5118b3fd)
+#### To get area of perticular gate:
+![36](https://github.com/user-attachments/assets/8ff7a4f4-54a6-45d1-895c-611604d098dc)
+#### To get capacitance of perticular gate:
+![37](https://github.com/user-attachments/assets/2870ece8-c10c-49fe-b118-95f00e2c7780)
+#### To check clock pin or not of perticular gate:
+#### To get all the sequential cells in the library:
+get_lib_cells */* -filter "is_sequential == true"
 </details>
 </li>
 </ul>
