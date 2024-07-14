@@ -794,18 +794,18 @@ Generallyt IO delay modeling is done on 70% - 30% thub rule, menas 70% for exter
 tt_025C_1V80 - referes to PVT cornner
 'tt' typical type library,
 '025C' referes to temperature, &
-'1v80' refers to the voltage.
-These give us the operating conditions of the cells in the library
-In .lib we have following informtion:
-Tells about technology lis CMOS.
-Delay module look up table.
-Time unit 1ns.
-Voltage unit 1v.
-Leakage power unit 1nW.
-Current unit 1mA.
-Pulling resistance unit 1kohm.
-Capacitive load unit pf.
-Operation condition.
+'1v80' refers to the voltage.<br>
+These give us the operating conditions of the cells in the library.<br>
+In .lib we have following informtion:<br>
+Tells about technology lis CMOS.<br>
+Delay module look up table.<br>
+Time unit 1ns.<br>
+Voltage unit 1v.<br>
+Leakage power unit 1nW.<br>
+Current unit 1mA.<br>
+Pulling resistance unit 1kohm.<br>
+Capacitive load unit pf.<br>
+Operation condition.<br>
 ### default_max_transition : 1.5000000000;
 Load capacitance is depends on output capacistance, net capacitance and input capacitance of other gate.<br>
 This may incress the load capacitance this may leads to incress the transition.<br>
