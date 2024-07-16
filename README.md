@@ -888,4 +888,18 @@ consumption as well as a smaller semiconductor die area.<br>
 ### SOC Design Flow
 ![3](https://github.com/user-attachments/assets/38bd8a8c-3310-4108-877a-72ee8fbb2e07)
 
+## Introduction to BabySoC
+![4](https://github.com/user-attachments/assets/5e7724ed-87bb-4968-b27b-58ec0e9d0744)
+
+### Components of BabySOC
+RVMYTH: RVMYTH core is a simple RISCV-based CPU.<br>
+PLL: A phase-locked loop or PLL is a control system that generates an 
+output signal whose phase is related to the phase of an input signal. 
+PLLs are widely used for synchronization purposes, including clock 
+generation and distribution.<br>
+DAC: A digital-to-analog converter or DAC is a system that converts a 
+digital signal into an analog signal. DACs are widely used in modern 
+communication systems enabling the generation of digitally-defined 
+transmission signals.<br>
+
 </details
