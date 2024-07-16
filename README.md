@@ -984,4 +984,14 @@ So we will be using verilog to model - and use iverilog to compile and simulate 
 4. Case statement behaviour.
 ![10](https://github.com/user-attachments/assets/0c810805-c049-4100-99e3-23b35d59e9a4)
 
+#### Follow these steps to model the IP cores separately
+#### For modelling RVMYTH(RISC-V)
+1. git clone https://github.com/kunalg123/rvmyth/<br> 
+2. cd rvmyth<br> 
+3. csh<br>
+4. iverilog mythcore_test.v tb_mythcore_test.v<br> 
+5. ./a.out<br>
+6. gtkwave <file_name>.vcd &<br>
+7. Add the required waveforms.<br>
+
 </details>
