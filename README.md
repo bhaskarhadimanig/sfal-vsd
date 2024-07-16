@@ -864,3 +864,29 @@ list_attributes -app
 </li>
 </ul>
 </details>
+
+<details> 
+<summary> Day 11 - Introduction to BabySoC </summary>
+
+## Day 11 - Introduction to BabySoC
+### What is SoC
+SoC is a single-die chip that has some different IP cores on it.<br>
+SoC is a single-die chip that has some different IP cores on it. These IPs could vary from 
+microprocessors (completely digital) to 5G broadband modems (completely analog).<br>
+The design of a system on chip usually includes a central processing unit, memory, ports for input 
+and outputs, secondary storage devices, and peripheral interfaces such as Timers, etc.<br> 
+Depending upon the requirement it can also consist of a digital or analog signal processing system 
+or a floating-point unit.<br>
+SoC with equivalent functionality will have increased performance and reduced power
+consumption as well as a smaller semiconductor die area.<br>
+### My mobile processor name is snapdragon 
+![810_3](https://github.com/user-attachments/assets/3c87bfd9-4dec-48af-8f4f-4bd7d1567c41)
+
+### Types of SOC
+![1](https://github.com/user-attachments/assets/2de7c5c5-610d-4010-8c67-6689dba510d9)
+![2](https://github.com/user-attachments/assets/e4a12a93-e1e8-42bf-8646-d69a5b7307db)
+
+### SOC Design Flow
+![3](https://github.com/user-attachments/assets/38bd8a8c-3310-4108-877a-72ee8fbb2e07)
+
+</details
