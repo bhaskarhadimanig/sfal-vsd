@@ -994,4 +994,5 @@ So we will be using verilog to model - and use iverilog to compile and simulate 
 6. gtkwave <file_name>.vcd &<br>
 7. Add the required waveforms.<br>
 
+
 </details>
