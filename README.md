@@ -902,4 +902,55 @@ digital signal into an analog signal. DACs are widely used in modern
 communication systems enabling the generation of digitally-defined 
 transmission signals.<br>
 
-</details
+</details>
+
+
+<details> 
+<summary> Day 12 - BabySoC Modelling </summary>
+	
+## Day 12 - BabySoC Modelling
+![5](https://github.com/user-attachments/assets/8e09d6c6-9a51-4602-a3f5-02670a4f6f8c)
+
+### Components of BabySOC
+#### RVMYTH:
+RVMYTH core is a simple RISCV-based CPU, introduced in a workshop by RedwoodEDA and VSD. During a 5-day workshop students (including middle-schoolers) managed to create a processor from scratch. The workshop used the TLV for faster development. All of the present and future contributions to the IP will be done by students and under open-source licenses.<br>
+
+#### PLL:
+A phase-locked loop or PLL is a control system that generates an output signal whose phase is related to the phase of an input signal. PLLs are widely used for synchronization purposes, including clock generation and distribution.<br>
+
+#### DAC:
+A digital-to-analog converter or DAC is a system that converts a digital signal into an analog signal. DACs are widely used in modern communication systems enabling the generation of digitally-defined transmission signals. As a result, high-speed DACs are used for mobile communications and ultra-high-speed DACs are employed in optical communications systems.<br>
+![4](https://github.com/user-attachments/assets/26e01fa8-e47e-4cf4-a6f4-ba943df7a68b)
+
+#### VSDBabySoC Modeling
+Here we are going to model and simulate the VSDBabySoC using iverilog, then we will show the results using gtkwave tool. Some initial input signals will be fed into vsdbabysoc module that make the pll start generating the proper CLK for the circuit. The clock signal will make the rvmyth to execute instructions in its imem. As a result the register r17 will be filled with some values cycle by cycle. These values are used by dac core to provide the final output signal named OUT. So we have 3 main elements (IP cores) and a wrapper as an SoC and of-course there would be also a testbench module out there.<br>
+
+#### RVMYTH:
+RVMYTH - Risc-V based MYTH (Microprocessor for You in Thirty Hours)<br>
+RISC stands for Reduced instruction set computer.<br>
+It is an Instruction Set Architecture (ISA).<br>
+#### A simple one cycle CPU for Risc-V
+![6](https://github.com/user-attachments/assets/2eb8512c-d392-4825-b014-c2b2fd85aa2e)
+![7](https://github.com/user-attachments/assets/f3cb831b-411e-4dfa-b0b9-dc4751dcc703)
+#### PLL:
+PLL stands for Phase-Locked Loop, and it's a fundamental component in electronics used for various purposes including to generate, stabilize, modulate, demodulate and more.<br>
+Clock Signal is generated using Quartz crystal oscillators.
+#### Componets of PLL:
+#### 1. Phase detector.<br>
+The phase detector compares the phase difference between two signals: the reference input signal and the feedback signal from the VCO output.<br>
+It generates an error signal that is proportional to the phase difference between these two signals.<br>
+Common types of phase detectors include the XOR gate (for digital PLLs) or a mixer (for analog PLLs).<br>
+#### 2. Loop filter.<br>
+This is a network of capacitors and resistors used in the feedback path of the PLL.<br>
+It integrates the control voltage from the LPF to provide the required dynamic response and stability of the PLL loop.<br>
+The loop filter determines the bandwidth and damping characteristics of the PLL, affecting its transient response and noise performance.<br>
+#### 3. Voltage controlled oscillator.<br>
+The VCO generates an output signal whose frequency is directly proportional to the input control voltage.<br>
+In a PLL, the control voltage comes from the LPF, which adjusts the VCO frequency to minimize the phase difference between the reference input and the feedback signal.<br>
+VCOs can be implemented using various technologies such as LC circuits, ring oscillators, or digital controlled oscillators (DCOs) depending on the application.<br>
+#### 4. Frequency divider.<br>
+A frequency divider is used to divide down the output frequency of the VCO.<br>
+This allows for generating output frequencies that are multiples or fractions of the VCO frequency, which can be useful for frequency synthesis applications.<br>
+The divided signal may also be used as a feedback signal to the phase detector instead of the VCO output directly.<br>
+
+</details>
