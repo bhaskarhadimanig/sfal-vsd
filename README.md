@@ -953,4 +953,26 @@ A frequency divider is used to divide down the output frequency of the VCO.<br>
 This allows for generating output frequencies that are multiples or fractions of the VCO frequency, which can be useful for frequency synthesis applications.<br>
 The divided signal may also be used as a feedback signal to the phase detector instead of the VCO output directly.<br>
 
+#### DAC (Digital to Analog Conveter):
+A Digital to Analog Converter (DAC) converts a digital input signal into an analog out signal.<br>
+#### There are two types of DACs :
+1. Weighted Resistor DAC<br>
+2. R-2R Ladder DAC<br>
+#### 1. Weighted Resistor DAC :
+A weighted resistor DAC produces an analog output, which is almost equal to the
+digital (binary) input by using binary weighted resistors in the inverting adder
+circuit. In short, a binary weighted resistor DAC is called as weighted resistor
+DAC.<br>
+![8](https://github.com/user-attachments/assets/1b76989e-b839-4315-9c5c-fddd0b5db615)
+
+#### 2. R-2R Ladder DAC :
+The R-2R Ladder DAC overcomes the disadvantages of a binary weighted 
+resistor DAC. As the name suggests, R-2R Ladder DAC produces an analog 
+output, which is almost equal to the digital (binary) input by using a R-2R ladder 
+network in the inverting adder circuit.<br>
+![9](https://github.com/user-attachments/assets/17a22c3f-a635-440e-9956-b4a73a46b30f)
+
+RVMYTH is a digital block, so yes we can use a HDL for designing and check its functionality using a testbench. <br>
+DAC and PLL are analog so verilog can not synthesise analog block's.<br>
+But we are going to simulate it using verilog here we will be using data-types such real its a non synthesizable.We are going to simulate “functionality” to verify its logical correctness.<br>
 </details>
