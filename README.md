@@ -975,4 +975,13 @@ network in the inverting adder circuit.<br>
 RVMYTH is a digital block, so yes we can use a HDL for designing and check its functionality using a testbench. <br>
 DAC and PLL are analog so verilog can not synthesise analog block's.<br>
 But we are going to simulate it using verilog here we will be using data-types such real its a non synthesizable.We are going to simulate “functionality” to verify its logical correctness.<br>
+So we will be using verilog to model - and use iverilog to compile and simulate Use GTKWave to see the waveforms & debug.<br>
+
+#### Few tips on modelling your design
+1. Avoid race Conditions 
+2. Use a optimized Testbench for debugging your design
+3. Creating models that simulate faster…
+4. Case statement behaviour.
+![10](https://github.com/user-attachments/assets/0c810805-c049-4100-99e3-23b35d59e9a4)
+
 </details>
