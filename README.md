@@ -870,7 +870,6 @@ list_attributes -app
 
 ## Day 11 - Introduction to BabySoC
 ### What is SoC
-SoC is a single-die chip that has some different IP cores on it.<br>
 SoC is a single-die chip that has some different IP cores on it. These IPs could vary from 
 microprocessors (completely digital) to 5G broadband modems (completely analog).<br>
 The design of a system on chip usually includes a central processing unit, memory, ports for input 
