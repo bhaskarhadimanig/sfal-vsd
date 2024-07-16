@@ -993,6 +993,7 @@ So we will be using verilog to model - and use iverilog to compile and simulate 
 5. ./a.out<br>
 6. gtkwave <file_name>.vcd &<br>
 7. Add the required waveforms.<br>
+![11](https://github.com/user-attachments/assets/e23bf46e-f70b-414d-93f6-d8af5d0c56c7)
 
 
 </details>
