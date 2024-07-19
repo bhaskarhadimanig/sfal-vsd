@@ -995,5 +995,15 @@ So we will be using verilog to model - and use iverilog to compile and simulate 
 7. Add the required waveforms.<br>
 ![11](https://github.com/user-attachments/assets/e23bf46e-f70b-414d-93f6-d8af5d0c56c7)
 
+#### For modelling DAC
+1. git clone https://github.com/kunalg123/rvmyth/ /// ignore if already done once!<br>
+2. cd rvmyth <br>
+3. csh<br>
+4. iverilog avsddac.v avsddac_tb_test.v<br>
+5. ./a.out<br>
+6. gtkwave <file_name>.vcd &<br>
+7. Add the required waveforms.<br>
+
+
 
 </details>
