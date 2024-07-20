@@ -1004,6 +1004,32 @@ So we will be using verilog to model - and use iverilog to compile and simulate 
 6. gtkwave <file_name>.vcd &<br>
 7. Add the required waveforms.<br>
 
+## Steps to be followed for pre-synthesis modeling of BabySoC
+#### Details on VSDBabySoC please find the repo <a href="https://github.com/manili/VSDBabySoC?tab=readme-ov-file#step-by-step-modeling-walkthrough">Click Here</a>.
+#### 1. Install These Required Packages:<br>
+ $ sudo apt install make python python3 python3-pip git iverilog gtkwave docker.io<br>
+ $ sudo chmod 666 /var/run/docker.sock<br>
+ $ cd ~<br>
+ $ pip3 install pyyaml click sandpiper-saas<br>
+#### 2. Clone the repository of VSDBabySoC project contain design and testbench files:<br>
+ git clone https://github.com/manili/VSDBabySoC.git<br>
+#### 3. Change directory to VSDBabySoC project directory:<br>
+ cd VSDBabySoC<br>
+#### 4. To generate .v file from .tlv file using sandpiper-saas using belos command:<br>
+ sandpiper-saas -i ./src/module/*.tlv -o rvmyth.v --bestsv --noline -p verilog --outdir ./src/module/<br>
+ It will generate following .v files rvmyth.v and rvmyth_gen.v.
+#### 5. To compile and simulate VSDBabySoC use the following command:<br>
+ iverilog -o output/pre_synth_sim.out -DPRE_SYNTH_SIM src/module/testbench.v -I src/include -I src/module<br>
+ This will generates the pre_synth_sim.out file in output folder.<br>
+#### 6. Change directory to output:<br>
+ cd output<br>
+#### 7. To generate pre_synth_sim.vcd file run the command:<br>
+ ./pre_synth_sim.out<br>
+ This will generate the pre_synth_sim.vcd file.<br>
+#### 8. Simulate using gtkwave by running command:<br>
+ gtkwave pre_synth_sim.vcd<br>
 
+#### 8. Simulate output:<br>
+ ![13](https://github.com/user-attachments/assets/25c6bb58-9028-4f7c-b858-d149b5b8fb5d)
 
 </details>
