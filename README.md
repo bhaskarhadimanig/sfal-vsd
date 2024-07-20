@@ -1029,7 +1029,7 @@ So we will be using verilog to model - and use iverilog to compile and simulate 
 #### 8. Simulate using gtkwave by running command:<br>
  gtkwave pre_synth_sim.vcd<br>
 
-#### 8. Simulate output:<br>
+#### 9. Simulate output:<br>
  ![13](https://github.com/user-attachments/assets/25c6bb58-9028-4f7c-b858-d149b5b8fb5d)
 
 </details>
