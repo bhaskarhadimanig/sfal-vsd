@@ -1079,7 +1079,9 @@ After editing avsdpll.lib lib file can able to read the file and convert to avsd
 
 ### Converting sky130_fd_sc_hd__tt_025C_1v80.lib to sky130_fd_sc_hd__tt_025C_1v80.db
 Download the latest sky130_fd_sc_hd__tt_025C_1v80.lib from the path - https://github.com/efabless/skywater-pdk-libs-sky130_fd_sc_hd/tree/master/timing Synatx to download the raw file in Linux<br>
+#### Use below command to downlaod latest sky130_fd_sc_hd__tt_025C_1v80.lib file:
 wget https://raw.githubusercontent.com/efabless/skywater-pdk-libs-sky130_fd_sc_hd/master/timing/sky130_fd_sc_hd__tt_025C_1v80.lib<br>
+
 After downloading latest sky130_fd_sc_hd__tt_025C_1v80.lib file convert the sky130_fd_sc_hd__tt_025C_1v80.lib to sky130_fd_sc_hd__tt_025C_1v80.db<br>
 cd /home/bhaskar/vsd/VSDBabySOC/VSDBabySoC/src/lib
 lc_shell
