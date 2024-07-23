@@ -1033,3 +1033,29 @@ So we will be using verilog to model - and use iverilog to compile and simulate 
  ![13](https://github.com/user-attachments/assets/25c6bb58-9028-4f7c-b858-d149b5b8fb5d)
 
 </details>
+
+
+<details> 
+<summary> Day 13 - Post-Synthesis Simulation (GLS) of BabySoC </summary>
+	
+## Post-Synthesis Simulation (GLS) of BabySoC
+### Why do pre-synthesis? Why not just do post-synthesis?
+Pre-synthesis simulation is done according to the logic you have designed for and 
+written -> only functionality.<br>
+Post synthesis simulation / ‘gate level simulation’ is done after synthesis
+considering each and every gate delays into account. reports the violations in both 
+functionality and timing.<br> 
+This also show’s the mismatches we are likely to get due to wrong usage of 
+operators and inference of latches.<br>
+For ex: using ‘X’(simulator terms/ synthesizer terms) - ‘Unknown’/“Don’t care”.<br>
+
+### GLS: a brief introduction
+The term "gate level" refers to the netlist view of a circuit, usually produced by logic synthesis.<br>
+So while RTL simulation is pre-synthesis, GLS is post-synthesis.<br>
+The netlist view is a complete connection list consisting of gates and IP models with full functional and timing behavior.<br>
+RTL simulation is a zero delay environment and events generally occur on the active clock edge.<br>
+GLS can be zero delay also, but is more often used in unit delay or full timing mode.<br>
+Gate level simulation is used to boost the confidence regarding implementation of a design and can help verify dynamic circuit behaviour, which cannot be verified accurately by static methods. It is a significant step in the verification process.<br>
+
+
+</details>
