@@ -1057,5 +1057,34 @@ RTL simulation is a zero delay environment and events generally occur on the act
 GLS can be zero delay also, but is more often used in unit delay or full timing mode.<br>
 Gate level simulation is used to boost the confidence regarding implementation of a design and can help verify dynamic circuit behaviour, which cannot be verified accurately by static methods. It is a significant step in the verification process.<br>
 
+### Converting .lib file to .db file
+Convert .lib file to .db file using Synopsys Library Compiler (lc_shell). We need .db format for avsddac.lib, avsdpll.lib & sky130_fd_sc_hd__tt_025C_1v80.lib.<br>
+
+### Converting avsddac.lib to avsddac.db
+cd /home/bhaskar/vsd/VSDBabySOC/VSDBabySoC/src/lib<br>
+lc_shell<br>
+read_lib avsddac.lib<br>
+write_lib avsddac -format db -output avsddac.db<br>
+![1](https://github.com/user-attachments/assets/c8a3ce17-a734-4bd1-af09-57f2bdb36da0)
+
+### Converting avsdpll.lib to avsdpll.db
+cd /home/bhaskar/vsd/VSDBabySOC/VSDBabySoC/src/lib<br>
+lc_shell<br>
+read_lib avsdpll.lib<br>
+write_lib avsdpll -format db -output avsdpll.db<br>
+But while reading avsdpll.lib we are getting some error as shown below screen shot.<br>
+![2](https://github.com/user-attachments/assets/e28a9906-ebe6-4b15-99d3-2fb43ee0e529)
+After editing avsdpll.lib lib file can able to read the file and convert to avsdpll.db file show in screen shot.
+![3](https://github.com/user-attachments/assets/759707f9-bfe8-4a80-8852-71c701c5c6eb)
+
+### Converting sky130_fd_sc_hd__tt_025C_1v80.lib to sky130_fd_sc_hd__tt_025C_1v80.db
+Download the latest sky130_fd_sc_hd__tt_025C_1v80.lib from the path - https://github.com/efabless/skywater-pdk-libs-sky130_fd_sc_hd/tree/master/timing Synatx to download the raw file in Linux<br>
+wget https://raw.githubusercontent.com/efabless/skywater-pdk-libs-sky130_fd_sc_hd/master/timing/sky130_fd_sc_hd__tt_025C_1v80.lib<br>
+After downloading latest sky130_fd_sc_hd__tt_025C_1v80.lib file convert the sky130_fd_sc_hd__tt_025C_1v80.lib to sky130_fd_sc_hd__tt_025C_1v80.db<br>
+cd /home/bhaskar/vsd/VSDBabySOC/VSDBabySoC/src/lib
+lc_shell
+read_lib sky130_fd_sc_hd__tt_025C_1v80.lib
+write_lib sky130_fd_sc_hd__tt_025C_1v80 -format db -output sky130_fd_sc_hd__tt_025C_1v80.db
+![4](https://github.com/user-attachments/assets/045383ad-0cf7-4629-96b0-b1137f9670fd)
 
 </details>
