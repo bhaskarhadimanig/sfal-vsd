@@ -1091,16 +1091,18 @@ write_lib sky130_fd_sc_hd__tt_025C_1v80 -format db -output sky130_fd_sc_hd__tt_0
 
 ## Lab - Synthesis and Post Synthesis (Gate Level) Simulation
 ### Below commands to perform the synthesis:
-cd /home/bhaskar/vsd/VSDBabySOC/VSDBabySoC<br>
-dc_shell<br>
-set target_library /home/bhaskar/vsd/VSDBabySOC/VSDBabySoC/src/lib/sky130_fd_sc_hd__tt_025C_1v80.db<br>
-set link_library {* /home/bhaskar/vsd/VSDBabySOC/VSDBabySoC/src/lib/sky130_fd_sc_hd__tt_025C_1v80.db /home/bhaskar/vsd/VSDBabySOC/VSDBabySoC/src/lib/avsdpll.db /home/bhaskar/vsd/VSDBabySOC/VSDBabySoC/src/lib/avsddac.db}<br>
-set search_path {/home/bhaskar/vsd/VSDBabySOC/VSDBabySoC/src/include /home/bhaskar/vsd/VSDBabySOC/VSDBabySoC/src/module}<br> 
-read_file {sandpiper_gen.vh  sandpiper.vh  sp_default.vh  sp_verilog.vh clk_gate.v rvmyth.v rvmyth_gen.v vsdbabysoc.v} -autoread -top vsdbabysoc<br> 
-link<br> 
-compile_ultra<br>
-write_file -format verilog -hierarchy -output /home/bhaskar/vsd/VSDBabySOC/VSDBabySoC/output/vsdbabysoc_net.v<br>
-report_qor > report_qor.txt<br>
+```sh
+cd /home/bhaskar/vsd/VSDBabySOC/VSDBabySoC
+dc_shell
+set target_library /home/bhaskar/vsd/VSDBabySOC/VSDBabySoC/src/lib/sky130_fd_sc_hd__tt_025C_1v80.db
+set link_library {* /home/bhaskar/vsd/VSDBabySOC/VSDBabySoC/src/lib/sky130_fd_sc_hd__tt_025C_1v80.db /home/bhaskar/vsd/VSDBabySOC/VSDBabySoC/src/lib/avsdpll.db /home/bhaskar/vsd/VSDBabySOC/VSDBabySoC/src/lib/avsddac.db}
+set search_path {/home/bhaskar/vsd/VSDBabySOC/VSDBabySoC/src/include /home/bhaskar/vsd/VSDBabySOC/VSDBabySoC/src/module} 
+read_file {sandpiper_gen.vh  sandpiper.vh  sp_default.vh  sp_verilog.vh clk_gate.v rvmyth.v rvmyth_gen.v vsdbabysoc.v} -autoread -top vsdbabysoc 
+link 
+compile_ultra
+write_file -format verilog -hierarchy -output /home/bhaskar/vsd/VSDBabySOC/VSDBabySoC/output/vsdbabysoc_net.v
+report_qor > report_qor.txt
+```
 ![5](https://github.com/user-attachments/assets/ad698170-5a2f-47ec-885c-57289ff991a4)
 ![6](https://github.com/user-attachments/assets/ea9674cb-7aff-416c-a271-4b5295bcf7b9)
 ![7](https://github.com/user-attachments/assets/8f387a4d-6b73-440f-bcd6-8e3690258688)
