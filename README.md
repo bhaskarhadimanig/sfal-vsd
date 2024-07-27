@@ -1110,4 +1110,8 @@ report_qor > report_qor.txt
 ![8](https://github.com/user-attachments/assets/62924f0e-fc80-44ff-b387-e8ddbf65be99)
 ![9](https://github.com/user-attachments/assets/59007962-bf08-4d22-94a4-4e82277318a0)
 
+#### post-synth and pre-synth wave forms are same :
+![11](https://github.com/user-attachments/assets/0c5b198d-627a-45fe-bda7-5846d88fc59d)
+
+
 </details>
