@@ -1440,5 +1440,14 @@ Attributes:
 1
 ```
 ### Commands to perform post-synthesis with SDC constraints:
+```sh
+cd /home/bhaskar/vsd/VSDBabySOC/VSDBabySoC/
+iverilog -DFUNCTIONAL -DUNIT_DELAY=#1 -o ./output/post_synth_sdc_sim.out ./src/gls_model/primitives.v ./src/gls_model/sky130_fd_sc_hd.v ./output/vsdbabysoc_net_sdc.v ./src/module/avsdpll.v ./src/module/avsddac.v ./src/module/testbench.v
+cd output
+./post_synth_sdc_sim.out
+gtkwave dump.vcd
+```
+### Wave form of post-synthesis with SDC constraints:
+![13](https://github.com/user-attachments/assets/652c3810-bdff-4545-baf9-485e8541a77d)
 
 </details>
