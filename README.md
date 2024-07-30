@@ -1451,3 +1451,21 @@ gtkwave dump.vcd
 ![13](https://github.com/user-attachments/assets/652c3810-bdff-4545-baf9-485e8541a77d)
 
 </details>
+
+
+<details> 
+<summary> Day 14 - Synopsys DC and Timing Analysis </summary>
+	
+## Synopsys DC and Timing Analysis
+### Download .lib files for different PVT corners using following repo:
+https://github.com/efabless/skywater-pdk-libs-sky130_fd_sc_hd/tree/master/timing
+### Commands to convert .lib to .db format:
+```sh
+cd /home/bhaskar/vsd/VSDBabySOC/VSDBabySoC/src/Timing/timing
+lc_shell
+read_lib sky130_fd_sc_hd__ff_100C_1v65.lib
+write_lib sky130_fd_sc_hd__ff_100C_1v65 -format db -output sky130_fd_sc_hd__ff_100C_1v65.db
+```
+### Commands to perform synthesis with SDC constraints:
+
+</details>
