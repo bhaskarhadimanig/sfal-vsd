@@ -1587,5 +1587,23 @@ exit
 
 ![5](https://github.com/user-attachments/assets/9a9ca48a-846f-455d-9c21-0032213e4139)
 
+### Based on the above report table we need to select the PVT corners that represent the worst-case scenarios for both Worst Negative Slack (WNS) and Worst Hold Slack (WHS). Here are the steps to identify the PVT corners:
+### 1. Identify the worst-case WNS:
+Worst-case WNS is the most negative WNS value, which indicates the scenario where the setup time is most critical.
+### 2. Identify the worst-case WHS:
+Worst-case WHS is the most negative WHS value, which indicates the scenario where the hold time is most critical.
 
+### Analysis of the Table
+### For WNS:
+The most negative WNS value is -2.14636 at the PVT corner ss_n40C_1v28.
+### For WHS:
+The most negative WHS value is -0.307088 at the PVT corner ff_n40C_1v95.
+
+### Selected PVT Corners for Analysis
+### 1. Worst-case Setup Timing (WNS):
+PVT Corner: ss_n40C_1v28 with WNS of -2.14636.
+### 2. Worst-case Hold Timing (WHS):
+PVT Corner: ff_n40C_1v95 with WHS of -0.307088.<br>
+
+These PVT corners should be considered for detailed timing analysis to ensure that the design meets the required setup and hold times under the most critical conditions.
 </details>
