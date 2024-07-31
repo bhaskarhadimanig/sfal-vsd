@@ -1460,7 +1460,41 @@ gtkwave dump.vcd
 ### Download .lib files for different PVT corners using following repo:
 https://github.com/efabless/skywater-pdk-libs-sky130_fd_sc_hd/tree/master/timing
 ### Script to convert .lib to .db format:
+### Write a shell script to invoke lc_shell and execute tcl script
+```sh
+#run_convert.sh
+#!/bin/sh
 
+LC_SHELL_PATH="/usr/synopsys/lc/T-2022.03-SP5/bin/lc_shell"
+TCL_SCRIPT="convert_lib_to_db.tcl"
+
+$LC_SHELL_PATH -f $TCL_SCRIPT
+```
+### Write a tcl script to convert all .lib files to .db
+```sh
+# convert_lib_to_db.tcl
+set lib_files_dir "/home/bhaskar/vsd/VSDBabySOC/VSDBabySoC/src/Timing/timing";
+set db_output_dir "/home/bhaskar/vsd/VSDBabySOC/VSDBabySoC/src/all_db_files";
+
+foreach lib_file [glob -nocomplain $lib_files_dir/*.lib] {
+    set base_name [file rootname [file tail $lib_file]]
+    set db_file "$db_output_dir/${base_name}.db"
+
+    if {[llength [list_libs]] > 0} {
+        remove_lib [lindex [list_libs] 0]
+    }
+
+    read_lib $lib_file
+
+    write_lib $base_name -format db -output $db_file
+
+    if {[llength [list_libs]] > 0} {
+        remove_lib [lindex [list_libs] 0]
+    }
+}
+
+exit
+```
 ### Script to perform synthesis with SDC constraints:
 
 </details>
