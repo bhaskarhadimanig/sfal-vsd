@@ -1456,7 +1456,27 @@ gtkwave dump.vcd
 <details> 
 <summary> Day 14 - Synopsys DC and Timing Analysis </summary>
 	
-## Synopsys DC and Timing Analysis
+## Synopsys DC and Timing Analysis for different PVT corners
+### What is PVT Corners?
+PVT Corners refer to the different conditions under which a semiconductor device is tested to ensure it performs reliably across a range of scenarios. PVT stands for Process, Voltage, and Temperature, and the corners represent the extremes of these conditions:<br>
+
+Process Corners: These account for variations in the semiconductor manufacturing process. Since it's impossible to manufacture every chip exactly the same, there are always slight differences. Process corners include:<br>
+Typical (T): Represents average conditions in the manufacturing process.<br>
+Fast (F): Represents conditions where the manufacturing process resulted in faster than average transistors.<br>
+Slow (S): Represents conditions where the manufacturing process resulted in slower than average transistors.<br>
+Fast-Slow (F-S): Represents conditions where NMOS transistors are fast and PMOS transistors are slow.<br>
+Slow-Fast (S-F): Represents conditions where NMOS transistors are slow and PMOS transistors are fast.<br>
+
+Voltage Corners: These account for variations in the supply voltage. Voltage can vary due to different factors such as power supply quality, load conditions, and environmental factors. Voltage corners include:<br>
+Nominal (N): The typical operating voltage.<br>
+High (H): A higher than typical operating voltage.<br>
+Low (L): A lower than typical operating voltage.<br>
+
+Temperature Corners: These account for variations in the operating temperature. Semiconductors can operate over a range of temperatures, and their performance can vary significantly across this range. Temperature corners include:<br>
+Low (L): The lower extreme of the operating temperature range.<br>
+Typical (T): Room temperature or the average operating temperature.<br>
+High (H): The upper extreme of the operating temperature range.<br>
+Testing devices across these corners ensures that they will function correctly under all expected conditions, providing a level of robustness and reliability necessary for most applications.<br>
 ### Download .lib files for different PVT corners using following repo:
 https://github.com/efabless/skywater-pdk-libs-sky130_fd_sc_hd/tree/master/timing
 ### Script to convert .lib to .db format:
@@ -1495,6 +1515,77 @@ foreach lib_file [glob -nocomplain $lib_files_dir/*.lib] {
 
 exit
 ```
-### Script to perform synthesis with SDC constraints:
+### Script to perform synthesis with SDC constraints with multi PVT corners:
+### Write a shell script to invoke dc_shell and execute tcl script
+```sh
+# run_dc_pvt_corners.sh
+#!/bin/bash
+
+TCL_SCRIPT_PATH="/home/bhaskar/vsd/VSDBabySOC/VSDBabySoC/src/script/timing_multi_pvt_corners.tcl"
+LOG_FILE="dc_shell.log"
+dc_shell -f $TCL_SCRIPT_PATH | tee $LOG_FILE
+```
+### Write a tcl script to perform synthesis with SDC constraints with multi PVT corners
+```sh
+# timing_multi_pvt_corners.tcl
+set file_handle [open report_timing.rpt w]
+puts $file_handle "PVT_Corner\tWNS\tWHS"
+
+set lib_files [glob -directory /home/bhaskar/vsd/VSDBabySOC/VSDBabySoC/src/Timing/timing/ -type f *.db]
+
+foreach lib_file_paths $lib_files {
+
+regexp {.*\/sky130_fd_sc_hd__(.*)\.db$} $lib_file_paths full_match pvt_corners
+
+set timing_report_fast_mode true
+
+set target_library $lib_file_paths
+set link_library {* /home/bhaskar/vsd/VSDBabySOC/VSDBabySoC/src/lib/avsdpll.db /home/bhaskar/vsd/VSDBabySOC/VSDBabySoC/src/lib/avsddac.db}
+lappend link_library $target_library
+set search_path {/home/bhaskar/vsd/VSDBabySOC/VSDBabySoC/src/include /home/bhaskar/vsd/VSDBabySOC/VSDBabySoC/src/module}
+read_file {sandpiper_gen.vh  sandpiper.vh  sp_default.vh  sp_verilog.vh clk_gate.v rvmyth.v rvmyth_gen.v vsdbabysoc.v} -autoread -top vsdbabysoc
+source /home/bhaskar/vsd/VSDBabySOC/VSDBabySoC/src/sdc/vsdbabysoc_synthesis.sdc
+link
+compile_ultra
+
+set wns [get_attribute [get_timing_paths -delay_type max -max_paths 1] slack]
+set whs [get_attribute [get_timing_paths -delay_type min -max_paths 1] slack]
+
+puts $file_handle "$pvt_corners\t$wns\t$whs"
+
+reset_design
+}
+
+close $file_handle
+exit
+```
+### Below table explians Worst Negative/Setup Slack (WNS) & Worst Hold Slack (WHS) for different PVT corners for BabySoC Design :
+| PVT_Corner    |      WNS   |      WHS   |
+| ------------- | -----------| -----------|
+| ff_100C_1v65  | 0.00459766 | -0.244979  |
+| ff_100C_1v95  | 0.227859   | -0.298619  |
+| ff_n40C_1v56  | 0.0493441  | -0.201714  |
+| ff_n40C_1v65  | 0.0182953  | -0.23863   |
+| ff_n40C_1v76  | 0.032217   | -0.269796  |
+| ff_n40C_1v95  | 0.0913324  | -0.307088  |
+| ss_100C_1v40  | 0.00604248 | 0.413952   |
+| ss_100C_1v60  | 1.7014     | 0.14934    |
+| ss_n40C_1v28  | -2.14636   | 1.2782     |
+| ss_n40C_1v35  | 0.00161362 | 0.825907   |
+| ss_n40C_1v40  | 0.00352478 | 0.607227   |
+| ss_n40C_1v44  | 0.00133705 | 0.498978   |
+| ss_n40C_1v60  | 0.00631809 | 0.169568   |
+| ss_n40C_1v76  | 0.00544834 | -0.0055871 |
+| tt_025C_1v80  | 0.198813   | -0.184026  |
+| tt_100C_1v80  | 0.00269318 | -0.179197  |
+
+![1](https://github.com/user-attachments/assets/63f82541-ecef-4859-b6e8-57c7d148e9f4)
+
+![3](https://github.com/user-attachments/assets/042fcce9-d583-4fdf-a87b-4119f6cab4c2)
+
+![4](https://github.com/user-attachments/assets/87d71ae7-3275-423e-a0d2-d1793af41ed7)
+
+![5](https://github.com/user-attachments/assets/9a9ca48a-846f-455d-9c21-0032213e4139)
+
 
 </details>
