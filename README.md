@@ -1652,4 +1652,18 @@ These are described in a high-level hardware description language (HDL) like Ver
 #### Firm Macros:
 
 These are partially synthesized and come with specific constraints. They offer a balance between flexibility and optimization, allowing some level of customization while still providing a partially optimized layout.
+### Introduction to RISC-V Instruction Set Architecture (ISA):
+If we want to run C program on an hardwear initially the C program is comipled in assambly language which is then converted in to binary language.
+And also we need to implement RISC-V processor architecture using Hardware description language based on the specification.
+![9](https://github.com/user-attachments/assets/77ce7b1d-1817-4ea5-a084-9f55c70c7bf8)
+
+### From softwear application to Hardwear:
+How the application softwear's like PDF rader, Microsoft Excell are run on hrdwear through a series of steps involving in the system softwear. System softwear contains different components like Oprating system(OS), Compiler, and Assembled.
+Whre the application are written in the Java,C,C++ these are compiled and converted into instructions based on the hardwear if hardware is RISC-V compiler will convert's into RISC-V format instruction set. And Assembler will convert instruction set in to binary means meachine readable formt.
+![9](https://github.com/user-attachments/assets/34536629-5cd4-4c08-ac7d-379fafd5705a)
+![10](https://github.com/user-attachments/assets/8b01f281-9ec4-4179-ad89-9b0a906314fd)
+![11](https://github.com/user-attachments/assets/3b504b3e-4634-4569-a3a5-eea7b986cb54)
+![13](https://github.com/user-attachments/assets/db494edd-f139-41b9-aa94-476241906b52)
+## SOC Design and OpenLANE:
+
 </details>
