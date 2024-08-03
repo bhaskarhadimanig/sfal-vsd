@@ -1607,3 +1607,49 @@ PVT Corner: ff_n40C_1v95 with WHS of -0.307088.<br>
 
 These PVT corners should be considered for detailed timing analysis to ensure that the design meets the required setup and hold times under the most critical conditions.
 </details>
+
+
+
+
+
+<details> 
+<summary> Day 15 - Physical Design Basics </summary>
+	
+## Day 15 - Physical Design Basics
+### Introduction to open source EDA, OpenLANE and sky 130 PDK:
+In this for study we are taking ARDUINO board as example where we can able to see a chip.<br>
+![1](https://github.com/user-attachments/assets/3e445de8-ae13-4d04-b205-3d429091a456)<br>
+The outer part what we are able to see is an package (Quad Flat NO-leads). Within that chip is at center where it is connect to the pins through wire bonds to comunicate with signals coming from out side.<br>
+![4](https://github.com/user-attachments/assets/47039779-aa51-4157-beda-bb8de40e6795)<br>
+Chip contains a pads and is used to commuicate to out side world. And the core of the chip where our actual digital logics sits.<br>
+![6](https://github.com/user-attachments/assets/504d9607-cc10-4c24-9081-d96100041df4)<br>
+![7](https://github.com/user-attachments/assets/4f845edd-ecce-43b7-b8e8-d8c7509c297a)<br>
+In a chip it contains IP's macros.<br>
+### IP(Intellectual Property):
+VLSI IP refers to pre-designed and pre-verified circuit blocks or design modules that can be licensed and reused in different chip designs. These IP blocks can range from simple functions like arithmetic units to complex systems like entire processors or communication interfaces.<br>
+### Types of VLSI IP<br>
+#### Soft IP: 
+These are typically provided in the form of synthesizable HDL (Hardware Description Language) code, such as VHDL or Verilog. They offer flexibility but may require further synthesis, place and route, and verification.
+
+#### Hard IP: 
+These are provided as layout designs, which are fully placed and routed and are specific to a particular fabrication process. They are less flexible but offer faster integration and potentially better performance.
+
+#### Firm IP: 
+These lie between soft and hard IP. They are partially synthesized and may come with specific constraints but still allow some flexibility in optimization for different processes.
+
+### Macros:
+macros refer to pre-designed, reusable logic blocks or modules that are used to implement specific functions within an integrated circuit (IC). They are similar to IP (Intellectual Property) blocks but can vary in terms of complexity and the stage of design abstraction.<br>
+#### Types of Macros in VLSI
+#### Standard Cell Macros:
+
+These are basic logic gates (AND, OR, NOT, etc.), flip-flops, and other simple circuits that are used as the building blocks for more complex designs. Standard cells are typically part of a standard cell library provided by semiconductor companies.
+#### Hard Macros:
+
+These are pre-designed and pre-verified blocks that are provided in a fixed layout format. They are specific to a particular process technology and are used to implement critical functions like memory blocks (e.g., SRAM, ROM) or complex analog circuits. Hard macros are less flexible in terms of modification but offer optimized performance and reliability.
+#### Soft Macros:
+
+These are described in a high-level hardware description language (HDL) like Verilog or VHDL. They are more flexible and can be synthesized and optimized for different technology nodes. Soft macros are typically used for functional blocks where customization or optimization for different applications is required.
+#### Firm Macros:
+
+These are partially synthesized and come with specific constraints. They offer a balance between flexibility and optimization, allowing some level of customization while still providing a partially optimized layout.
+</details>
