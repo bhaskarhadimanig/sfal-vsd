@@ -1665,5 +1665,38 @@ Whre the application are written in the Java,C,C++ these are compiled and conver
 ![11](https://github.com/user-attachments/assets/3b504b3e-4634-4569-a3a5-eea7b986cb54)
 ![13](https://github.com/user-attachments/assets/db494edd-f139-41b9-aa94-476241906b52)
 ## SOC Design and OpenLANE:
+### Digital ASIC design:
+To design ASIC based design we are using RTL IP's, EDA tools and PDK. Here we are using EDA tool is OpenLANE.<br>
+### PDK( PDK stands for Process Design Kit):
+A PDK is a comprehensive collection of files and data that provide the necessary information and resources for designing integrated circuits (ICs) using a specific semiconductor manufacturing process. It is provided by semiconductor foundries to ensure that designers can create designs that are manufacturable and meet the performance and reliability specifications of the process technology.<br>
+### Key Components of a PDK:
+#### Technology Files:
+Define the process technology's parameters, such as layer stack, design rules, and process variations.
+Include information on the physical and electrical characteristics of the semiconductor process.
+
+#### Design Rules:
+A set of constraints and guidelines that must be followed during the design process to ensure manufacturability.
+Include minimum width, spacing, and enclosure rules for different layers and features.
+
+#### Device Models:
+Provide SPICE (Simulation Program with Integrated Circuit Emphasis) models for transistors, capacitors, resistors, and other devices used in the process.
+Include parameters for different operating conditions and process corners (e.g., typical, slow, fast).
+
+#### Standard Cell Libraries:
+Pre-designed and characterized logic gates and flip-flops that are used as building blocks in digital design.
+Include timing, power, and area information for each cell.
+
+#### IO Libraries:
+Pre-designed input/output (IO) cells that facilitate communication between the chip and the external world.
+Include different types of IO cells, such as general-purpose IOs, power pads, and analog interfaces.
+
+#### Memory Compilers:
+Tools and libraries for generating customized memory blocks (e.g., SRAM, ROM) based on specific requirements.
+Include different configurations and performance parameters.
+
+#### Analog and Mixed-Signal Components:
+Pre-designed analog and mixed-signal blocks, such as operational amplifiers, ADCs (Analog-to-Digital Converters), and DACs (Digital-to-Analog Converters).
+Include characterization data for performance verification.
+
 
 </details>
