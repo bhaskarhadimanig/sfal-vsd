@@ -1707,15 +1707,28 @@ The RTL code is transformed into a gate-level netlist using synthesis tools. The
 #### Tools: 
 Synopsys Design Compiler, Cadence Genus, Mentor Graphics Precision.
 ## Floorplanning/Power Planning:
-Define the physical organization of the chip by determining the placement of major functional blocks. Design the power distribution network to ensure adequate power delivery to all parts of the chip.
+Define the physical organization of the chip by determining the placement of major functional blocks. Design the power distribution network to ensure adequate power delivery to all parts of the chip and power distribution is done using higher matel layer as compre to lower metal layer.
 ![21](https://github.com/user-attachments/assets/561ce03b-902e-4df6-8962-527057aeee2c)
 ![22](https://github.com/user-attachments/assets/0270c7f0-236b-40e7-b060-6816348783a0)
+![23](https://github.com/user-attachments/assets/6cc622c5-1524-4f23-8814-beec21903202)
 ## Placement:
-Place the standard cells and macros within the floorplan.
+Place the standard cells and macros within the floorplan whre pacement done in two steps.<br>
+![24](https://github.com/user-attachments/assets/6b4c3665-a8a9-4fab-aa11-8750de86bed0)
+### 1. Global placement.
+Where the standard cells and macros (functional blocks) are placed on the chip's floorplan. The goal is to determine the approximate locations means cells are not legally posistioned.<br>
+![25](https://github.com/user-attachments/assets/079c923a-2b77-4297-b9a9-39725192f4dc)
+### 2. Detailed placements.
+Where the standard cells and macros (functional blocks) are placed on the chip's floorplan and are legally posistioned in the placement rows.<br>
+![26](https://github.com/user-attachments/assets/746f8f73-c108-4406-a3c9-3f42b8547e68)
 ## Clock Tree Synthesis (CTS):
 Design the clock distribution network to ensure synchronized operation of sequential elements.
+![27](https://github.com/user-attachments/assets/c7724204-f3ae-455f-9b9a-d1d4a8438a20)
 ## Routing:
 Create the metal interconnections between placed cells.
+![28](https://github.com/user-attachments/assets/ddfb1532-42c9-4c9b-a799-c23fc6752d23)
+![29](https://github.com/user-attachments/assets/33519af8-9b79-4552-bb52-d4c4b931c749)
 ## Sign-Off:
 This refers to the final stage of the design process where the design is thoroughly checked and verified before it is sent to the foundry for fabrication.
+![30](https://github.com/user-attachments/assets/db3564a6-32c7-4d3d-8c69-50722a90f908)
+
 </details>
