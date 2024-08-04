@@ -1742,11 +1742,15 @@ This refers to the final stage of the design process where the design is thoroug
 ![40](https://github.com/user-attachments/assets/19d08e0e-1ab0-428d-98e7-4a29217c04e8)
 #### Yosys: 
 Open-source synthesis tool used for converting RTL to a gate-level netlist.
+![42](https://github.com/user-attachments/assets/34b9e8ea-5896-4464-8591-9bd5dbc27bd0)
 #### OpenROAD: 
 A suite of open-source tools for physical design, including placement, CTS, and routing.
+![41](https://github.com/user-attachments/assets/30236e25-a914-4fac-9fcb-b44e61ceab13)
 #### Magic: 
 Open-source layout tool used for physical verification.
 #### OpenSTA: 
 Static Timing Analysis tool for verifying timing constraints.
+#### Fault: 
+![39](https://github.com/user-attachments/assets/088ecbdb-c97c-4cd7-946c-1f52cdc8eb7c)
 
 </details>
