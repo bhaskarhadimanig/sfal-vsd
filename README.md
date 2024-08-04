@@ -1738,5 +1738,15 @@ This refers to the final stage of the design process where the design is thoroug
 ![35](https://github.com/user-attachments/assets/41180b2c-1990-460e-8933-8fbdfecc6059)
 ## Introduction to OpenLANE ASIC Flow:
 ![38](https://github.com/user-attachments/assets/1f97c5d2-5f21-438c-94b3-cb6b6ddafb8d)
+### Tools and Technologies in OpenLane:
+![40](https://github.com/user-attachments/assets/19d08e0e-1ab0-428d-98e7-4a29217c04e8)
+#### Yosys: 
+Open-source synthesis tool used for converting RTL to a gate-level netlist.
+#### OpenROAD: 
+A suite of open-source tools for physical design, including placement, CTS, and routing.
+#### Magic: 
+Open-source layout tool used for physical verification.
+#### OpenSTA: 
+Static Timing Analysis tool for verifying timing constraints.
 
 </details>
