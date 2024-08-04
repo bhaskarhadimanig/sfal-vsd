@@ -1697,6 +1697,25 @@ Include different configurations and performance parameters.
 #### Analog and Mixed-Signal Components:
 Pre-designed analog and mixed-signal blocks, such as operational amplifiers, ADCs (Analog-to-Digital Converters), and DACs (Digital-to-Analog Converters).
 Include characterization data for performance verification.
-
-
+![16](https://github.com/user-attachments/assets/363ec634-5810-4c4e-bb44-d03d4859c499)
+## RTL To GDSII Flow:
+![18](https://github.com/user-attachments/assets/f93387fd-dc82-48d2-87f1-dc2547a54c52)
+### Synthesis
+The RTL code is transformed into a gate-level netlist using synthesis tools. The gate level net list is functional equivalent to RTL design.
+![19](https://github.com/user-attachments/assets/7b36e398-75e5-4e5f-b9ad-1b94d3ec17ed)
+![20](https://github.com/user-attachments/assets/a8d48cd8-7a35-4844-8a89-7e90fc84712e)
+#### Tools: 
+Synopsys Design Compiler, Cadence Genus, Mentor Graphics Precision.
+## Floorplanning/Power Planning:
+Define the physical organization of the chip by determining the placement of major functional blocks. Design the power distribution network to ensure adequate power delivery to all parts of the chip.
+![21](https://github.com/user-attachments/assets/561ce03b-902e-4df6-8962-527057aeee2c)
+![22](https://github.com/user-attachments/assets/0270c7f0-236b-40e7-b060-6816348783a0)
+## Placement:
+Place the standard cells and macros within the floorplan.
+## Clock Tree Synthesis (CTS):
+Design the clock distribution network to ensure synchronized operation of sequential elements.
+## Routing:
+Create the metal interconnections between placed cells.
+## Sign-Off:
+This refers to the final stage of the design process where the design is thoroughly checked and verified before it is sent to the foundry for fabrication.
 </details>
