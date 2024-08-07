@@ -1753,4 +1753,15 @@ Static Timing Analysis tool for verifying timing constraints.
 #### Fault: 
 ![39](https://github.com/user-attachments/assets/088ecbdb-c97c-4cd7-946c-1f52cdc8eb7c)
 
+## Design Prepration setup:
+To perform design prepration setup and invoke the openlane excute the folowing command
+```sh
+cd /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane
+alias docker='docker run -it -v $(pwd):/openLANE_flow -v $PDK_ROOT:$PDK_ROOT -e PDK_ROOT=$PDK_ROOT -u
+docker
+./flow.tcl -interactive
+package require openlane 0.9
+prep -design picorv32a
+```
+
 </details>
