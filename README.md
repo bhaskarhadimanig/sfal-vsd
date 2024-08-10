@@ -1614,8 +1614,11 @@ These PVT corners should be considered for detailed timing analysis to ensure th
 
 <details> 
 <summary> Day 15 - Physical Design Basics </summary>
+<ul>
+<details> 
+<summary> OpenLANE EDA Tool </summary>	
 	
-## Day 15 - Physical Design Basics
+## OpenLANE EDA Tool
 ### Introduction to open source EDA, OpenLANE and sky 130 PDK:
 In this for study we are taking ARDUINO board as example where we can able to see a chip.<br>
 ![1](https://github.com/user-attachments/assets/3e445de8-ae13-4d04-b205-3d429091a456)<br>
@@ -1752,6 +1755,9 @@ Open-source layout tool used for physical verification.
 Static Timing Analysis tool for verifying timing constraints.
 #### Fault: 
 ![39](https://github.com/user-attachments/assets/088ecbdb-c97c-4cd7-946c-1f52cdc8eb7c)
+</details> 
+<details> 
+<summary> Design Prepration setup </summary>
 
 ## Design Prepration setup:
 To perform design prepration setup and invoke the openlane excute the folowing command
@@ -1763,6 +1769,9 @@ docker
 package require openlane 0.9
 prep -design picorv32a
 ```
+</details>
+<details> 
+<summary> Run Synthesis </summary>
 ## Run Synthesis on picorv32a design using openlane flow
 To run the synthesis use the following command
 ```sh
@@ -1776,5 +1785,5 @@ Flop Ratio = (Total number of DFF’s)/(Total number of standard cells)=1613/148
 ### Synthesised Netlist:
 ![45](https://github.com/user-attachments/assets/3fcd93f6-2deb-470b-81a6-e14885ec079c)
 ![46](https://github.com/user-attachments/assets/c29c05bf-2dfe-45ef-b16d-be926d502f7b)
-
+</details>
 </details>
