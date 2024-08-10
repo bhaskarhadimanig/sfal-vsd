@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/0d56a79a-bdec-4bc6-a753-085adb44b03e)<details>
+<details>
 <summary>Day 0: System Tools Setup</summary>
     <ul>
         <li>
