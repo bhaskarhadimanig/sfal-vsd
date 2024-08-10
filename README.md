@@ -1818,8 +1818,12 @@ If we take area occupied by standard cells of netlist is 4sq unit and total are 
 ![7](https://github.com/user-attachments/assets/285ed8aa-e23e-4eda-b780-29900800f37c)
 ![8](https://github.com/user-attachments/assets/3fbc3811-bd56-47c7-962c-9e7583cc713e)
 
-Here standart cell's of netlist utlizes 100% of core are so utilization factor will be of 1.<br>
-Means 
+Here standart cell's of netlist utlizes 100% of core area so utilization factor will be of 1.<br>
+Means there should be some space for other logic and routing.<br>
+
+### Aspect Ration:
+Acspect ratio is Height/Width of the core when the aspect ratio is one it tells that the chip is square shape.<br>
+![10](https://github.com/user-attachments/assets/aeb419ba-8fbd-414d-a7c2-03e7fe3ddc63)
 
 </details>
 </ul>
