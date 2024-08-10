@@ -1822,8 +1822,26 @@ Here standart cell's of netlist utlizes 100% of core area so utilization factor 
 Means there should be some space for other logic and routing.<br>
 
 ### Aspect Ration:
-Acspect ratio is Height/Width of the core when the aspect ratio is one it tells that the chip is square shape.<br>
-![10](https://github.com/user-attachments/assets/aeb419ba-8fbd-414d-a7c2-03e7fe3ddc63)
+Acspect ratio is Height/Width of the core when the aspect ratio is one it tells that the chip is square shape. If the aspect ratio is less then 1 it says the chip is rectangler.<br>
+![10](https://github.com/user-attachments/assets/aeb419ba-8fbd-414d-a7c2-03e7fe3ddc63)<br>
+If we take another example with different core area. Where the utilization factor is 0.5 and aspect ratio will be 0.5.<br>
+If utilization factor is 0.5 that indicates 50% of the core is utilized by standard cells of the netlist and other 50% is utilized by other logic and routing.<br>
+If aspect ratio is 0.5 indicates the chip is rectangler.<br>
+![12](https://github.com/user-attachments/assets/3eb76712-05da-4292-af64-2391d184a1e3)
+
+### Another example:
+![13](https://github.com/user-attachments/assets/ffb0e70d-5a44-44d4-a52a-d83a91585665)
+### Preplaced cell's:
+Generally the netlist contain complex logic is partitioned into multiple blocks.<br>
+![14](https://github.com/user-attachments/assets/0f0d926c-95f0-4e1c-9aad-d356ac6565a3)
+![15](https://github.com/user-attachments/assets/e723eb84-870a-4f5d-98ba-b7d9675a9451)
+
+These blocks are indipendently implemented as reusable blocks. It means it is implemented once and reused multiple times.<br>
+![16](https://github.com/user-attachments/assets/a6975774-d60b-4bec-a3e2-114a2acab341)
+
+Preplaced cells are a type of structural element in physical design, particularly in electronics and integrated circuit (IC) fabrication.<br>
+They are pre-designed and pre-fabricated cells that can be easily incorporated into a larger design, reducing the complexity and time required for layout and verification.<br>
+
 
 </details>
 </ul>
