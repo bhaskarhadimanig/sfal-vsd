@@ -1803,7 +1803,7 @@ Flop Ratio = (Total number of DFF’s)/(Total number of standard cells)=1613/148
 
 ## Floor Planning
 The first step of physical design is defining width and height of the core and die.
-### How to calculate values of w(width) and h(height):
+### 1. How to the value of values of w(width) and h(height):
 If we concider the simple netlist where we have FF(flip-flops/latch's/register's) and standard cells.<br>
 To calculate the width and height of the core and die first we should know the dimention of the standard cells, as of now we concider only dimention of standard cells not the wires.<br>
 ![Screenshot 2024-08-10 171853](https://github.com/user-attachments/assets/341890ba-1cdc-45e7-8390-f60f5528a862)
@@ -1843,6 +1843,23 @@ Preplaced cells are a type of structural element in physical design, particularl
 They are pre-designed and pre-fabricated cells that can be easily incorporated into a larger design, reducing the complexity and time required for layout and verification. These are called IP's are resusable blocks these are call prelaced cells.<br>
 ![17](https://github.com/user-attachments/assets/14b8ee3d-f217-4f28-829b-634a33d8f8b5)
 
+### 2. Defining location of preplaced cell's:
+The location of the preplaced is decided based on the design requirement.<br>
+Like if blocks talk to the inputs pins so we need to to place blocks near to the input pin's so it's depends on the design requirement.<br>
+![18](https://github.com/user-attachments/assets/49898afe-84a6-4a59-958e-65a44731c715)
+
+### 3. Surround preplaced cell's with decoupling cells:
+![19](https://github.com/user-attachments/assets/bc7fa579-dec6-414e-af0d-45509057cae7)
+
+In the circuit as shown above when the gates switches/transition from zero to one the capacitance has to charge to represent logic one. The amount of charge is passed from vdd/supply voltage.<br>
+In the same way when gate switches/transition from one to zero the capacitance has to discharge to represent logic zero. VSS take that amout of charge to discharge the capacitor.<br>
+If thre is a larg distance between the voltage source and the design there may be chance of voltage drop due to some pysical dimessions.<br> 
+If the voltage drop is within the noise margin then its fine or if voltage drop is more then it leads to indetermined state of transition.<br>
+![20](https://github.com/user-attachments/assets/7bfac4dd-9711-4be8-8bfb-a6a3dfc77b07)
+
+To over come that issue we need to use decoupling capacitance.<br>
+
+![21](https://github.com/user-attachments/assets/4fbf12c1-a861-45e2-9b51-ac107fb0d217)
 
 </details>
 </ul>
