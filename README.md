@@ -1857,9 +1857,23 @@ If thre is a larg distance between the voltage source and the design there may b
 If the voltage drop is within the noise margin then its fine or if voltage drop is more then it leads to indetermined state of transition.<br>
 ![20](https://github.com/user-attachments/assets/7bfac4dd-9711-4be8-8bfb-a6a3dfc77b07)
 
-To over come that issue we need to use decoupling capacitance.<br>
+To over come that issue we need to use decoupling capacitance. The voltage accros the capacitor is similer to the poer supply.<br>
+The decopuling capacitors decouples the circuit from the main supply.<br>
+Decoupling cell's are added only for critical block's not for all the clock's.<br>
 
 ![21](https://github.com/user-attachments/assets/4fbf12c1-a861-45e2-9b51-ac107fb0d217)
+![22](https://github.com/user-attachments/assets/4474122c-2d61-4988-8b73-f514a2081f6f)
+
+
+### 4. Power Planning:
+For local communication decoupling capacitor is fine for global commnication we resolve the issue with power planning.
+![23](https://github.com/user-attachments/assets/b8aa1cff-c598-4a2b-8d1b-22d981d009bc)
+
+Indted of providing one power supply from on place we can have multiple power dupply. This can be implemented by power mesh it will supply the power nearest logic.
+![27](https://github.com/user-attachments/assets/2e2157d8-6734-4562-a975-8271e83beb10)
+![28](https://github.com/user-attachments/assets/f1f2c77f-f3c7-4233-ab65-3f79ef8be612)
+
+### 5. Pin placement:
 
 </details>
 </ul>
