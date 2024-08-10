@@ -1840,7 +1840,8 @@ These blocks are indipendently implemented as reusable blocks. It means it is im
 ![16](https://github.com/user-attachments/assets/a6975774-d60b-4bec-a3e2-114a2acab341)
 
 Preplaced cells are a type of structural element in physical design, particularly in electronics and integrated circuit (IC) fabrication.<br>
-They are pre-designed and pre-fabricated cells that can be easily incorporated into a larger design, reducing the complexity and time required for layout and verification.<br>
+They are pre-designed and pre-fabricated cells that can be easily incorporated into a larger design, reducing the complexity and time required for layout and verification. These are called IP's are resusable blocks these are call prelaced cells.<br>
+![17](https://github.com/user-attachments/assets/14b8ee3d-f217-4f28-829b-634a33d8f8b5)
 
 
 </details>
