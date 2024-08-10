@@ -1757,8 +1757,11 @@ Static Timing Analysis tool for verifying timing constraints.
 ![39](https://github.com/user-attachments/assets/088ecbdb-c97c-4cd7-946c-1f52cdc8eb7c)
 </details> 
 <details> 
-<summary> Design Prepration setup </summary>
-
+<summary> OpenLANE EDA Tool Flow </summary>
+<ul>
+<details> 
+<summary> Design Prepration </summary>
+	
 ## Design Prepration setup:
 To perform design prepration setup and invoke the openlane excute the folowing command
 ```sh
@@ -1773,7 +1776,7 @@ prep -design picorv32a
 <details> 
 <summary> Run Synthesis </summary>
 	
-## Run Synthesis on picorv32a design using openlane flow
+## Run Synthesis for picorv32a design using openlane flow
 To run the synthesis use the following command
 ```sh
 run_synthesis
@@ -1787,5 +1790,13 @@ Flop Ratio = (Total number of DFF’s)/(Total number of standard cells)=1613/148
 ![45](https://github.com/user-attachments/assets/3fcd93f6-2deb-470b-81a6-e14885ec079c)
 ![46](https://github.com/user-attachments/assets/c29c05bf-2dfe-45ef-b16d-be926d502f7b)
 </details>
+<details> 
+<summary> Floor Plan </summary>
 
+## Floor Plan
+
+</details>
+</ul>
+</details> 
+</ul>
 </details>
