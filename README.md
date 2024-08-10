@@ -1798,5 +1798,29 @@ Flop Ratio = (Total number of DFF’s)/(Total number of standard cells)=1613/148
 </details>
 </ul>
 </details> 
+<details> 
+<summary> Chip Floor Planning </summary>
+
+## Floor Planning
+The first step of physical design is defining width and height of the core and die.
+### How to calculate values of w(width) and h(height):
+If we concider the simple netlist where we have FF(flip-flops/latch's/register's) and standard cells.<br>
+To calculate the width and height of the core and die first we should know the dimention of the standard cells, as of now we concider only dimention of standard cells not the wires.<br>
+![Screenshot 2024-08-10 171853](https://github.com/user-attachments/assets/341890ba-1cdc-45e7-8390-f60f5528a862)
+![2](https://github.com/user-attachments/assets/c78a3032-b6d4-4c5f-b705-27e80c53f54d)
+![3](https://github.com/user-attachments/assets/5008932c-4848-433c-b40f-7ee14e6d4c60)
+![4](https://github.com/user-attachments/assets/96f7e32a-40df-4437-bde8-47fa3b50531d)
+![5](https://github.com/user-attachments/assets/8ebd77bd-4b9d-4fb2-9e36-1e218e668a2f)
+
+If we take area occupied by standard cells of netlist is 4sq unit and total are of the core will be 2sq unit by 2sq unit means 4sq unit.<br>
+![5_A](https://github.com/user-attachments/assets/27e303ff-cde9-4e98-a32b-113cd5c7ab8d)
+![6](https://github.com/user-attachments/assets/f5fa56aa-d9ec-4c83-8513-bf3bb2210ae4)
+![7](https://github.com/user-attachments/assets/285ed8aa-e23e-4eda-b780-29900800f37c)
+![8](https://github.com/user-attachments/assets/3fbc3811-bd56-47c7-962c-9e7583cc713e)
+
+Here standart cell's of netlist utlizes 100% of core are so utilization factor will be of 1.<br>
+Means 
+
+</details>
 </ul>
 </details>
