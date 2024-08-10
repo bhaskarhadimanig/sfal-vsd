@@ -1,4 +1,4 @@
-<details>
+![image](https://github.com/user-attachments/assets/0d56a79a-bdec-4bc6-a753-085adb44b03e)<details>
 <summary>Day 0: System Tools Setup</summary>
     <ul>
         <li>
@@ -1763,5 +1763,18 @@ docker
 package require openlane 0.9
 prep -design picorv32a
 ```
+## Run Synthesis on picorv32a design using openlane flow
+To run the synthesis use the following command
+```sh
+run_synthesis
+```
+![43](https://github.com/user-attachments/assets/0e910450-0fa2-4867-87a7-dc4aaa4f920c)
+### Chartacterize the synthesis results:
+![44](https://github.com/user-attachments/assets/d802bc91-c584-4060-aca9-dc2d538f0614)
+#### Flop ratio:
+Flop Ratio = (Total number of DFF’s)/(Total number of standard cells)=1613/14876=0.108429
+### Synthesised Netlist:
+![45](https://github.com/user-attachments/assets/3fcd93f6-2deb-470b-81a6-e14885ec079c)
+![46](https://github.com/user-attachments/assets/c29c05bf-2dfe-45ef-b16d-be926d502f7b)
 
 </details>
