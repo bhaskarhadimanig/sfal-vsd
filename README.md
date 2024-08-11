@@ -1794,6 +1794,13 @@ Flop Ratio = (Total number of DFF’s)/(Total number of standard cells)=1613/148
 <summary> Floor Plan </summary>
 
 ## Floor Plan
+Floor planning is the proccess of defining die area, core area, plcing of input and out ports, power planning and macro placement.<br>
+1. Initialization of a floorplan of appropriate dimension means defining width and height of the core and die area.<br>
+2. Macro Placement measn defining location of the preplaced cell's.<br>
+3. Placement of endcap cells means suround preplaced cell's with decoupling cells.<br>
+4. Power planning.<br>
+5. Placement of I/O pins.<br>
+6. Applying appropriate placement blockages near the I/O pins.<br>
 
 </details>
 </ul>
