@@ -1874,6 +1874,23 @@ Indted of providing one power supply from on place we can have multiple power du
 ![28](https://github.com/user-attachments/assets/f1f2c77f-f3c7-4233-ab65-3f79ef8be612)
 
 ### 5. Pin placement:
+Lets concider a design below there will be multiple input and output ports.<br>
+
+![29](https://github.com/user-attachments/assets/2c17df48-bad2-4050-ac92-63cf9f44713f)
+![30](https://github.com/user-attachments/assets/125bbc16-32c7-4319-b937-4e03fdb839f0)
+
+It has connectivity of the different gates from different port's. This connectivity of the netlist are defined using verilog.<br>
+![31](https://github.com/user-attachments/assets/fd264ce9-9796-4efd-8742-953fc6663b26)
+
+Here the pin placement is differe from design to design and the size of the clock port is bigger as compare to data port.<br>
+![32](https://github.com/user-attachments/assets/4602d090-276b-4942-8c37-216c90a8d8aa)
+
+These clock port drives flop's in the complete design so size is biger and lower in recistence.<br>
+
+### 6. Logical cell's placement blockage:
+placement blockage is the area where the cells must avoid during placement, optimization and legalization. It can be hard and soft.<br>
+The placement of these blockeg is to avoid to take care the tool should not place other cell's near the port's.<br>
+![33](https://github.com/user-attachments/assets/a6425002-3485-4bff-b0d9-2c7276ae01b9)
 
 </details>
 </ul>
