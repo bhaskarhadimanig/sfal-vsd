@@ -1802,6 +1802,31 @@ Floor planning is the proccess of defining die area, core area, plcing of input 
 5. Placement of I/O pins.<br>
 6. Applying appropriate placement blockages near the I/O pins.<br>
 
+### Switch Avilable in openlane for floorplan:
+![35](https://github.com/user-attachments/assets/b380d27a-e91f-4625-b6e4-635afafccb71)
+### These are the default Switch set to floorplan:
+![36](https://github.com/user-attachments/assets/ac212825-5996-416b-9c34-cd11a6399245)
+
+1. These are system default settings and it is the lowest precedence that is "floorplan.tcl" vailable in the folder "/home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/configuration".<br>
+2. Then next precedence will be "config.tcl" in the project folder "/home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a".<br>
+3. Then next precedence will be "sky130A_sky130_fd_sc_hd_config.tcl" in the project folder "/home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a".<br>
+### Run the command for floorplan:
+```sh
+run_floorplan
+```
+### Magic tool to open floorplan:
+![37](https://github.com/user-attachments/assets/37d8452b-e008-4a79-b9cf-76f0cc9b6ac6)
+#### In Magic tool to see which metal is used for horizonatal and vertical pin:
+![38](https://github.com/user-attachments/assets/a395dd61-2be2-4c64-b541-2ef61e175790)
+#### In Magic tool we can see TAP cell and DECAP cell's:
+![39](https://github.com/user-attachments/assets/64c72dda-69ba-4a13-b86a-027dbf9feda8)
+#### Still placement of standard cell's not done in floor plan:
+![40](https://github.com/user-attachments/assets/79ee2209-d77e-43ea-b7a4-a7fd33ba40bb)
+
+</details>
+<details> 
+<summary> Placement and Routing </summary>
+	
 </details>
 </ul>
 </details> 
