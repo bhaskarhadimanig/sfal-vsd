@@ -1967,6 +1967,10 @@ In this stage where we estimate wire length and capacitance and, based on that i
 These repeaters are used to reproduce the original signal and send these repeaters come into picute where wire lenthg is high but there will be loss of area. <br>
 ![46](https://github.com/user-attachments/assets/b6308b0d-a710-4ef2-bf89-6d7d82fc82ff)
 ![47](https://github.com/user-attachments/assets/7f7d3e08-99b5-4650-acbe-5f2af975a957)
+![48](https://github.com/user-attachments/assets/223050f6-838b-4260-8bbc-2ad45cf378ea)
+
+Here the clocks are not build by concidering clock path as ideal it means clock to reach any of the flip flop is zero is the ideal clock. So we need to check timing for the data path.<br>
+
 
 </ul>
 </details>
