@@ -1815,6 +1815,10 @@ Floor planning is the proccess of defining die area, core area, plcing of input 
 run_floorplan
 ```
 ### Magic tool to open floorplan:
+### Command to open floorplan:
+```sh
+magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &
+```
 ![37](https://github.com/user-attachments/assets/37d8452b-e008-4a79-b9cf-76f0cc9b6ac6)
 #### In Magic tool to see which metal is used for horizonatal and vertical pin:
 ![38](https://github.com/user-attachments/assets/a395dd61-2be2-4c64-b541-2ef61e175790)
@@ -1826,7 +1830,25 @@ run_floorplan
 </details>
 <details> 
 <summary> Placement and Routing </summary>
-	
+
+## Placement
+### Placement Algorithms:
+#### Global Placement: 
+In this initial step, cells are roughly placed to provide a good starting point for more detailed placement. The focus is on spreading the cells across the die evenly and avoiding high congestion areas.
+#### Detailed Placement: 
+After global placement, cells are fine-tuned to their exact positions to optimize timing, power, and area further. Detailed placement resolves any overlaps and fine-tunes cell positions for better performance.<br>
+
+To performed the placement of standard cell's use following command.<br>
+```sh
+run_placement
+```
+### Command to open placement:
+```sh
+magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def.png &
+```
+![49](https://github.com/user-attachments/assets/e480976f-6795-4f91-8c8d-86c998589a55)
+![50](https://github.com/user-attachments/assets/382017ea-c2aa-43ac-a739-eb3c1c1c2603)
+
 </details>
 </ul>
 </details> 
