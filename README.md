@@ -1992,7 +1992,15 @@ These repeaters are used to reproduce the original signal and send these repeate
 ![48](https://github.com/user-attachments/assets/223050f6-838b-4260-8bbc-2ad45cf378ea)
 
 Here the clocks are not build by concidering clock path as ideal it means clock to reach any of the flip flop is zero is the ideal clock. So we need to check timing for the data path.<br>
+</details>
+<details> 
+<summary> Cell design and characterization flow </summary>
+	
+## Cell design flow
+The information of the standard cell's are avilable in the library.<br>
+Library contains different flowers of same standard cells like cell's with different functinality, different size.<br>
 
 
+</details>
 </ul>
 </details>
