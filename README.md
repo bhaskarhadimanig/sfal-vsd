@@ -1925,5 +1925,48 @@ The placement of these blockeg is to avoid to take care the tool should not plac
 ![33](https://github.com/user-attachments/assets/a6425002-3485-4bff-b0d9-2c7276ae01b9)
 
 </details>
+<details> 
+<summary> Place and routing </summary>
+
+## Place and routing
+### 1. Bind netlist with physical cells:
+Bind netlist with physical cells is the process of mapping a logical cell (like logic gate, flip-flop, or other standard cell) to a specific physical cell in the standard cell library during the physical design phase.<br>
+#### Cell Libraries: 
+Standard cell libraries contain pre-designed physical layouts for logic gates, flip-flops, and other basic components used in digital design. Each logic cell has multiple implementations (different sizes and power characteristics) to cater to different design constraints.
+
+#### Logical to Physical Mapping: 
+After the synthesis step, where the RTL (Register Transfer Level) code is converted into a gate-level netlist, each logical cell in the netlist needs to be associated with a corresponding physical cell from the library.
+
+#### Constraints Consideration:
+##### Timing Constraints: 
+Cells are selected based on their ability to meet the timing requirements of the design.
+##### Power Constraints: 
+Cells are chosen to minimize power consumption, especially in low-power designs.
+##### Area Constraints: 
+The physical size of the cell is also a consideration, as it impacts the overall chip area.
+![41](https://github.com/user-attachments/assets/4c013bc1-a401-45a3-9ae9-38f3f964ba7d)
+
+The library is classified into two one it contains shape and size and another library contains the delay information.<br>
+In the library there are different size and of same types cell's means AND gate of different size of cell's avilable in the library.<br>
+Where bigger cell have faster as compare to smaller cell's.<br>
+![42](https://github.com/user-attachments/assets/68c58c08-92f1-461b-b950-d84ac946a61a)
+
+### 2. Placement: 
+Once the cells are bound, the physical design process continues with placement, placement is a crucial step in the physical design flow. It involves positioning the standard cells (like logic gates, flip-flops, and other basic components) into cell boundry.<br>
+At placment stage already pre placed cell should not affeted mean's preplaced cell's must be fixed they should not move.<br>
+There is no cell's placed in that area where the preplaced cell's are placed.<br>
+![43](https://github.com/user-attachments/assets/ad71fee9-810f-4654-be49-849fa1ed6765)
+
+Hrere the cell's are placed based on port which are commnicatting with the ports.<br>
+And based on the which are communicatting with other preplaced cell's.<br>
+![45](https://github.com/user-attachments/assets/c4ac446a-4021-49ad-8eff-53881798286c)
+
+Some cell's are placed for away brom each other related to one logic. The solution to this is optimize placment.
+### 3. Optimize placment: 
+In this stage where we estimate wire length and capacitance and, based on that insert reapeaters here repeaters are bufferes.<br>
+These repeaters are used to reproduce the original signal and send these repeaters come into picute where wire lenthg is high but there will be loss of area. <br>
+![46](https://github.com/user-attachments/assets/b6308b0d-a710-4ef2-bf89-6d7d82fc82ff)
+![47](https://github.com/user-attachments/assets/7f7d3e08-99b5-4650-acbe-5f2af975a957)
+
 </ul>
 </details>
