@@ -2051,6 +2051,20 @@ Extract parasitics from the layout and characterize interms of timing.<br>
 
 The output of layout deisgn is GDSII , LEF(where have information on height and width of the cell), extracted spice netlist(.cir).
 #### 3. Characterization:
+We need to charaterize baed on the extracted spice netlist, sub circuits(it contains the information of NMOS and PMOS SPICE models).<br>
+Characterization setup.<br>
+1. Reading the models.
+2. Reading the extracted SPICE nestlist.
+3. Recognise the behaviour of the design.
+4. Read sub circuits of the design.
+5. Attach the nessary power source.
+6. Applay the stimulus.
+7. Provide the nessary output load capacitance.
+8. Provide nessary simulation command.
+
+Feed the all inputs in the form of configuration to the tool(GUNA).<br>
+Then this tool generates Timing, Noice, Power .lib's function.<br>
+
 
 </details>
 </ul>
