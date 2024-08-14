@@ -1999,8 +1999,39 @@ Here the clocks are not build by concidering clock path as ideal it means clock 
 ## Cell design flow
 The information of the standard cell's are avilable in the library.<br>
 Library contains different flavors of same standard cells like cell's with different size and with different functinality(AND, OR, Inverter etc...) of cell's.<br>
+Based on the size of the cell they different threshold voltage bigers cells have high threshold voltage.<br>
+![53](https://github.com/user-attachments/assets/9de008bd-c59d-4f40-87c4-ae9f672e9b54)
 
+The cell design flow is divided into 3 part's.
+1. Inputs.
+2. Design flow.
+3. Outputs.
 
+### 1. Inputs:
+Inputs to design the inverter we required proccess deign kits.<br>
+These kits are provided by foundry and the kits consists of DRC (Design rul check's), LVS (Layout Versus Schematic) rules, SPICE models, library and user defined specs.<br>
+DRC's are the design rules provided by foundry to design the cell's some of are.<br>
+Poly width.<br>
+extension over active.<br>
+poly to active spacing.<br>
+![54](https://github.com/user-attachments/assets/4fcb9407-b5dd-4bf3-9931-68c8016a69d4)
+
+SPICE models also provided by foundry based on the equation provided foundry parameters.<br>
+![55](https://github.com/user-attachments/assets/126f2125-2f4f-4cff-9e30-c5b186fd71a7)
+
+Library and user defined specs is also provided by foundry and user defined specs are cell height, supply voltage, meta layers, pin location, drwan gate length.
+
+### 2. Design flow's:
+Design involves 3 different step's.<br>
+1. Circuit design.<br>
+2. Layout design.<br>
+3. Characterization.<br>
+
+#### 1. Circuit design:
+Circuit design involves two steps.<br>
+1) Implement the function.<br>
+2) Model PMOS and NMOS transister based on the library requirement.<br>
+The output we get from the circuit design is the CDL (circuit description launguage) file.
 </details>
 </ul>
 </details>
