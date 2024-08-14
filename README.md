@@ -1998,7 +1998,7 @@ Here the clocks are not build by concidering clock path as ideal it means clock 
 	
 ## Cell design flow
 The information of the standard cell's are avilable in the library.<br>
-Library contains different flowers of same standard cells like cell's with different functinality, different size.<br>
+Library contains different flavors of same standard cells like cell's with different size and with different functinality(AND, OR, Inverter etc...) of cell's.<br>
 
 
 </details>
