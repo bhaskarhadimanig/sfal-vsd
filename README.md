@@ -2032,6 +2032,26 @@ Circuit design involves two steps.<br>
 1) Implement the function.<br>
 2) Model PMOS and NMOS transister based on the library requirement.<br>
 The output we get from the circuit design is the CDL (circuit description launguage) file.
+
+#### 2. Layout design:
+First implementing a function.<br>
+Deriving pmos and nmos network graph done.<br>
+
+![58](https://github.com/user-attachments/assets/e99adbe9-eae2-496b-9f70-f620029bec04)
+
+Obtain the Euler's path. Euler's path is the path traced only once.<br>
+
+![59](https://github.com/user-attachments/assets/fa66e78d-759f-4ac9-b8b1-237ec115c286)
+
+Based on the Euler's path draw the stick diagram and make the connection based on the circuit.<br>
+Then convert stick diagram into layout based on the based on the rules provided by foundy.<br>
+![60](https://github.com/user-attachments/assets/0aef694e-d3f0-49f5-ba9d-9ad01012e170)
+
+Extract parasitics from the layout and characterize interms of timing.<br>
+
+The output of layout deisgn is GDSII , LEF(where have information on height and width of the cell), extracted spice netlist(.cir).
+#### 3. Characterization:
+
 </details>
 </ul>
 </details>
