@@ -1757,7 +1757,7 @@ Static Timing Analysis tool for verifying timing constraints.
 ![39](https://github.com/user-attachments/assets/088ecbdb-c97c-4cd7-946c-1f52cdc8eb7c)
 </details> 
 <details> 
-<summary> OpenLANE EDA Tool Flow </summary>
+<summary> OpenLANE EDA Tool Flowand LAB </summary>
 <ul>
 <details> 
 <summary> Design Prepration </summary>
