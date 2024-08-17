@@ -2067,5 +2067,32 @@ Then this tool generates Timing, Noice, Power .lib's function.<br>
 
 
 </details>
+
+<details> 
+<summary> Timing chracterization </summary>
+	
+## Timing chracterization
+### Slew:
+Time taken for a signal to increase from 20% to 80% of its maximum value for raise time, time it takes for a signal to decrease from 80% to 20% of its maximum value for fall time is call slew.<br>
+**slew_low_rise_thr**<br>
+**slew_high_rise_thr**<br>
+**slew_low_fall_thr**<br>
+**slew_high_fall_thr**<br>
+### Propagation delay:
+Propagation delay is typically measured from the 50% point of the input signal's transition to the 50% point of the output signal's transition.<br>
+**in_rise_thr**<br>
+**in_fall_thr**<br>
+**out_rise_thr**<br>
+**out_fall_thr**<br>
+```text
+PT = time(out_*_thr) - time(in_*_thr)
+If in_rais_thr = 3.207ns and out_fall_thr = 3.230ns
+PT = 3.230ns - 3.207ns = 23ps
+If in_rais_thr = 3.263ns and out_fall_thr = 3.221ns
+PT = 3.221ns - 3.263ns = -42ps
+This -ve indicates out put comes before the input.
+Due to input delay there may be chance of getting -ve delay.
+```
+</details>
 </ul>
 </details>
