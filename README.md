@@ -1853,6 +1853,7 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 
 <details> 
 <summary> IO Placer </summary>
+	
 In Openlane we IO placer can be used to place the IO pins by setting switch FP_IO_MODE.
 ### Command to set to switch FP_IO_MODE and view floorplan using Magic tool:
 ```sh
