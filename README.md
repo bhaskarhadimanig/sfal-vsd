@@ -2170,7 +2170,20 @@ This is the point where the both the switches are turned on so there will leakag
 And Current directly can flow from power to ground.<br>
 ![15](https://github.com/user-attachments/assets/8a7d390c-75c4-431e-b7b3-f517d838ed4d)
 
+</details>
+<details> 
+<summary> Inception of layout and CMOS fabrication </summary>
 
+## Inception of layout and CMOS fabrication
+### 16 Mask CMOS Process:
+1. Selecting of substrate.
+The commonly used subrate is P-type silicon substrate.
+2. Creating active region for transistor.
+	Step 1: Grow a 40nm of Silicon dioxide over a P-substrate it act as insulator.
+	Step 2: Deposite a layer of 80nm of silicon nitride over a Silicon dioxide.
+   	Step 3: Deposite a layer of 1um photoresist.
+   	Step 4: Perform the Mask1 (Layout's are converted into mask).
+   	Steo 5: Then expose to UV light.
 </details>
 </ul>
 </details>
