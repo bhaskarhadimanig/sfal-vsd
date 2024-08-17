@@ -1861,6 +1861,7 @@ set ::env(FP_IO_MODE) 2
 run_floorplan
 magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &
 ```
+![8](https://github.com/user-attachments/assets/03e3091c-4129-4b07-a6eb-5f21033cca91)
 
 </details>
 </ul>
