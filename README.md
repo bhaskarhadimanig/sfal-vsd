@@ -1864,6 +1864,22 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 ![8](https://github.com/user-attachments/assets/03e3091c-4129-4b07-a6eb-5f21033cca91)
 
 </details>
+
+<details> 
+<summary> Standard cell design </summary>
+
+## Standard cell design and characterization using openlane
+```txt
+cd /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane
+git clone https://github.com/nickson-jose/vsdstdcelldesign.git
+copy sky130A tech file into /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign
+cd /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic
+cp sky130A.tech /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign/
+cd /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign
+```
+![22](https://github.com/user-attachments/assets/97a983e3-bcef-4026-8973-bbffe26d74a3)
+
+</details>
 </ul>
 </details> 
 <details> 
