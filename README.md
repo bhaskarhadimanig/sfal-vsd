@@ -2116,5 +2116,31 @@ This -ve indicates out put comes before the input.
 Due to input delay there may be chance of getting -ve delay.
 ```
 </details>
+
+<details> 
+<summary> SPICE Deck creation for CMOS Inverter </summary>
+
+## SPICE Deck creation for CMOS Inverter
+### SPICE Deck:
+1. Connectivity information about the netlist.
+2. Define the component values.
+	Define channel length and width of the channel.
+	Define the output load.
+	Define the input gate voltage.
+	Define drain voltage or mainsupplay voltage.
+![9](https://github.com/user-attachments/assets/39eecb92-f107-4953-bef2-7a4e331574d6)
+4. Identify 'nodes': The points between there is a componet.
+5. Name Node's.
+
+![11](https://github.com/user-attachments/assets/78a2587f-8a5f-4945-88f3-23cd38e552f5)
+
+#### SPICE Deck Defination:
+```text
+M1 out in vdd vdd pmos W=0.375u L=0.25u
+Nothing but below is the description
+M1 Drain gate substrate source pmos width length
+```
+
+</details>
 </ul>
 </details>
