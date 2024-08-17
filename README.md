@@ -1844,10 +1844,22 @@ run_placement
 ```
 ### Command to open placement:
 ```sh
-magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def.png &
+magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &
 ```
 ![49](https://github.com/user-attachments/assets/e480976f-6795-4f91-8c8d-86c998589a55)
 ![50](https://github.com/user-attachments/assets/382017ea-c2aa-43ac-a739-eb3c1c1c2603)
+
+</details>
+
+<details> 
+<summary> IO Placer </summary>
+In Openlane we IO placer can be used to place the IO pins by setting switch FP_IO_MODE.
+### Command to set to switch FP_IO_MODE and view floorplan using Magic tool:
+```sh
+set ::env(FP_IO_MODE) 2
+run_floorplan
+magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &
+```
 
 </details>
 </ul>
