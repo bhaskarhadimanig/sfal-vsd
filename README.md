@@ -2143,8 +2143,17 @@ M1 drain gate source substrate pmos width length
 The .mod file contain the all the technology related parameter's.
 ![14](https://github.com/user-attachments/assets/30317f99-a128-423c-90a2-735ff510f220)
 
+By sweeping gate input voltage from 0v to 2.5v at steps of 0.05v
+
 We are going to perfom SPICE simulation for the following parameters.
 ![15](https://github.com/user-attachments/assets/5a6b6cf0-eafc-49da-ad6d-0a8a8e9f60f2)
+
+#### Switching threshold:
+Switching threshold is the point where Vin = Vout the gate voltage is equal to drain voltage Vgs=Vds where current IdsP=IdsN.<br>
+This is the point where the both the switches are turned on so there will leakage current.<br>
+And Current directly can flow from power to ground.<br>
+![15](https://github.com/user-attachments/assets/8a7d390c-75c4-431e-b7b3-f517d838ed4d)
+
 
 </details>
 </ul>
