@@ -2138,8 +2138,9 @@ Due to input delay there may be chance of getting -ve delay.
 ```text
 M1 out in vdd vdd pmos W=0.375u L=0.25u
 Nothing but below is the description
-M1 Drain gate substrate source pmos width length
+M1 drain gate source substrate pmos width length
 ```
+![12](https://github.com/user-attachments/assets/c1201e44-3ccf-4239-b1c4-4425535b6065)
 
 </details>
 </ul>
