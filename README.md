@@ -2078,6 +2078,14 @@ Time taken for a signal to increase from 20% to 80% of its maximum value for rai
 **slew_high_rise_thr**<br>
 **slew_low_fall_thr**<br>
 **slew_high_fall_thr**<br>
+### Transition Time:
+![7](https://github.com/user-attachments/assets/53bd81fb-f6d4-4890-bdec-a57315c79fc1)
+```text
+slew raise = time(slew_high_rise_thr) - time(slew_low_rise_thr)
+slew fall = time(slew_high_fall_thr) - time(slew_low_fall_thr)
+If 80% vdd is 1.44v and 20% of vdd is 036v
+input slew is 26ps output slew 54ps from above transition wave form
+```
 ### Propagation delay:
 Propagation delay is typically measured from the 50% point of the input signal's transition to the 50% point of the output signal's transition.<br>
 **in_rise_thr**<br>
