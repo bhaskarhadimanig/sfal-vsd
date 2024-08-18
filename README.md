@@ -1876,6 +1876,7 @@ copy sky130A tech file into /home/vsduser/Desktop/work/tools/openlane_working_di
 cd /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic
 cp sky130A.tech /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign/
 cd /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign
+magic -T sky130A.tech sky130_inv.mag &
 ```
 ![22](https://github.com/user-attachments/assets/97a983e3-bcef-4026-8973-bbffe26d74a3)
 
