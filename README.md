@@ -1868,7 +1868,7 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 <details> 
 <summary> Standard cell design </summary>
 
-## Standard cell design and characterization using openlane
+## Standard cell design using openlane
 ```txt
 cd /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane
 git clone https://github.com/nickson-jose/vsdstdcelldesign.git
