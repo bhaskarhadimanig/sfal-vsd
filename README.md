@@ -1895,6 +1895,10 @@ With this extract all the paracitics capacitance also.<br>
 ext2spice cthresh 0 rthresh 0
 ext2spice
 ```
+
+**cthresh** stands for capacitance threshold.<br>
+**rthresh** stands for resistance threshold.<br>
+
 ![45](https://github.com/user-attachments/assets/f8a9a021-f47e-422e-8276-910ad689e281)
 
 The below is the extracted SPICE file.<br>
