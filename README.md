@@ -1886,7 +1886,7 @@ extract all
 ```
 ![44](https://github.com/user-attachments/assets/cb22f409-e860-4704-8302-cedd5dbc5bb3)
 
-The extracted file contain the information that is extracted various electrical parameters from the layout.<br>
+The extracted file contain the information of various electrical parameters that is extracted from the layout.<br>
 ![47](https://github.com/user-attachments/assets/94246ba9-2033-4789-aab9-b16d81afce9a)
 
 ### 2. Use ext file to create SPICE file.
