@@ -2222,6 +2222,19 @@ Substrate dooping should be less than well dooping.<br>
  	Step 3: Remove the mask.<br>
   	![38](https://github.com/user-attachments/assets/b704dc35-e0db-40b9-b5f8-307dbf93ead0)
 
+ 	Step 4: Create a P-Well using a Boron is an P-type material and it is difussed into P-type substrate using a process called Ion Implantation.<br>
+  	![39](https://github.com/user-attachments/assets/ec97a85e-3a24-4947-a5fe-3330e6883568)
+
+   	Step 5: Repeate the above steps 1 and 2 proces with Mask3.<br>
+    	![40](https://github.com/user-attachments/assets/c5ae6585-3f71-44bd-9e4a-6f3d03ab45c2)
+
+ 	Step 6: Create a N-Well using a Phosphorous is an N-type material and it is difussed into P-type substrate to create N-Well.<br>
+  	![41](https://github.com/user-attachments/assets/168071b9-e653-45b1-bf89-9c8f1c1dc490)
+
+ 	Step 7: Diffuse Boron and Phosphorous into P-type substrate to create clear P-Well and N-Well.<br>
+  	![43](https://github.com/user-attachments/assets/c98e75c2-f878-4d90-99bd-8d8fdf55bbfa)
+
+ 	
 </details>
 </ul>
 </details>
