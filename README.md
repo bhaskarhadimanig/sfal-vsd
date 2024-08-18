@@ -2176,14 +2176,44 @@ And Current directly can flow from power to ground.<br>
 
 ## Inception of layout and CMOS fabrication
 ### 16 Mask CMOS Process:
-1. Selecting of substrate.
-The commonly used subrate is P-type silicon substrate.
-2. Creating active region for transistor.
-	Step 1: Grow a 40nm of Silicon dioxide over a P-substrate it act as insulator.
-	Step 2: Deposite a layer of 80nm of silicon nitride over a Silicon dioxide.
-   	Step 3: Deposite a layer of 1um photoresist.
-   	Step 4: Perform the Mask1 (Layout's are converted into mask).
-   	Steo 5: Then expose to UV light.
+1. Selecting of substrate.<br>
+The commonly used subrate is P-type silicon substrate it has high resistivity, dooping level, orientation.<bt>
+Substrate dooping should be less than well dooping.<br>
+![24](https://github.com/user-attachments/assets/7d1346d1-769c-4e44-a04a-789390f0e9b4)
+
+2. Creating active region for transistor.<br>
+	Step 1: Grow a 40nm of Silicon dioxide over a P-substrate it act as insulator.<br>
+	![25](https://github.com/user-attachments/assets/8999d682-8764-4ebe-bc54-c106002029a1)
+
+	Step 2: Deposite a layer of 80nm of silicon nitride over a Silicon dioxide.<br>
+	![26](https://github.com/user-attachments/assets/1fefe49a-ac2d-49cc-8c7c-fd9ae5691b3a)
+
+   	Step 3: Deposite a layer of 1um photoresist(where photoresist is a filme).<br>
+	![27](https://github.com/user-attachments/assets/f5e0e0c1-1b85-46db-ae9b-45a49bde6480)
+
+   	Step 4: Create the Mask1 (Layout's are converted into mask) by expossing to UV light this is nothing but photo lithography.<br>
+   	![28](https://github.com/user-attachments/assets/47d37a09-6b8a-4be5-98d5-5021d055d0ac)
+
+   	Steo 5: Remove the unexposed area to UV light.<br>
+   	![29](https://github.com/user-attachments/assets/48b236af-da07-4dc9-82ea-83fe473b62cb)
+
+ 	Step 6: Remove the mask.<br>
+	![30](https://github.com/user-attachments/assets/653a7bcc-38ba-4ee7-ac74-36c6e2be173c)
+
+   	Step 7: Etching of silicon nitride where the area unexposed to UV light.<br>
+    	![31](https://github.com/user-attachments/assets/e643bdad-b470-4bcb-b22e-3501ef3aae2a)
+
+ 	Step 8: Remove the photoresist chemically.<br>
+  	![32](https://github.com/user-attachments/assets/bbb6b4b1-cd4f-49ee-aa9c-876eafaec306)
+
+   	Step 9: Growth of oxidation by keeping in oxidation furnace. Field oxidation is grow and this is called "LOCOS"(Local Oxidation Of Silicon).<br>
+	![33](https://github.com/user-attachments/assets/1df51134-3ed9-41ad-a489-6d076b69ab25)
+
+	Step 10: Etching of silicon nitride.<br>
+ 	![34](https://github.com/user-attachments/assets/505db23e-7eb6-42c0-82f1-134f27d5f23f)
+
+3. N-Well and P-Well formation.<br>
+ 
 </details>
 </ul>
 </details>
