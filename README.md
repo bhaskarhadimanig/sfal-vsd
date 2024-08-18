@@ -2213,7 +2213,15 @@ Substrate dooping should be less than well dooping.<br>
  	![34](https://github.com/user-attachments/assets/505db23e-7eb6-42c0-82f1-134f27d5f23f)
 
 3. N-Well and P-Well formation.<br>
- 
+ 	Step 1: Deposite a layer of photoresist.<br>
+  	![35](https://github.com/user-attachments/assets/da7357ab-d2b6-4623-91b5-5d262919d27e)
+
+ 	Step 2: Create the Mask2 and expose to UV light.<br>
+  	![37](https://github.com/user-attachments/assets/de584d7e-a3ce-42af-8498-608dc94885e5)
+
+ 	Step 3: Remove the mask.<br>
+  	![38](https://github.com/user-attachments/assets/b704dc35-e0db-40b9-b5f8-307dbf93ead0)
+
 </details>
 </ul>
 </details>
