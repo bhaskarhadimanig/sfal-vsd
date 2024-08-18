@@ -1880,6 +1880,23 @@ magic -T sky130A.tech sky130_inv.mag &
 ```
 ![22](https://github.com/user-attachments/assets/97a983e3-bcef-4026-8973-bbffe26d74a3)
 
+### 1. Create an ext file.
+```txt
+extract all
+```
+![44](https://github.com/user-attachments/assets/cb22f409-e860-4704-8302-cedd5dbc5bb3)
+
+### 2. Use ext file to create SPICE file.
+With this extract all the paracitics capacitance also.<br>
+```txt
+ext2spice cthresh 0 rthresh 0
+ext2spice
+```
+![45](https://github.com/user-attachments/assets/f8a9a021-f47e-422e-8276-910ad689e281)
+
+The below is the extracted SPICE file.<br>
+![46](https://github.com/user-attachments/assets/216e6bf2-af32-4193-aa07-bb0040ddd5fa)
+
 </details>
 </ul>
 </details> 
