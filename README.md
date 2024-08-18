@@ -1891,6 +1891,7 @@ The extracted file contain the information of various electrical parameters that
 
 ### 2. Use ext file to create SPICE file.
 With this extract all the paracitics capacitance also.<br>
+Conversion of the extracted layout data into a SPICE netlist use following command.<br>
 ```txt
 ext2spice cthresh 0 rthresh 0
 ext2spice
