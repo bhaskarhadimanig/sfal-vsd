@@ -2259,8 +2259,40 @@ Substrate dooping should be less than well dooping.<br>
 
  	Step 7: Diffuse Boron and Phosphorous into P-type substrate to create clear P-Well and N-Well.<br>
   	![43](https://github.com/user-attachments/assets/c98e75c2-f878-4d90-99bd-8d8fdf55bbfa)
+4. N-Well and P-Well formation.<br>
+Gate is importent terminal of N-mos and P-mos transister that is used to control the threshold voltage.<br>
+Where threshold voltage is the terning on voltage of the transistor.<br>
+Threshold voltage very much depend on the body coefficient like dooping concetration and oxide capacitance.<br>
+	Step 1: Deposite a layer of photoresist and create the Mask4.<br>
+ 	![50](https://github.com/user-attachments/assets/eb680947-202a-4931-854e-376db3499b56)
 
- 	
+ 	Step 2: Then expose to an impurity Boron where boron is p-type metreial with low energy .<br>
+	![51](https://github.com/user-attachments/assets/3ced38ee-2d41-45f7-98b4-aeec57cb04d4)
+
+ 	Step 3: Deposite a layer of photoresist and create the Mask5.<br>
+  	![52](https://github.com/user-attachments/assets/fa0d0b2d-3956-4953-b81c-81a452f19d4c)
+
+ 	Step 4: Then expose to an impurity Phosphorus/Arsenic with low energy .<br>
+	![53](https://github.com/user-attachments/assets/3fa784ff-9d56-47a5-a4b6-e72d3ad68785)
+
+ 	Step 5: Then oxide etched/stripped using dilute hydrofluric(HF) solution.<br>
+	![54](https://github.com/user-attachments/assets/a95d763d-1041-4595-8147-8d52485bbe4e)
+
+  	Step 6: Then re-grow the oxide of thikness 10nm.<br>
+	![55](https://github.com/user-attachments/assets/c3231815-eb9d-4637-bab5-bd897a999039)
+
+ 	Step 7: Then deposite the thick polysilicon layer of thick 0.4um and dope with Phosphorus/Arsenic implants for low gate resistance.<br>
+  	![56](https://github.com/user-attachments/assets/58cae49f-5372-4bcb-9ebd-d0a0ef632019)
+
+ 	Step 8: Deposite a layer of photoresist and create the Mask6.<br>
+  	![57](https://github.com/user-attachments/assets/dee1debb-5636-4e60-8dc2-faacbee534bc)
+
+   	Step 6: Remove the mask by eatching process and remove the photoresist.<br>
+    	![58](https://github.com/user-attachments/assets/04a57911-4241-4585-b9c9-f559b890cbaa)
+   	![59](https://github.com/user-attachments/assets/b62effc5-3a83-4dff-b4d0-002b2c27a954)
+
+
+
 </details>
 </ul>
 </details>
