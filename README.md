@@ -2287,10 +2287,11 @@ Threshold voltage very much depend on the body coefficient like dooping concetra
  	Step 8: Deposite a layer of photoresist and create the Mask6.<br>
   	![57](https://github.com/user-attachments/assets/dee1debb-5636-4e60-8dc2-faacbee534bc)
 
-   	Step 6: Remove the mask by eatching process and remove the photoresist.<br>
+   	Step 9: Remove the mask by eatching process and remove the photoresist.<br>
     	![58](https://github.com/user-attachments/assets/04a57911-4241-4585-b9c9-f559b890cbaa)
    	![59](https://github.com/user-attachments/assets/b62effc5-3a83-4dff-b4d0-002b2c27a954)
 
+5. Lightly doped drain formation (LDD).<br>
 
 
 </details>
