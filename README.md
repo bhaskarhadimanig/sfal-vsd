@@ -1959,6 +1959,11 @@ Fall Cell delay = Tfout50% - Tfin50%
 		 =  0.02359ns
 ```
 </details>
+
+<details> 
+<summary> Introduction to magic too and DRC rules </summary>
+## Introduction to magic too and DRC rules
+</details>
 </ul>
 </details> 
 <details> 
