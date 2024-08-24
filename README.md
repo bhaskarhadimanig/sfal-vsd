@@ -2306,6 +2306,10 @@ And also it crosses the 3.2eV barrier between si conduction band and sio2 conduc
 #### 2. Short Channel Effect
 When device size reducess that is when gate length reducess the drain field panetrates the channel and it becomes difficult gate to control the current.<br>
 	Step 1: Deposite a layer of photoresist and create the Mask7.<br>
+ 	![60](https://github.com/user-attachments/assets/1fea3770-ed97-4706-8baa-6e505f3d19fe)
+  	Step 2: Then expose to an impurity Phosphorus/Arsenic with low energy where impurity should not penitrates into the into the well.<br>
+   	![61](https://github.com/user-attachments/assets/afa3966b-9f09-4be5-b61a-52ecbf980d60)
+	
 </details>
 </ul>
 </details>
