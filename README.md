@@ -1906,6 +1906,17 @@ The below is the extracted SPICE file.<br>
 ![46](https://github.com/user-attachments/assets/216e6bf2-af32-4193-aa07-bb0040ddd5fa)
 
 ### 3. Steps to create final SPICE deck using 130 tech.
+#### Edit the .sice file generated/extracted previusly:
+![1](https://github.com/user-attachments/assets/b3fb00ef-55b6-4e39-a591-db51f5086899)
+
+#### To run SPICE simulation use the follwoing command:
+```text
+ngspice sky130_inv.spice   #Command to simulte.
+plot y vs time a  #Enter command in the spice tool to plot the waveform.
+```
+![2](https://github.com/user-attachments/assets/17a2b494-a366-4dbe-8735-12b862069129)
+
+![3](https://github.com/user-attachments/assets/e752e772-818c-4887-8f45-0c89e9964f51)
 
 </details>
 </ul>
