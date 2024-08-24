@@ -1905,6 +1905,8 @@ ext2spice
 The below is the extracted SPICE file.<br>
 ![46](https://github.com/user-attachments/assets/216e6bf2-af32-4193-aa07-bb0040ddd5fa)
 
+### 3. Steps to create final SPICE deck using 130 tech.
+
 </details>
 </ul>
 </details> 
