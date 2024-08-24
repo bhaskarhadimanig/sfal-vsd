@@ -1906,10 +1906,10 @@ The below is the extracted SPICE file.<br>
 ![46](https://github.com/user-attachments/assets/216e6bf2-af32-4193-aa07-bb0040ddd5fa)
 
 ### 3. Steps to create final SPICE deck using 130 tech.
-#### Edit the .sice file generated/extracted previusly:
+#### Edit the .spice file generated/extracted previusly:
 ![1](https://github.com/user-attachments/assets/b3fb00ef-55b6-4e39-a591-db51f5086899)
 
-#### To run SPICE simulation use the follwoing command:
+#### To run SPICE simulation use the following command:
 ```text
 ngspice sky130_inv.spice   #Command to simulte.
 plot y vs time a  #Enter command in the spice tool to plot the waveform.
@@ -1918,6 +1918,46 @@ plot y vs time a  #Enter command in the spice tool to plot the waveform.
 
 ![3](https://github.com/user-attachments/assets/e752e772-818c-4887-8f45-0c89e9964f51)
 
+### Characteizing the cell:
+Characterization the cell means find the value of 4 parameters.<br>
+**1. Raise Transistion:** That is time taken by the output wave form to transit from 20% to 80% of the waveform.<br>
+**2. Fall Transistion:** That is time taken by the output wave form to transit from 80% to 20% of the waveform.<br>
+**3. Raise Cell Delay(PD):** Time taken for output to rise to 50% - Time taken for input to fall to 50%.<br>
+**4. Fall Cell Delay(PD):** Time taken for output to fall to 50% - Time taken for input to raise to 50%.<br>
+-> 20% of 3.3V=0.66V <br>
+-> 80% of 3.3V=2.64V <br>
+-> 50% of output=1.65V <br>
+**1. Raise Transistion:**
+![4](https://github.com/user-attachments/assets/d2c12101-458b-4713-8fd0-9a3c98a4eaa3)
+
+![5](https://github.com/user-attachments/assets/e9b2c6e2-77ee-43e0-aaad-f9873d34d7d9)
+```text
+Raise Transistion Time Tr = Tr80% - Tr20%
+  			  = 2.24492 - 2.18163
+                          = 0.06329ns
+```
+**2. Fall Transistion:**
+![6](https://github.com/user-attachments/assets/d413d2ac-6b22-42d0-92d9-ef0eeb851fc4)
+```text
+Fall Transistion Time Tf = Tf20% - Tf80%
+ 			 =  4.09212 - 4.04912
+			 =  0.043ns
+```
+**3. Raise Cell Delay(PD):**
+![7](https://github.com/user-attachments/assets/41240084-72b9-4c3d-8d4a-bb9584fd46fe)
+
+```text
+Raise Cell delay = Trout50% - Trin50%
+		 =  2.21064 - 2.15
+		 =  0.06064ns
+```
+**4. Fall Cell Delay(PD):**
+![8](https://github.com/user-attachments/assets/e8a66b2a-2457-4696-96d8-d41e19596c5e)
+```text
+Fall Cell delay = Tfout50% - Tfin50%
+		 =  4.07364 - 4.05005
+		 =  0.02359ns
+```
 </details>
 </ul>
 </details> 
