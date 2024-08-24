@@ -2360,7 +2360,55 @@ When device size reducess that is when gate length reducess the drain field pane
  	![80](https://github.com/user-attachments/assets/90cb80a2-9ef9-44a5-a442-802a7628a366)
 
 8. Higher level metal formation.
-	
+	Step 1: Deposite a thick layer if SiO2. Doped with phosphoros and boron on wafer surface. Where as phosphorous axt as protection layer for the sodium ions.<br>
+ 	![81](https://github.com/user-attachments/assets/3aa4a75f-8dbe-40da-a83c-66c396a7e38f)
+
+   	Step 2: Polish and get the flat surface by chemical mechanical polishing(CMP).<br>
+	![82a](https://github.com/user-attachments/assets/2a0e95c2-385f-401f-8e82-18ab4fd01a76)
+
+ 	Step 3: Deposite a layer of photoresist and create the Mask12 and expos to UV light.<br>
+  	![82](https://github.com/user-attachments/assets/d476167a-6f8a-4324-ada7-8d3f9fb01049)
+
+ 	Step 4: Remove the mask and remove and eatch of the SiO2 where we want to drill the contact holes.<br>
+  	![83](https://github.com/user-attachments/assets/eaa5739e-1b7a-45a8-bfee-3f60ec3a61c6)
+
+ 	Step 5: Remove the photoresist and deposite thin layer of TiN.<br>
+  	![84](https://github.com/user-attachments/assets/2137893c-157f-4319-832f-5a16b723e59a)
+
+   	Step 6: Deposite a blanket tungsten it will help to contact to higher layers.<br>
+	![85](https://github.com/user-attachments/assets/5d6d22ab-b6b0-42f6-8cc1-a28c76a29af5)
+
+ 	Step 7: Perform the chemical mechanical polishing(CMP) to planerize the wafer surface.<br>
+  	![86](https://github.com/user-attachments/assets/7523c565-1f49-49a5-9344-d2fe386748b2)
+
+	Step 8: Deposite aluminium layer on the surface of the wafer.<br>
+ 	![87](https://github.com/user-attachments/assets/49342df6-02ea-43ae-b1c0-3926add29667)
+
+	Step 9: Deposite a layer of photoresist and create the Mask13.<br>
+ 	![88](https://github.com/user-attachments/assets/c3a911f2-b235-40dd-8462-4239ec8aa4b2)
+
+ 	Step 10: Remove the mask and eatch the aluminum layer and then remove the photoresist.<br>
+  	![89](https://github.com/user-attachments/assets/14f08df9-3439-4c14-97ae-3af2befe5fba)
+	![90](https://github.com/user-attachments/assets/72d7a365-1876-4152-867f-d6f637363b4c)
+
+   	Now there is two layer of metal interconnects.<br>
+    
+ 	Step 11: Deposite SiO2 and perform the chemical mechanical polishing(CMP). Then use the Mask14 to drill the contact holes.<br>
+  	![91](https://github.com/user-attachments/assets/d9cee23e-5f61-4104-be51-1e88bf502bba)
+	![92](https://github.com/user-attachments/assets/a96b085c-e85c-4c05-848e-684ccb4fc1e0)
+
+	Step 12: Deposite thin layer of TiN and then deposite tungsten.<br>
+ 	![94](https://github.com/user-attachments/assets/7134e388-5f38-4762-bd4f-4ddf60eaa645)
+
+ 	Step 13: Now we will create 3rd layer of interconnects by depositing aluminium layer and deposite a layer of photoresist and create the Mask15 and eatch the aluminium layer. And thiknes of inter connect metal layer like aluminium increasses.<br>
+	![95](https://github.com/user-attachments/assets/25e9f92e-c82d-49d6-bbd5-358c403624a1)
+
+ 	Step 14: Deposite a layer of Si3N4 to protect the chip.<br>
+  	![96](https://github.com/user-attachments/assets/e7b39a7d-26af-4828-b9b2-2cb9dfffa0f0)
+
+ 	Step 15: Create the Mask16 to drill the contact holes to make connects out side the chip.<br>
+  	![97](https://github.com/user-attachments/assets/7a927b69-e75e-44c9-bc08-5e140343e326)
+
 </details>
 </ul>
 </details>
