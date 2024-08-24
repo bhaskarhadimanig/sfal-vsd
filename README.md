@@ -2202,12 +2202,12 @@ And Current directly can flow from power to ground.<br>
 
 ## Inception of layout and CMOS fabrication
 ### 16 Mask CMOS Process:
-### 1. Selecting of substrate.<br>
+1. Selecting of substrate.<br>
 The commonly used subrate is P-type silicon substrate it has high resistivity, dooping level, orientation.<bt>
 Substrate dooping should be less than well dooping.<br>
 ![24](https://github.com/user-attachments/assets/7d1346d1-769c-4e44-a04a-789390f0e9b4)
 
-### 2. Creating active region for transistor.<br>
+2. Creating active region for transistor.<br>
 	Step 1: Grow a 40nm of Silicon dioxide over a P-substrate it act as insulator.<br>
 	![25](https://github.com/user-attachments/assets/8999d682-8764-4ebe-bc54-c106002029a1)
 
@@ -2238,7 +2238,7 @@ Substrate dooping should be less than well dooping.<br>
 	Step 10: Etching of silicon nitride.<br>
  	![34](https://github.com/user-attachments/assets/505db23e-7eb6-42c0-82f1-134f27d5f23f)
 
-### 3. N-Well and P-Well formation.<br>
+3. N-Well and P-Well formation.<br>
  	Step 1: Deposite a layer of photoresist.<br>
   	![35](https://github.com/user-attachments/assets/da7357ab-d2b6-4623-91b5-5d262919d27e)
 
@@ -2259,7 +2259,7 @@ Substrate dooping should be less than well dooping.<br>
 
  	Step 7: Diffuse Boron and Phosphorous into P-type substrate to create clear P-Well and N-Well.<br>
   	![43](https://github.com/user-attachments/assets/c98e75c2-f878-4d90-99bd-8d8fdf55bbfa)
-### 4. N-Well and P-Well formation.<br>
+4. N-Well and P-Well formation.<br>
 Gate is importent terminal of N-mos and P-mos transister that is used to control the threshold voltage.<br>
 Where threshold voltage is the terning on voltage of the transistor.<br>
 Threshold voltage very much depend on the body coefficient like dooping concetration and oxide capacitance.<br>
@@ -2291,7 +2291,7 @@ Threshold voltage very much depend on the body coefficient like dooping concetra
     	![58](https://github.com/user-attachments/assets/04a57911-4241-4585-b9c9-f559b890cbaa)
    	![59](https://github.com/user-attachments/assets/b62effc5-3a83-4dff-b4d0-002b2c27a954)
 
-### 5. Lightly doped drain formation (LDD).<br>
+5. Lightly doped drain formation (LDD).<br>
 Where P-mos fabricated on n-well constain source and drain of P-type that is P+, and P-. Where P- is lightly doped drain formation.<br>
 Where N-mos fabricated on p-well contains source and drain of N-type that N+, and N-. Where N- is lightly doped drain fomation for N-mos.<br>
 
