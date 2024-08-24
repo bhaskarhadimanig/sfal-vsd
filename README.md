@@ -1,4 +1,4 @@
-<details>
+![image](https://github.com/user-attachments/assets/329d11da-96c0-42a8-9669-06fbc56ca97f)<details>
 <summary>Day 0: System Tools Setup</summary>
     <ul>
         <li>
@@ -2306,9 +2306,60 @@ And also it crosses the 3.2eV barrier between si conduction band and sio2 conduc
 #### 2. Short Channel Effect
 When device size reducess that is when gate length reducess the drain field panetrates the channel and it becomes difficult gate to control the current.<br>
 	Step 1: Deposite a layer of photoresist and create the Mask7.<br>
- 	![60](https://github.com/user-attachments/assets/1fea3770-ed97-4706-8baa-6e505f3d19fe)
-  	Step 2: Then expose to an impurity Phosphorus/Arsenic with low energy where impurity should not penitrates into the into the well.<br>
-   	![61](https://github.com/user-attachments/assets/afa3966b-9f09-4be5-b61a-52ecbf980d60)
+ 	![60](https://github.com/user-attachments/assets/1fea3770-ed97-4706-8baa-6e505f3d19fe)<br>
+  	Step 2: Then expose to an impurity Phosphorus/Arsenic with low energy where impurity should not penitrates into the into the well. It creates N-implant.<br>
+   	![61](https://github.com/user-attachments/assets/afa3966b-9f09-4be5-b61a-52ecbf980d60)<br>
+    	Step 3: Deposite a layer of photoresist and create the Mask8.<br>
+	![62a](https://github.com/user-attachments/assets/bd5143d7-705e-44f3-b99c-561fc52e8692)<br>
+     	Step 4: Then expose to an impurity Boron with low energy where impurity should not penitrates into the into the well. It creates P-implant.<br>
+	![62](https://github.com/user-attachments/assets/0f18b146-80bd-454d-82e3-87dd38d7aed9)<br>
+ 	Step 5: Deposite a layer of sio2 and SI3N3.<br>
+  	![63](https://github.com/user-attachments/assets/a3b6dc0e-475b-4680-b437-f12cfb492bd0)<br>
+   	Step 6: Perform anisotropic plasma eatching by keeping side wall spacess.<br>
+	![65](https://github.com/user-attachments/assets/58aad7f8-fbd3-4376-829d-a603e22fd4fb)<br>
+
+6. Source and drain formation.<br>
+	Step 1: Then grow the thin layer of oxide. This is to avoid the effect of the channeling during implant.<br>
+ 	![66](https://github.com/user-attachments/assets/34b45df5-1cc2-473a-b887-ea2cef613c97)<br>
+	Step 2: Deposite a layer of photoresist and create the Mask9.<br>
+ 	![67](https://github.com/user-attachments/assets/e3ef083b-bf25-490e-a66c-33204ddffb01)<br>
+	Step 3: Then expose to an impurity Phosphorus/Arsenic by maintaining lightly doped drain.<br>
+ 	![68](https://github.com/user-attachments/assets/9257d000-0145-4c0c-b5de-ed178c571dfc)<br>
+	![69](https://github.com/user-attachments/assets/c602f44b-1820-44d8-90e3-c8ae35ace5bc)<br>
+	Step 4: Deposite a layer of photoresist and create the Mask10.<br>
+ 	![70](https://github.com/user-attachments/assets/6a41ff97-a6a8-4578-8f1c-808ebd92295c)
+
+	Step 5: Then expose to an impurity boron by maintaining lightly doped drain.<br>
+ 	![71](https://github.com/user-attachments/assets/31f5d599-d301-48b8-b430-0422fd0461f3)
+
+ 	Step 6: Then place in high temprature furnace for annealing. Annealing is the proccess where it will push P+ and N+ more into N-well and P-well.<br>
+  	![72](https://github.com/user-attachments/assets/d786f150-e6cf-4e76-8935-c593eff1866c)
+
+7. Steps to form contacts and interconnects.<br>
+ 	Step 1: Remove the thin screen of oxide by using HidroFloric acid.<br>
+  	![73](https://github.com/user-attachments/assets/57dcf6d3-cc92-4bc9-8d81-d31b98398fa8)
+
+ 	Step 2: Deposite a titanium on wafer surface using sputtring.<br>
+  	![75](https://github.com/user-attachments/assets/474cb4c7-4ead-4404-8ce7-306ea570202d)
+  	### Sputtring:
+   	Hit the titanium metal with Argon(Ar+) gas the particals of titanium metal sputted out and deposited on substrate.<br>
+
+     	Step 3: Then wafer is heated on N2 ambient about temprature 600-700c. Due to chemical reaction get converted into tanium silicon dioxide(TiSi2) and used for local interconnects.<br>
+   	![76](https://github.com/user-attachments/assets/7eacdcb7-27f1-45c4-a421-d817c29fa939)
+
+    	Another chemical reaction between Titanium(Ti) and Nitrogen(Ni2) ambient gets converted into TitaniumNitrate(TiN) and used for local communication
+	![77](https://github.com/user-attachments/assets/5eac20d9-5c44-409d-ae49-d9a94d92d42b)
+
+	Step 4: Deposite a layer of photoresist and create the Mask11. Then remove the mask and eatch off the extra TitaniumNitrate(TiN) usin RCA cleaning.<br>
+ 	![78](https://github.com/user-attachments/assets/f8455da6-bc9f-4672-bfdd-790d18257c73)
+	### RCA:
+	RCA is the combination multple solution like.<br>
+ 	-> De-ionized water (H2O) 5 parts.<br>
+	-> Aminium Hydroxide(NH4OH) 1part.<br>
+	-> Hydrogen peroxide (H2O2) 1part.<br>
+ 	![80](https://github.com/user-attachments/assets/90cb80a2-9ef9-44a5-a442-802a7628a366)
+
+8. Higher level metal formation.
 	
 </details>
 </ul>
