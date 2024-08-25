@@ -1995,7 +1995,7 @@ load poly #Command to load the poly.mag in to the magic tool
 ![6](https://github.com/user-attachments/assets/54822d2f-e06b-4b1c-a61c-787b9c79b780)
 
 ##### Poly resistor spacing to poly or spacing (no overlap) to diff/tap 0.480µm
-Here we will the first distance between the poly and npoly resistor.<br>
+Here we will first find the distance between the poly and npoly resistor.<br>
 ![8](https://github.com/user-attachments/assets/96d0b458-4d59-4153-acd3-c281ec2ded9e)
 
 ##### Edit the tech file to add the rules like distance between the poly and npoly resistor.<br>
