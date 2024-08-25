@@ -2149,6 +2149,14 @@ run_synthesis
 Chip area for module '\picorv32a': 181730.544000 If compare previous chip area 147712.918400 here chip area has been incresed.<br>
 Timing : tns 0.0 , wns 0.0<br>
 ![16](https://github.com/user-attachments/assets/e36ef0a8-e989-4244-b1c0-7d0f0a971837)
+#### merged.lef
+![17](https://github.com/user-attachments/assets/2bf6926f-3cce-4fd1-b49b-4a2728a07f75)
+
+## Run Floarplan:
+```text
+run_floorplan
+```
+Here wer are getting some error.<br>
 
 </details>
 </ul>
