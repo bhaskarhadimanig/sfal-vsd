@@ -2156,7 +2156,6 @@ Timing : tns 0.0 , wns 0.0<br>
 ```text
 run_floorplan
 ```
-Here wer are getting some error.<br>
 
 </details>
 </ul>
