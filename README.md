@@ -1962,7 +1962,53 @@ Fall Cell delay = Tfout50% - Tfin50%
 
 <details> 
 <summary> Introduction to magic too and DRC rules </summary>
+	
 ## Introduction to magic too and DRC rules
+#### Download the corrupted skywater drc documentation and perform the correction.<br>
+```text
+wget http://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz # Download the corrupted drc document
+tar xfz drc_tests.tgz
+cd drc_tests
+ls -al
+gvim .magicrc
+magic -d XR #To open magic tool
+```
+![2](https://github.com/user-attachments/assets/71eaddfd-299c-4e64-84c3-641d00e4594b)
+
+#### .magicrc file:
+![3](https://github.com/user-attachments/assets/24d7d96f-4e78-45ae-aa38-dddd1d4efc05)
+#### open metal3.mag file from magic tool:
+![4](https://github.com/user-attachments/assets/f2919b5d-fd78-420c-b365-3475961fc756)
+```text
+#Open the metal3.mag file from magic tool.
+#Select the componet then enter
+drc why #To see the drc information
+#Draw the large are of m3contact by clicking the midle mouse button.
+cif see VIA2 #To see the contact cuts.
+```
+![5](https://github.com/user-attachments/assets/52647b2d-e8ba-44d1-99a5-3766eb1c9fc3)
+
+#### Poly rules correction:
+```text
+load poly #Command to load the poly.mag in to the magic tool
+```
+![6](https://github.com/user-attachments/assets/54822d2f-e06b-4b1c-a61c-787b9c79b780)
+
+##### Poly resistor spacing to poly or spacing (no overlap) to diff/tap 0.480µm
+Here we will the first distance between the poly and npoly resistor.<br>
+![8](https://github.com/user-attachments/assets/96d0b458-4d59-4153-acd3-c281ec2ded9e)
+
+##### Edit the tech file to add the rules like distance between the poly and npoly resistor.<br>
+![10](https://github.com/user-attachments/assets/1c31ad9b-ba36-4cb5-91ba-3ad416ab951e)
+
+After editing the tech file save the file then to load the tech file use the following command with out closign the miagic tool.
+```text
+tech load sky130A.tech #To load the tech file with out cloasing magic tool.
+drc check #To check the drc rule
+drc why #To chek the DRC errors
+```
+![9](https://github.com/user-attachments/assets/7e1a4cbd-bac1-4511-b471-ff4c8966ce8d)
+
 </details>
 </ul>
 </details> 
