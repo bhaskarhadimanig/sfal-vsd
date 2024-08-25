@@ -2633,5 +2633,27 @@ When device size reducess that is when gate length reducess the drain field pane
   	![97](https://github.com/user-attachments/assets/7a927b69-e75e-44c9-bc08-5e140343e326)
 
 </details>
+
+<details> 
+<summary> Introduction to delay tables </summary>
+
+## Introduction to delay tables
+If we take AND when one input is always one and other input clock input then clock propogate to output.<br>
+If we take OR when one input is always zero and other input clock input then clock propogate to output.<br>
+![1](https://github.com/user-attachments/assets/c1ac63f4-3ba6-4566-a8ba-79892a6a0f47)
+
+The advantage of the gatting is when ther is not gatting the rest of the circuit there is no switching and shot circuit power consumed by clock tree.<br>
+![2](https://github.com/user-attachments/assets/1cdf5140-f10e-4dd8-9d1a-3f6e6f2de7af)
+
+Here based on the output load input transition also varies.<br>
+With varieing input transition and output load delay of the cell is charaterize and placed in a tabler format.<br>
+In the delay table it containes delay of the cell for all different value of transition time and output load.<br>
+![3](https://github.com/user-attachments/assets/42e4f3f8-d6ef-479a-991b-509118f9f3f0)
+
+For different size of the cell different delay table will be avilable as cell charachteristic.<br>
+Skew value of the input register will be non zero skew value, if load is different for each cell in the same level.<br>
+
+
+</details>
 </ul>
 </details>
