@@ -2043,8 +2043,18 @@ To resolve all the error's in the nwell we need to tap the contact on all nwell.
 ### Here we will extract the lef file from sky130_inv.mag file and extracted lef we will use in the picorv32a.
 We need to follow some guidlines while incorporate custom standard cell in pnr perspective.<br>
 1. Input and output port must lie on the intersection of veritical and horizonatl track's.<br>
+![4](https://github.com/user-attachments/assets/43aa139c-a0af-406c-8208-411461ed206c)
+
 2. Width of the standard cell should be odd multiples of horizonatal track pitch.<br>
-3. Height of the standard cell should be odd multiples of vertical track pitch.<br>
+Whre width of the track = 0.480um.<br>
+Where width of the standard cell = 0.480*3 = 1.380um.<br>
+![3](https://github.com/user-attachments/assets/110c67c7-3cca-4271-914d-040687832305)
+![5](https://github.com/user-attachments/assets/be82560f-5bdf-4e21-9876-a26a7af29401)
+
+4. Height of the standard cell should be odd multiples of vertical track pitch.<br>
+Hight of the track/Pitch=0.340um.
+Height of standard cell =0.340*8=2.72um
+![6](https://github.com/user-attachments/assets/3fdac24e-90ac-4ead-8042-2e3575bcc440)
 
 ### Track information 
 ```text
@@ -2055,6 +2065,27 @@ grid 0.46um 0.34um 0.23um 0.17um # Set grid interms of track values present in t
 ```
 ![1](https://github.com/user-attachments/assets/55e321b2-8360-4ab6-b568-4c57bf6539ac)
 ![2](https://github.com/user-attachments/assets/8c402bdd-6c42-42b4-a98e-74c124bde482)
+### To extract the lef file we required port information is required
+We need to provide port name.<br>
+![7](https://github.com/user-attachments/assets/d4029e20-a2a6-4554-a619-6f010a8a3dbb)
+We need to define all the port information.<br>
+### Then we need to mention the port defination
+We need to provide what A is an input port, Y is an output port, VPWR and GND so on.<br>
+This can done by setting port class port port use.<br>
+![8](https://github.com/user-attachments/assets/965154fe-3826-4c39-b735-b3133fc5763d)
+
+##  To save custom inverter layout with a custom name and generate its corresponding lef
+First save the sky130_inv.mag file with name sky130_bhaskarinv.mag
+```text
+save sky130_bhaskarinv.mag # Command to save layout with a custom name
+magic -T sky130A.tech sky130_bhaskarinv.mag &
+lef write # Generate lef using using .mag file that is sky130_bhaskarinv.mag
+```
+![9](https://github.com/user-attachments/assets/c011bed6-7a02-4759-90f3-51a550d2996e)
+![10](https://github.com/user-attachments/assets/206706f9-bca5-45ee-b547-85598cca3f1c)
+
+#### Generated Lef file:
+![11](https://github.com/user-attachments/assets/5728985b-8ffa-445e-a206-ec86ce0234e8)
 
 </details>
 </ul>
