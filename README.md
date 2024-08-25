@@ -2128,6 +2128,28 @@ Here we can able to see almost 1554 new cell is used.<br>
 ![13](https://github.com/user-attachments/assets/0823660a-1ac1-407f-88c3-14207929dc0d)
 ![14](https://github.com/user-attachments/assets/5a5d35a8-a68b-4c28-bc9e-e0eef391c291)
 
+Current chip area for module '\picorv32a': 147712.918400<br>
+Timing : tns -711.59 , wns -23.89<br>
+
+### To improve the timing we can set some parameters
+```text
+prep -design picorv32a -tag 17-08_09-41 -overwrite
+set lefs [glob $::env(DESIGN_DIR)/src/*.lef] 
+add_lefs -src $lefs
+echo $::env(SYNTH_STRATEGY) # This is to dsiplay current value of SYNTH_STRATEGY
+set ::env(SYNTH_STRATEGY) "DELAY 3" # This is to set new value for SYNTH_STRATEGY if set to 1 area inccress but timing will be better
+echo $::env(SYNTH_BUFFERING) # This is to display current value of variable SYNTH_BUFFERING this indicates high fan out's
+echo $::env(SYNTH_SIZING) # This is to display current value of variable SYNTH_SIZING this is for up sizing and down sizing of cell's
+set ::env(SYNTH_SIZING) 1 # This is to set new value for SYNTH_SIZING
+echo $::env(SYNTH_DRIVING_CELL) # Command to display current value of variable SYNTH_DRIVING_CELL to check the cell to drive the input port
+run_synthesis
+```
+![15](https://github.com/user-attachments/assets/4892251d-40b8-45ae-9a1f-68affac139e5)
+
+Chip area for module '\picorv32a': 181730.544000 If compare previous chip area 147712.918400 here chip area has been incresed.<br>
+Timing : tns 0.0 , wns 0.0<br>
+![16](https://github.com/user-attachments/assets/e36ef0a8-e989-4244-b1c0-7d0f0a971837)
+
 </details>
 </ul>
 </details> 
