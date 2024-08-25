@@ -2035,6 +2035,28 @@ To resolve all the error's in the nwell we need to tap the contact on all nwell.
 ![18](https://github.com/user-attachments/assets/d6bac4c3-66c6-4431-ba0d-dabd02dee168)
 
 </details>
+
+<details> 
+<summary> Pre-layout timing analysis and importance of good clock tree </summary>
+
+## Pre-layout timing analysis and importance of good clock tree
+### Here we will extract the lef file from sky130_inv.mag file and extracted lef we will use in the picorv32a.
+We need to follow some guidlines while incorporate custom standard cell in pnr perspective.<br>
+1. Input and output port must lie on the intersection of veritical and horizonatl track's.<br>
+2. Width of the standard cell should be odd multiples of horizonatal track pitch.<br>
+3. Height of the standard cell should be odd multiples of vertical track pitch.<br>
+
+### Track information 
+```text
+cd /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd
+gvim tracks.info #Track's are used for routing routs are traces of metal layer
+
+grid 0.46um 0.34um 0.23um 0.17um # Set grid interms of track values present in tracks.info file for sky130_fd_sc_hd
+```
+![1](https://github.com/user-attachments/assets/55e321b2-8360-4ab6-b568-4c57bf6539ac)
+![2](https://github.com/user-attachments/assets/8c402bdd-6c42-42b4-a98e-74c124bde482)
+
+</details>
 </ul>
 </details> 
 <details> 
