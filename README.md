@@ -2088,6 +2088,47 @@ lef write # Generate lef using using .mag file that is sky130_bhaskarinv.mag
 ![11](https://github.com/user-attachments/assets/5728985b-8ffa-445e-a206-ec86ce0234e8)
 
 </details>
+
+<details> 
+<summary> Introduction to timing libs and steps to include new cell in synthesis </summary>
+
+## Introduction to timing libs and steps to include new cell in synthesis
+#### Copy Newly generated lef file into src folder of picorv32a design
+```text
+cp sky130_bhaskarinv.lef /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src
+cd /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign/libs
+cp sky130_fd_sc_hd__* /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src #Copy all the .lib file into src of picorv32a design
+```
+#### Modify config.tcl to change .lib file and add the new extra .lef into the openlane flow:
+```text
+cd sky130_bhaskarinv.lef /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/
+gvim config.tcl
+
+#set the following in config.tcl
+set ::env(LIB_SYNTH) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib"
+set ::env(LIB_FASTEST) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__fast.lib"
+set ::env(LIB_SLOWEST) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__slow.lib"
+set ::env(LIB_TYPICAL) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib"
+set ::env(EXTRA_LEFS) [glob $::env(OPENLANE_ROOT)/designs/$::env(DESIGN_NAME)/src/*.lef]
+```
+![12](https://github.com/user-attachments/assets/3f84aa9b-b728-46a7-9ae2-e741d2d48448)
+
+## Synthesis using newly extracted .lef using openlane flow:
+```text
+cd 
+docker
+./flow.tcl -interactive
+package require openlane 0.9
+prep -design picorv32a # To start with prvious run "prep -design picorv32a -tag 17-08_09-41 -overwrite"
+set lefs [glob $::env(DESIGN_DIR)/src/*.lef] # To ensure opelane takes our newly generated lef file
+add_lefs -src $lefs
+run_synthesis
+```
+Here we can able to see almost 1554 new cell is used.<br>
+![13](https://github.com/user-attachments/assets/0823660a-1ac1-407f-88c3-14207929dc0d)
+![14](https://github.com/user-attachments/assets/5a5d35a8-a68b-4c28-bc9e-e0eef391c291)
+
+</details>
 </ul>
 </details> 
 <details> 
