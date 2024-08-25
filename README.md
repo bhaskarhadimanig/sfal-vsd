@@ -2151,15 +2151,43 @@ Timing : tns 0.0 , wns 0.0<br>
 ![16](https://github.com/user-attachments/assets/e36ef0a8-e989-4244-b1c0-7d0f0a971837)
 #### merged.lef
 ![17](https://github.com/user-attachments/assets/2bf6926f-3cce-4fd1-b49b-4a2728a07f75)
+## Run Floarplan:
 #### After run_synthesis run following command
 ```text
 init_floorplan
 place_io
 tap_decap_or
 ```
-## Run Floarplan:
+## Run Placement:
 ```text
-run_floorplan
+run_placement
+cd /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/17-08_09-41/results/placement
+magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &
+```
+![18](https://github.com/user-attachments/assets/0bea40f3-d910-405e-8979-f0337efe4ff3)
+
+#### Custom Inverter in the integrated in the design
+![20](https://github.com/user-attachments/assets/7da873d3-2c16-494e-97bb-5d3abe3b477d)
+
+#### To see internal conectivity layers
+```text
+expand
+```
+![22](https://github.com/user-attachments/assets/66b523eb-17a9-4457-9833-db859fabf0e9)
+
+#### Post synthesis Static Timing Analysis with OpenSTA tool:
+```text
+cd /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane
+prep -design picorv32a -tag 17-08_09-41 -overwrite
+set lefs [glob $::env(DESIGN_DIR)/src/*.lef] 
+add_lefs -src $lefs
+echo $::env(SYNTH_STRATEGY) # This is to dsiplay current value of SYNTH_STRATEGY
+set ::env(SYNTH_STRATEGY) "DELAY 3" # This is to set new value for SYNTH_STRATEGY if set to 1 area inccress but timing will be better
+echo $::env(SYNTH_BUFFERING) # This is to display current value of variable SYNTH_BUFFERING this indicates high fan out's
+echo $::env(SYNTH_SIZING) # This is to display current value of variable SYNTH_SIZING this is for up sizing and down sizing of cell's
+set ::env(SYNTH_SIZING) 1 # This is to set new value for SYNTH_SIZING
+echo $::env(SYNTH_DRIVING_CELL) # Command to display current value of variable SYNTH_DRIVING_CELL to check the cell to drive the input port
+run_synthesis
 ```
 </details>
 </ul>
