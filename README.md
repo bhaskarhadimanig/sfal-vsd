@@ -2151,12 +2151,16 @@ Timing : tns 0.0 , wns 0.0<br>
 ![16](https://github.com/user-attachments/assets/e36ef0a8-e989-4244-b1c0-7d0f0a971837)
 #### merged.lef
 ![17](https://github.com/user-attachments/assets/2bf6926f-3cce-4fd1-b49b-4a2728a07f75)
-
+#### After run_synthesis run following command
+```text
+init_floorplan
+place_io
+tap_decap_or
+```
 ## Run Floarplan:
 ```text
 run_floorplan
 ```
-
 </details>
 </ul>
 </details> 
