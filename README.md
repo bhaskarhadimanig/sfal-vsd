@@ -2000,6 +2000,7 @@ Here we will the first distance between the poly and npoly resistor.<br>
 
 ##### Edit the tech file to add the rules like distance between the poly and npoly resistor.<br>
 ![10](https://github.com/user-attachments/assets/1c31ad9b-ba36-4cb5-91ba-3ad416ab951e)
+![11](https://github.com/user-attachments/assets/65d1a425-e783-4715-9ccc-8e3f0217242b)
 
 After editing the tech file save the file then to load the tech file use the following command with out closign the miagic tool.
 ```text
