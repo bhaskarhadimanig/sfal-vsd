@@ -2014,7 +2014,7 @@ drc why #To chek the DRC errors
 Here there is no drc violation even no metal contact tap present in the nwell.<br>
 ![12](https://github.com/user-attachments/assets/a2e93722-bdaf-4af2-8414-6f142d32047f)
 
-#### Correct/proper implementation of the drc rule of nwell.4 by editing tech file
+#### Correct/proper implementation of the drc rule of nwell4.mag by editing tech file
 ![13](https://github.com/user-attachments/assets/9ff36382-257e-4339-a4b2-46a1da22b95e)
 ![14](https://github.com/user-attachments/assets/2af60c99-c57e-49a6-9a26-01e99bbc2ce9)
 ```text
@@ -2030,6 +2030,9 @@ drc check
 Here we got error on whole nwell because its untapped contact.<br>
 Now grow the nwell and tap the conntact on nwell and check we can observ there is no error.<br>
 ![17](https://github.com/user-attachments/assets/e2db060b-063d-43f3-9c63-3ee92aa4f696)
+
+To resolve all the error's in the nwell we need to tap the contact on all nwell.<br>
+![18](https://github.com/user-attachments/assets/d6bac4c3-66c6-4431-ba0d-dabd02dee168)
 
 </details>
 </ul>
