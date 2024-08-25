@@ -2010,6 +2010,21 @@ drc why #To chek the DRC errors
 ```
 ![9](https://github.com/user-attachments/assets/7e1a4cbd-bac1-4511-b471-ff4c8966ce8d)
 
+#### nwell.4 drc rules correction:
+Here there is no drc violation even no metal contact tap present in the nwell.<br>
+![12](https://github.com/user-attachments/assets/a2e93722-bdaf-4af2-8414-6f142d32047f)
+
+#### Correct/proper implementation of the drc rule of nwell.4 by editing tech file
+![13](https://github.com/user-attachments/assets/9ff36382-257e-4339-a4b2-46a1da22b95e)
+![14](https://github.com/user-attachments/assets/2af60c99-c57e-49a6-9a26-01e99bbc2ce9)
+```text
+tech load sky130A.tech #To load the tech file with out cloasing magic tool.
+drc check #To check the drc rule
+drc style drc(full)
+drc check
+```
+![15](https://github.com/user-attachments/assets/13ef6665-ff3b-4727-a9c4-c887eda7ac68)
+
 </details>
 </ul>
 </details> 
