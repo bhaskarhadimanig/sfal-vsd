@@ -2025,6 +2025,12 @@ drc check
 ```
 ![15](https://github.com/user-attachments/assets/13ef6665-ff3b-4727-a9c4-c887eda7ac68)
 
+![16](https://github.com/user-attachments/assets/c2846fe4-d1f1-4352-9eb4-d43d213ae1d3)
+
+Here we got error on whole nwell because its untapped contact.<br>
+Now grow the nwell and tap the conntact on nwell and check we can observ there is no error.<br>
+![17](https://github.com/user-attachments/assets/e2db060b-063d-43f3-9c63-3ee92aa4f696)
+
 </details>
 </ul>
 </details> 
