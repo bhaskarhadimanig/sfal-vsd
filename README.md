@@ -2735,5 +2735,15 @@ Skew value of the input register will be non zero skew value, if load is differe
 ![2](https://github.com/user-attachments/assets/bac7c726-faf4-41bd-99d8-1b8ff6b67a53)
 
 ## Design Planning Flow
+![3](https://github.com/user-attachments/assets/413a62d8-171f-4552-965e-225200745d7a)
+
+The Milkyway library was created during the design setup stage.
+It contains the design connectivity (netlist), timing/area/power constraints, pointers to required reference
+libraries, TLU+ models for your process and the UNIX directory structures to hold it all.
+
+## ICC Design Planning Flow
+![4](https://github.com/user-attachments/assets/72e58f5e-8c62-4d96-8883-9c5ddd500177)
+
+If the design contains black boxes or the netlist is dirty, use the read_mw_verilog command in place of import_designs. Also include adding of power pads (VSS,VDD) and insertion of pad fillers.
 
 </details>
