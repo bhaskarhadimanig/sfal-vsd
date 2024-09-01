@@ -2718,3 +2718,22 @@ Skew value of the input register will be non zero skew value, if load is differe
 </details>
 </ul>
 </details>
+
+<details> 
+<summary> Day 16 - IC Compiler II </summary>
+
+ ## IC Compiler II
+ ![1](https://github.com/user-attachments/assets/d6995329-f7ae-46dd-a940-f3fde4a61281)
+
+ **IC Compiler II** is a leading place-and-route solution developed by Synopsys. It is designed to deliver top-notch quality-of-results (QoR) for next-generation designs across various market verticals and process technologies. Here are some key features and benefits:
+
+- **Performance, Power, and Area (PPA) Optimization**: It addresses aggressive PPA and time-to-market pressures with a pervasively parallel optimization framework¹.
+- **Advanced Design Planning**: Includes flat and hierarchical design planning, early design exploration, congestion-aware placement, and optimization¹.
+- **Clock Tree Synthesis and Routing**: Features advanced node routing convergence and clock tree synthesis¹.
+- **Machine Learning Integration**: Utilizes machine learning for fast and predictive design closure¹.
+- **Signoff Integration**: Offers signoff IR drop driven optimization and PrimeTime delay calculation within the place-and-route flow¹.
+![2](https://github.com/user-attachments/assets/bac7c726-faf4-41bd-99d8-1b8ff6b67a53)
+
+## Design Planning Flow
+
+</details>
