@@ -2803,6 +2803,10 @@ gui_start
 ![2](https://github.com/user-attachments/assets/88e50d1d-3f7e-4de0-83e5-3ad399815297)
 ![3](https://github.com/user-attachments/assets/b4976c03-7932-45f5-ae81-19b689928350)
 
+### RVMYTH Schematic :
+![4](https://github.com/user-attachments/assets/7e0996e2-e8d7-4c3e-9f3c-5614e534b2b4)
+![5](https://github.com/user-attachments/assets/6dbe5d0a-e75e-4c90-8783-34398cb75480)
+
 ### Area Report:
 ```text 
 ****************************************
@@ -3016,5 +3020,21 @@ vsdbabysoc                                0.616    2.878    8.721    3.494 100.0
   dac (avsddac)                        8.11e-03    0.000    0.000 8.11e-03   0.2
   pll (avsdpll)                           0.437    0.000    0.000    0.437  12.5
   core (rvmyth)                           0.170    2.878    8.718    3.048  87.3
+```
+## Downloading Physical design Collaterals :
+```text
+To download all Technology file (.techlef) for skywater130nm pdk and all the .lef files for all standard cells:
+git clone https://github.com/efabless/skywater-pdk-libs-sky130_fd_sc_hd.git
+
+To download Technology file (.tf) for skywater130nm pdk and RC Tech file (parasitics file) in .itf format for the PDK:
+git clone https://github.com/bharath19-gs/synopsys_ICC2flow_130nm.git
+
+To download all the scripts to setup and run Physical Design flow in ICC2 Compiler tool:
+git clone https://github.com/kunalg123/icc2_workshop_collaterals.git
+```
+### To convert .itf file to .tluplus format,perform the following steps :
+```text
+cd /home/bhaskar/vsd/VSDBabySoC_ICC2/PD/synopsys_ICC2flow_130nm/synopsys_skywater_flow_nominal/itf_files
+grdgenxo -itf2TLUPlus -i skywater130.nominal.itf -o skywater130.nominal.tluplus # to generate TLUplus RC Tech file from .itf file format using StarRC tool.
 ```
 </details>
