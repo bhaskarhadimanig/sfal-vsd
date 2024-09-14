@@ -2746,4 +2746,275 @@ libraries, TLU+ models for your process and the UNIX directory structures to hol
 
 If the design contains black boxes or the netlist is dirty, use the read_mw_verilog command in place of import_designs. Also include adding of power pads (VSS,VDD) and insertion of pad fillers.
 
+ ## SDC Constraints Used for Synthesis :
+ ### SDC Constraints
+ ```txt
+set_units -time ns
+create_clock [get_pins {pll/CLK}] -name clk -period 10
+set_max_area 8000;
+set_max_fanout 5 vsdbabysoc;
+set_max_transition 10 vsdbabysoc
+#set_min_delay -max 10 -clock[get_clk myclk] [get_ports OUT]
+set_max_delay 10 -from dac/OUT -to [get_ports OUT]
+
+#set_input_delay[expr 0.34][all_inputs]
+
+set_clock_latency -source 2 [get_clocks MYCLK];
+set_clock_latency 1 [get_clocks MYCLK];
+set_clock_uncertainty -setup 0.5 [get_clocks MYCLK];
+set_clock_uncertainty -hold 0.5 [get_clocks MYCLK];
+
+set_input_delay -max 4 -clock [get_clocks MYCLK] [get_ports VCO_IN];
+set_input_delay -max 4 -clock [get_clocks MYCLK] [get_ports ENb_CP];
+set_input_delay -min 1 -clock [get_clocks MYCLK] [get_ports VCO_IN];
+set_input_delay -min 1 -clock [get_clocks MYCLK] [get_ports ENb_CP];
+
+set_input_transition -max 0.4 [get_ports ENb_CP];
+set_input_transition -max 0.4 [get_ports VCO_IN];
+set_input_transition -min 0.1 [get_ports ENb_CP];
+set_input_transition -min 0.1 [get_ports VCO_IN];
+
+set_load -max 0.5 [get_ports OUT];
+set_load -min 0.5 [get_ports OUT];
+```
+Rund the tcl file for synthesis with SDC constraints.<br>
+```txt
+dc_shell
+set target_library /home/bhaskar/vsd/ICC2_Flow/VSDBabySOC/VSDBabySoC/src/lib/sky130_fd_sc_hd__tt_025C_1v80.db
+set link_library {* /home/bhaskar/vsd/ICC2_Flow/VSDBabySOC/VSDBabySoC/src/lib/sky130_fd_sc_hd__tt_025C_1v80.db /home/bhaskar/vsd/ICC2_Flow/VSDBabySOC/VSDBabySoC/src/lib/avsdpll.db /home/bhaskar/vsd/ICC2_Flow/VSDBabySOC/VSDBabySoC/src/lib/avsddac.db}
+set search_path {/home/bhaskar/vsd/ICC2_Flow/VSDBabySOC/VSDBabySoC/src/include /home/bhaskar/vsd/ICC2_Flow/VSDBabySOC/VSDBabySoC/src/module} 
+read_file {sandpiper_gen.vh  sandpiper.vh  sp_default.vh  sp_verilog.vh clk_gate.v rvmyth.v rvmyth_gen.v vsdbabysoc.v} -autoread -top vsdbabysoc 
+link
+read_sdc /home/bhaskar/vsd/ICC2_Flow/VSDBabySOC/VSDBabySoC/src/sdc/vsdbabysoc_synthesis.sdc
+
+check_design
+compile_ultra
+
+file mkdir report
+write -hierarchy -format verilog -output /home/bhaskar/vsd/ICC2_Flow/VSDBabySOC/VSDBabySoC/src/module/report/vsdbabysoc_gtlvl.v
+write_sdc -nosplit -version 2.0 /home/bhaskar/vsd/ICC2_Flow/VSDBabySOC/VSDBabySoC/src/module/report/vsdbabysoc.sdc
+report_area -hierarchy > /home/bhaskar/vsd/ICC2_Flow/VSDBabySOC/VSDBabySoC/src/module/report/vsdbabysoc.area
+report_timing > /home/bhaskar/vsd/ICC2_Flow/VSDBabySOC/VSDBabySoC/src/module/report/vsdbabysoc.timing
+report_power -hierarchy > /home/bhaskar/vsd/ICC2_Flow/VSDBabySOC/VSDBabySoC/src/module/report/vsdbabysoc.power
+
+gui_start
+```
+![1](https://github.com/user-attachments/assets/b13d6dd8-0f9a-4cda-acce-d6b9656a8a95)
+![2](https://github.com/user-attachments/assets/88e50d1d-3f7e-4de0-83e5-3ad399815297)
+![3](https://github.com/user-attachments/assets/b4976c03-7932-45f5-ae81-19b689928350)
+
+### Area Report:
+```text 
+****************************************
+Report : area
+Design : vsdbabysoc
+Version: T-2022.03-SP5-6
+Date   : Sat Sep 14 05:06:10 2024
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    sky130_fd_sc_hd__tt_025C_1v80 (File: /home/bhaskar/vsd/ICC2_Flow/VSDBabySOC/VSDBabySoC/src/lib/sky130_fd_sc_hd__tt_025C_1v80.db)
+    avsddac (File: /home/bhaskar/vsd/ICC2_Flow/VSDBabySOC/VSDBabySoC/src/lib/avsddac.db)
+    avsdpll (File: /home/bhaskar/vsd/ICC2_Flow/VSDBabySOC/VSDBabySoC/src/lib/avsdpll.db)
+
+Number of ports:                           19
+Number of nets:                          3307
+Number of cells:                         3274
+Number of combinational cells:           2595
+Number of sequential cells:               676
+Number of macros/black boxes:               2
+Number of buf/inv:                       1120
+Number of references:                       4
+
+Combinational area:              13486.684574
+Buf/Inv area:                     4204.031868
+Noncombinational area:           13532.978775
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 27019.663349
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ------------------------------ 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-   Black-
+                                  Total       Total    national    national    boxes   Design
+--------------------------------  ----------  -------  ----------  ----------  ------  ---------
+vsdbabysoc                        27019.6633    100.0      3.7536      0.0000  0.0000  vsdbabysoc
+core                              27015.9097    100.0  13482.9310  13532.9788  0.0000  rvmyth
+--------------------------------  ----------  -------  ----------  ----------  ------  ---------
+Total                                                  13486.6846  13532.9788  0.0000
+
+```
+### Time Report:
+```text
+
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : vsdbabysoc
+Version: T-2022.03-SP5-6
+Date   : Sat Sep 14 05:06:10 2024
+****************************************
+
+Operating Conditions: tt_025C_1v80   Library: sky130_fd_sc_hd__tt_025C_1v80
+Wire Load Model Mode: top
+
+  Startpoint: core/CPU_is_addi_a3_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/CPU_Xreg_value_a4_reg[1][31]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vsdbabysoc         Small                 sky130_fd_sc_hd__tt_025C_1v80
+
+  Point                                                               Incr       Path
+  --------------------------------------------------------------------------------------
+  clock clk (rise edge)                                               0.00       0.00
+  clock network delay (ideal)                                         0.00       0.00
+  core/CPU_is_addi_a3_reg/CLK (sky130_fd_sc_hd__dfxtp_1)              0.00       0.00 r
+  core/CPU_is_addi_a3_reg/Q (sky130_fd_sc_hd__dfxtp_1)                0.30       0.30 f
+  core/U4/Y (sky130_fd_sc_hd__clkinv_1)                               0.09       0.38 r
+  core/U518/Y (sky130_fd_sc_hd__clkinv_1)                             0.12       0.51 f
+  core/U674/Y (sky130_fd_sc_hd__nor2_1)                               0.15       0.66 r
+  core/U675/Y (sky130_fd_sc_hd__nand2_1)                              0.08       0.74 f
+  core/U677/Y (sky130_fd_sc_hd__nand2_1)                              0.11       0.85 r
+  core/U514/X (sky130_fd_sc_hd__clkbuf_1)                             0.19       1.04 r
+  core/U266/X (sky130_fd_sc_hd__clkbuf_1)                             0.20       1.24 r
+  core/U740/X (sky130_fd_sc_hd__a22o_1)                               0.17       1.40 r
+  core/U741/X (sky130_fd_sc_hd__xor2_1)                               0.09       1.50 f
+  core/U42/Y (sky130_fd_sc_hd__a21oi_1)                               0.23       1.73 r
+  core/U3/Y (sky130_fd_sc_hd__o21ai_1)                                0.13       1.86 f
+  core/U37/Y (sky130_fd_sc_hd__a21oi_2)                               0.19       2.05 r
+  core/U248/Y (sky130_fd_sc_hd__o21ai_2)                              0.09       2.14 f
+  core/U36/Y (sky130_fd_sc_hd__a21oi_2)                               0.18       2.32 r
+  core/U250/Y (sky130_fd_sc_hd__o21ai_2)                              0.09       2.41 f
+  core/U249/Y (sky130_fd_sc_hd__a21oi_2)                              0.16       2.57 r
+  core/U260/Y (sky130_fd_sc_hd__o21ai_1)                              0.10       2.67 f
+  core/U259/Y (sky130_fd_sc_hd__a21oi_1)                              0.20       2.87 r
+  core/U258/Y (sky130_fd_sc_hd__o21ai_1)                              0.12       2.99 f
+  core/U529/Y (sky130_fd_sc_hd__a21oi_1)                              0.20       3.19 r
+  core/U251/Y (sky130_fd_sc_hd__o21ai_1)                              0.13       3.32 f
+  core/U247/Y (sky130_fd_sc_hd__a21oi_2)                              0.17       3.49 r
+  core/U256/Y (sky130_fd_sc_hd__o21ai_1)                              0.10       3.60 f
+  core/U771/X (sky130_fd_sc_hd__a21o_1)                               0.18       3.77 f
+  core/U1309/COUT (sky130_fd_sc_hd__fa_1)                             0.38       4.15 f
+  core/U1287/COUT (sky130_fd_sc_hd__fa_1)                             0.39       4.54 f
+  core/U1269/COUT (sky130_fd_sc_hd__fa_1)                             0.39       4.94 f
+  core/U1252/COUT (sky130_fd_sc_hd__fa_1)                             0.42       5.35 f
+  core/U517/Y (sky130_fd_sc_hd__clkinv_1)                             0.06       5.42 r
+  core/U773/Y (sky130_fd_sc_hd__o21ai_1)                              0.07       5.48 f
+  core/U539/COUT (sky130_fd_sc_hd__fa_1)                              0.38       5.87 f
+  core/U1784/COUT (sky130_fd_sc_hd__fa_1)                             0.39       6.26 f
+  core/U1180/COUT (sky130_fd_sc_hd__fa_1)                             0.40       6.65 f
+  core/U74/COUT (sky130_fd_sc_hd__fa_2)                               0.37       7.02 f
+  core/U73/X (sky130_fd_sc_hd__a21o_1)                                0.17       7.19 f
+  core/U1117/COUT (sky130_fd_sc_hd__fa_1)                             0.38       7.57 f
+  core/U296/COUT (sky130_fd_sc_hd__fa_1)                              0.39       7.96 f
+  core/U538/COUT (sky130_fd_sc_hd__fa_1)                              0.39       8.35 f
+  core/U295/COUT (sky130_fd_sc_hd__fa_1)                              0.42       8.77 f
+  core/U66/Y (sky130_fd_sc_hd__clkinv_1)                              0.06       8.84 r
+  core/U778/Y (sky130_fd_sc_hd__o21ai_1)                              0.07       8.90 f
+  core/U544/COUT (sky130_fd_sc_hd__fa_1)                              0.38       9.28 f
+  core/U779/X (sky130_fd_sc_hd__xor2_1)                               0.18       9.46 r
+  core/U385/X (sky130_fd_sc_hd__and2_1)                               0.20       9.66 r
+  core/U403/Y (sky130_fd_sc_hd__clkinv_1)                             0.14       9.80 f
+  core/U794/Y (sky130_fd_sc_hd__o22ai_1)                              0.12       9.91 r
+  core/CPU_Xreg_value_a4_reg[1][31]/D (sky130_fd_sc_hd__dfxtp_1)      0.00       9.92 r
+  data arrival time                                                              9.92
+
+  clock clk (rise edge)                                              10.00      10.00
+  clock network delay (ideal)                                         0.00      10.00
+  core/CPU_Xreg_value_a4_reg[1][31]/CLK (sky130_fd_sc_hd__dfxtp_1)
+                                                                      0.00      10.00 r
+  library setup time                                                 -0.08       9.92
+  data required time                                                             9.92
+  --------------------------------------------------------------------------------------
+  data required time                                                             9.92
+  data arrival time                                                             -9.92
+  --------------------------------------------------------------------------------------
+  slack (MET)                                                                    0.01
+
+
+  Startpoint: dac/OUT (internal path startpoint)
+  Endpoint: OUT (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vsdbabysoc         Small                 sky130_fd_sc_hd__tt_025C_1v80
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  dac/OUT (avsddac)                        0.00       0.00 r
+  OUT (out)                                0.87       0.87 r
+  data arrival time                                   0.87
+
+  max_delay                               10.00      10.00
+  output external delay                    0.00      10.00
+  data required time                                 10.00
+  -----------------------------------------------------------
+  data required time                                 10.00
+  data arrival time                                  -0.87
+  -----------------------------------------------------------
+  slack (MET)                                         9.13
+```
+### Power Report:
+```text
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : vsdbabysoc
+Version: T-2022.03-SP5-6
+Date   : Sat Sep 14 05:06:10 2024
+****************************************
+
+
+Library(s) Used:
+
+    sky130_fd_sc_hd__tt_025C_1v80 (File: /home/bhaskar/vsd/ICC2_Flow/VSDBabySOC/VSDBabySoC/src/lib/sky130_fd_sc_hd__tt_025C_1v80.db)
+    avsddac (File: /home/bhaskar/vsd/ICC2_Flow/VSDBabySOC/VSDBabySoC/src/lib/avsddac.db)
+    avsdpll (File: /home/bhaskar/vsd/ICC2_Flow/VSDBabySOC/VSDBabySoC/src/lib/avsdpll.db)
+
+
+Operating Conditions: tt_025C_1v80   Library: sky130_fd_sc_hd__tt_025C_1v80
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+vsdbabysoc             Small             sky130_fd_sc_hd__tt_025C_1v80
+
+
+Global Operating Voltage = 1.8  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+vsdbabysoc                                0.616    2.878    8.721    3.494 100.0
+  dac (avsddac)                        8.11e-03    0.000    0.000 8.11e-03   0.2
+  pll (avsdpll)                           0.437    0.000    0.000    0.437  12.5
+  core (rvmyth)                           0.170    2.878    8.718    3.048  87.3
+```
 </details>
