@@ -3035,6 +3035,6 @@ git clone https://github.com/kunalg123/icc2_workshop_collaterals.git
 ### To convert .itf file to .tluplus format,perform the following steps :
 ```text
 cd /home/bhaskar/vsd/VSDBabySoC_ICC2/PD/synopsys_ICC2flow_130nm/synopsys_skywater_flow_nominal/itf_files
-grdgenxo -itf2TLUPlus -i skywater130.nominal.itf -o skywater130.nominal.tluplus # to generate TLUplus RC Tech file from .itf file format using StarRC tool.
+grdgenxo -itf2TLUPlus -i skywater130.nominal.itf -o skywater130.nominal.tluplus
 ```
 </details>
