@@ -3037,4 +3037,22 @@ git clone https://github.com/kunalg123/icc2_workshop_collaterals.git
 cd /home/bhaskar/vsd/VSDBabySoC_ICC2/PD/synopsys_ICC2flow_130nm/synopsys_skywater_flow_nominal/itf_files
 grdgenxo -itf2TLUPlus -i skywater130.nominal.itf -o skywater130.nominal.tluplus
 ```
+### Setup the following files present in this path /home/bhaskar/vsd/ICC2_Flow/VSDBabySOC/VSDBabySoC/src/script/pdflow/standaloneFlow :
+#### compile_pg_example.tcl
+![image](https://github.com/user-attachments/assets/79769077-dfed-4b3a-a0ea-95c724feba5a)
+#### init_design.mcmm_example.auto_expanded.tcl
+![image](https://github.com/user-attachments/assets/6d421584-dc05-4dd8-97e8-b65e3bd6ca3f)
+#### init_design.read_parasitic_tech_example.tcl
+![image](https://github.com/user-attachments/assets/fbaece3c-6e1d-472e-8545-38a529f859e6)
+#### init_design.tech_setup.tcl
+![image](https://github.com/user-attachments/assets/e5a72678-5238-44bc-ae89-b6811968a992)
+#### pns_example.tcl
+![image](https://github.com/user-attachments/assets/2eadd4dc-978c-4eef-a70e-cbc72d050cf9)
+#### top.tcl
+![image](https://github.com/user-attachments/assets/b42de81a-5286-4c31-a326-c9462607fb37)
+#### write_block_data.tcl
+![image](https://github.com/user-attachments/assets/829e8653-e149-437f-ba11-08fe7c988251)
+## Out Put:
+![image](https://github.com/user-attachments/assets/da73a87e-93aa-49d7-8908-898a716daabf)
+
 </details>
