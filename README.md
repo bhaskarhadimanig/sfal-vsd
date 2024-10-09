@@ -3058,9 +3058,9 @@ grdgenxo -itf2TLUPlus -i skywater130.nominal.itf -o skywater130.nominal.tluplus
 ### After routing is completed, in icc2_shell, we can extract parasitics information in .SPEF format and post_route netlist by using following command :
 ```text
 file mkdir ./output_after_placement
-write_verilog ./output_after_placement/design_after_post_route.v
+write_verilog ./output_after_placement/design_after_place_opt.v
 file mkdir ./output_spef_after_placement
-write_parasitics -corner func1 -output ./output_spef_after_placement/design_after_post_route.spef
+write_parasitics -corner func1 -output ./output_spef_after_placement/design_after_place_opt.spef
 ```
 ### Extracted parasitics in .spef format:
 ![3](https://github.com/user-attachments/assets/bc4817ea-c635-4a84-9332-0b2b4bd9abe8)
