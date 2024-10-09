@@ -3126,7 +3126,7 @@ close $FH
 
 ![5](https://github.com/user-attachments/assets/6e84728c-d928-4f8b-80fd-a71fe874060f)
 
-
+### Below table explians Worst Negative/Setup Slack (WNS) & Worst Hold Slack (WHS) for different PVT corners for BabySoC Design post synthesis:
 
 | PVT_Corner    |      WNS   |      WHS   |
 | ------------- | -----------| -----------|
