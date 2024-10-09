@@ -3055,4 +3055,55 @@ grdgenxo -itf2TLUPlus -i skywater130.nominal.itf -o skywater130.nominal.tluplus
 ## Out Put:
 ![image](https://github.com/user-attachments/assets/da73a87e-93aa-49d7-8908-898a716daabf)
 
+### After routing is completed, in icc2_shell, we can extract parasitics information in .SPEF format and post_route netlist by using following command :
+```text
+file mkdir ./output_after_placement
+write_verilog ./output_after_placement/design_after_post_route.v
+file mkdir ./output_spef_after_placement
+write_parasitics -corner func1 -output ./output_spef_after_placement/design_after_post_route.spef
+```
+### Extracted parasitics in .spef format:
+![3](https://github.com/user-attachments/assets/bc4817ea-c635-4a84-9332-0b2b4bd9abe8)
+
+### Post_route netlist in .v format:
+![4](https://github.com/user-attachments/assets/db00e4bc-02fd-499a-9618-0dd4d709f7bf)
+
+## Prime Time STA analysis for all available PVT Corners :
+#### Script to run STA analysis for all PVT Corners:
+```text
+set m1 ""
+set pvt ""
+set wns ""
+set whs ""
+set FH [open report_timing_prime_time.rpt w]
+puts $FH "PVT_Corner\tWNS\tWHS"
+set lib_files [glob -directory /home/bhaskar/vsd/ICC2_Flow/VSDBabySOC/VSDBabySoC/src/Timing/timing/ -type f *.db]
+foreach lib_file_paths $lib_files {
+regexp {.*\/sky130_fd_sc_hd__(.*)\.db$} $lib_file_paths m1 pvt
+
+set link_path "* /home/bhaskar/vsd/ICC2_Flow/VSDBabySOC/VSDBabySoC/src/lib/avsdpll.db /home/bhaskar/vsd/ICC2_Flow/VSDBabySOC/VSDBabySoC/src/lib/avsddac.db"
+lappend link_path $lib_file_paths
+
+read_verilog "/home/bhaskar/vsd/ICC2_Flow/VSDBabySOC/VSDBabySoC/src/script/pdflow/standaloneFlow/output_after_placement/design_after_place_opt.v"
+current_design vsdbabysoc
+
+link_design
+read_sdc "/home/bhaskar/vsd/ICC2_Flow/VSDBabySOC/VSDBabySoC/src/sdc/vsdbabysoc_synthesis.sdc"
+read_parasitics "/home/bhaskar/vsd/ICC2_Flow/VSDBabySOC/VSDBabySoC/src/script/pdflow/standaloneFlow/output_spef_after_placement/design_after_place_opt.spef.temp1_25.spef"
+
+
+set wns [get_attribute [get_timing_paths -delay_type max -max_paths 1] slack]
+set whs [get_attribute [get_timing_paths -delay_type min -max_paths 1] slack]
+
+puts $FH "$pvt\t$wns\t$whs"
+
+remove_annotated_parasitics -all
+reset_design
+remove_design -all
+remove_lib -all
+}
+close $FH
+```
+![5](https://github.com/user-attachments/assets/6e84728c-d928-4f8b-80fd-a71fe874060f)
+
 </details>
