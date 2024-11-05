@@ -3154,4 +3154,20 @@ close $FH
 ![4](https://github.com/user-attachments/assets/87d71ae7-3275-423e-a0d2-d1793af41ed7)
 
 <img width="674" alt="Screenshot 2024-10-19 at 12 59 05 PM" src="https://github.com/user-attachments/assets/743fb1ee-7f14-48cf-a35e-1c2ecb2fd506">
+
+## PD Flow Using 45nm Technology:
+![1](https://github.com/user-attachments/assets/b92230ea-cb1c-449c-b9a1-775a8760b002)
+
+### The FINCELLs are shown below:
+![2](https://github.com/user-attachments/assets/e2f3bb65-4d3f-4ebc-b25f-08a8fec52b95)
+![3](https://github.com/user-attachments/assets/18075fbd-8c09-4ec5-b752-a1e4057e2a71)
+### Outputs generated
+#### 1. Type set_propagated_clock [all_clocks] in icc2_shell as shown below:
+#### 2. Type report_timing in icc2_shell and you will notice that the slack time is met as shown below:
+![4](https://github.com/user-attachments/assets/9ef35859-db85-49ce-bd16-7afe84222131)
+### Violations and Future Work
+#### 1. Type the following command in icc2_shell once the layout is generated:
+report_constraints -all_violators -nosplit -verbose -significant_digits 4 > violators.rpt
+![5](https://github.com/user-attachments/assets/885acc37-6b4a-4006-9952-7ae562849249)
+
 </details>
