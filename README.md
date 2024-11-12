@@ -3170,4 +3170,6 @@ close $FH
 report_constraints -all_violators -nosplit -verbose -significant_digits 4 > violators.rpt
 ![5](https://github.com/user-attachments/assets/885acc37-6b4a-4006-9952-7ae562849249)
 
+## SAT using Prime Time
+![2](https://github.com/user-attachments/assets/2cfa6321-c5fc-4123-8eba-3c996d894d15)
 </details>
